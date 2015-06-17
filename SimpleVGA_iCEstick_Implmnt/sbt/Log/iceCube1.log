@@ -1,0 +1,1409 @@
+15:34:09
+"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.main 
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":30:4:30:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":35:20:35:20|Referenced variable y is not in sensitivity list
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":33:16:33:16|Referenced variable x is not in sensitivity list
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":48:4:48:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":52:36:52:36|Referenced variable y is not in sensitivity list
+Post processing for work.simplevga.main
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":32:8:32:9|Latch generated from process for signal x(9 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":32:8:32:9|Latch generated from process for signal y(8 downto 0); possible missing assignment in an if or case statement.
+@W: CL111 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":32:8:32:9|All reachable assignments to vsync assign '1'; register removed by optimization
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:34:26 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:34:27 2015
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:34:27 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 35MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:34:28 2015
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1061R, Built Nov 12 2014 09:27:19
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@L: U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_scck.rpt 
+Printing clock  summary report in "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 60MB)
+
+@W: MT462 :"u:\simplevga_icestick\simplevga.vhdl":33:16:33:23|Net vsync_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist SimpleVGA
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+
+
+@S |Clock Summary
+****************
+
+Start                     Requested     Requested     Clock        Clock                
+Clock                     Frequency     Period        Type         Group                
+----------------------------------------------------------------------------------------
+SimpleVGA|clock_12MHz     4.1 MHz       243.835       inferred     Autoconstr_clkgroup_0
+System                    1.0 MHz       1000.000      system       system_clkgroup      
+========================================================================================
+
+@W: MT529 :"u:\simplevga_icestick\simplevga.vhdl":32:8:32:9|Found inferred clock SimpleVGA|clock_12MHz which controls 19 sequential elements including x[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:34:30 2015
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1061R, Built Nov 12 2014 09:27:19
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 57MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 57MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 59MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":52:15:52:22|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":52:36:52:43|Generating a type rem remainder 
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 76MB peak: 78MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 76MB peak: 78MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 76MB peak: 78MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 77MB peak: 78MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -3.89ns		 111 /         0
+------------------------------------------------------------
+
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -3.13ns		 115 /         0
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -3.13ns		 115 /         0
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+Warning: Found 22 combinational loops!
+@W: BN137 :|Found combinational loop during mapping at net x[7]
+1) instance x_latch[7] (view:work.SimpleVGA(main)), output net "x[7]" in work.SimpleVGA(main)
+    net        x[7]
+    input  pin x_latch[7]/I1
+    instance   x_latch[7] (cell SB_LUT4)
+    output pin x_latch[7]/O
+    net        x[7]
+@W: BN137 :|Found combinational loop during mapping at net x_3[7]
+2) instance x_3[7] (view:work.SimpleVGA(main)), output net "x_3[7]" in work.SimpleVGA(main)
+    net        x_3[7]
+    input  pin x_latch[7]/I2
+    instance   x_latch[7] (cell SB_LUT4)
+    output pin x_latch[7]/O
+    net        x[7]
+    input  pin un1_x_cry_7_s/I1
+    instance   un1_x_cry_7_s (cell SB_LUT4)
+    output pin un1_x_cry_7_s/O
+    net        N_187
+    input  pin x_3[7]/I0
+    instance   x_3[7] (cell SB_LUT4)
+    output pin x_3[7]/O
+    net        x_3[7]
+@W: BN137 :|Found combinational loop during mapping at net x[0]
+3) instance x_latch[0] (view:work.SimpleVGA(main)), output net "x[0]" in work.SimpleVGA(main)
+    net        x[0]
+    input  pin x_latch[0]/I0
+    instance   x_latch[0] (cell SB_LUT4)
+    output pin x_latch[0]/O
+    net        x[0]
+@W: BN137 :|Found combinational loop during mapping at net x[1]
+4) instance x_latch[1] (view:work.SimpleVGA(main)), output net "x[1]" in work.SimpleVGA(main)
+    net        x[1]
+    input  pin x_latch[1]/I0
+    instance   x_latch[1] (cell SB_LUT4)
+    output pin x_latch[1]/O
+    net        x[1]
+@W: BN137 :|Found combinational loop during mapping at net x[2]
+5) instance x_latch[2] (view:work.SimpleVGA(main)), output net "x[2]" in work.SimpleVGA(main)
+    net        x[2]
+    input  pin x_latch[2]/I1
+    instance   x_latch[2] (cell SB_LUT4)
+    output pin x_latch[2]/O
+    net        x[2]
+@W: BN137 :|Found combinational loop during mapping at net x[3]
+6) instance x_latch[3] (view:work.SimpleVGA(main)), output net "x[3]" in work.SimpleVGA(main)
+    net        x[3]
+    input  pin x_latch[3]/I1
+    instance   x_latch[3] (cell SB_LUT4)
+    output pin x_latch[3]/O
+    net        x[3]
+@W: BN137 :|Found combinational loop during mapping at net x[4]
+7) instance x_latch[4] (view:work.SimpleVGA(main)), output net "x[4]" in work.SimpleVGA(main)
+    net        x[4]
+    input  pin x_latch[4]/I1
+    instance   x_latch[4] (cell SB_LUT4)
+    output pin x_latch[4]/O
+    net        x[4]
+@W: BN137 :|Found combinational loop during mapping at net x[5]
+8) instance x_latch[5] (view:work.SimpleVGA(main)), output net "x[5]" in work.SimpleVGA(main)
+    net        x[5]
+    input  pin x_latch[5]/I1
+    instance   x_latch[5] (cell SB_LUT4)
+    output pin x_latch[5]/O
+    net        x[5]
+@W: BN137 :|Found combinational loop during mapping at net x[6]
+9) instance x_latch[6] (view:work.SimpleVGA(main)), output net "x[6]" in work.SimpleVGA(main)
+    net        x[6]
+    input  pin x_latch[6]/I1
+    instance   x_latch[6] (cell SB_LUT4)
+    output pin x_latch[6]/O
+    net        x[6]
+@W: BN137 :|Found combinational loop during mapping at net x[8]
+10) instance x_latch[8] (view:work.SimpleVGA(main)), output net "x[8]" in work.SimpleVGA(main)
+    net        x[8]
+    input  pin x_latch[8]/I1
+    instance   x_latch[8] (cell SB_LUT4)
+    output pin x_latch[8]/O
+    net        x[8]
+@W: BN137 :|Found combinational loop during mapping at net x[9]
+11) instance x_latch[9] (view:work.SimpleVGA(main)), output net "x[9]" in work.SimpleVGA(main)
+    net        x[9]
+    input  pin x_latch[9]/I1
+    instance   x_latch[9] (cell SB_LUT4)
+    output pin x_latch[9]/O
+    net        x[9]
+@W: BN137 :|Found combinational loop during mapping at net un3_clock_12mhz_6
+12) instance un3_clock_12mhz_6 (view:work.SimpleVGA(main)), output net "un3_clock_12mhz_6" in work.SimpleVGA(main)
+    net        un3_clock_12mhz_6
+    input  pin x_3[9]/I2
+    instance   x_3[9] (cell SB_LUT4)
+    output pin x_3[9]/O
+    net        x_3[9]
+    input  pin x_latch[9]/I2
+    instance   x_latch[9] (cell SB_LUT4)
+    output pin x_latch[9]/O
+    net        x[9]
+    input  pin un3_clock_12mhz_6/I3
+    instance   un3_clock_12mhz_6 (cell SB_LUT4)
+    output pin un3_clock_12mhz_6/O
+    net        un3_clock_12mhz_6
+@W: BN137 :|Found combinational loop during mapping at net y[0]
+13) instance y_latch[0] (view:work.SimpleVGA(main)), output net "y[0]" in work.SimpleVGA(main)
+    net        y[0]
+    input  pin y_latch[0]/I0
+    instance   y_latch[0] (cell SB_LUT4)
+    output pin y_latch[0]/O
+    net        y[0]
+@W: BN137 :|Found combinational loop during mapping at net y[1]
+14) instance y_latch[1] (view:work.SimpleVGA(main)), output net "y[1]" in work.SimpleVGA(main)
+    net        y[1]
+    input  pin y_latch[1]/I1
+    instance   y_latch[1] (cell SB_LUT4)
+    output pin y_latch[1]/O
+    net        y[1]
+@W: BN137 :|Found combinational loop during mapping at net y[2]
+15) instance y_latch[2] (view:work.SimpleVGA(main)), output net "y[2]" in work.SimpleVGA(main)
+    net        y[2]
+    input  pin y_latch[2]/I2
+    instance   y_latch[2] (cell SB_LUT4)
+    output pin y_latch[2]/O
+    net        y[2]
+@W: BN137 :|Found combinational loop during mapping at net y[3]
+16) instance y_latch[3] (view:work.SimpleVGA(main)), output net "y[3]" in work.SimpleVGA(main)
+    net        y[3]
+    input  pin y_latch[3]/I2
+    instance   y_latch[3] (cell SB_LUT4)
+    output pin y_latch[3]/O
+    net        y[3]
+@W: BN137 :|Found combinational loop during mapping at net y[4]
+17) instance y_latch[4] (view:work.SimpleVGA(main)), output net "y[4]" in work.SimpleVGA(main)
+    net        y[4]
+    input  pin y_latch[4]/I2
+    instance   y_latch[4] (cell SB_LUT4)
+    output pin y_latch[4]/O
+    net        y[4]
+@W: BN137 :|Found combinational loop during mapping at net y[5]
+18) instance y_latch[5] (view:work.SimpleVGA(main)), output net "y[5]" in work.SimpleVGA(main)
+    net        y[5]
+    input  pin y_latch[5]/I2
+    instance   y_latch[5] (cell SB_LUT4)
+    output pin y_latch[5]/O
+    net        y[5]
+@W: BN137 :|Found combinational loop during mapping at net y_3[5]
+19) instance g0_4_ns (view:work.SimpleVGA(main)), output net "y_3[5]" in work.SimpleVGA(main)
+    net        y_3[5]
+    input  pin y_latch[5]/I3
+    instance   y_latch[5] (cell SB_LUT4)
+    output pin y_latch[5]/O
+    net        y[5]
+    input  pin g0_4_ns/I1
+    instance   g0_4_ns (cell SB_LUT4)
+    output pin g0_4_ns/O
+    net        y_3[5]
+@W: BN137 :|Found combinational loop during mapping at net y[7]
+20) instance y_latch[7] (view:work.SimpleVGA(main)), output net "y[7]" in work.SimpleVGA(main)
+    net        y[7]
+    input  pin y_latch[7]/I2
+    instance   y_latch[7] (cell SB_LUT4)
+    output pin y_latch[7]/O
+    net        y[7]
+@W: BN137 :|Found combinational loop during mapping at net y[6]
+21) instance y_latch[6] (view:work.SimpleVGA(main)), output net "y[6]" in work.SimpleVGA(main)
+    net        y[6]
+    input  pin y_latch[6]/I2
+    instance   y_latch[6] (cell SB_LUT4)
+    output pin y_latch[6]/O
+    net        y[6]
+@W: BN137 :|Found combinational loop during mapping at net y[8]
+22) instance y_latch[8] (view:work.SimpleVGA(main)), output net "y[8]" in work.SimpleVGA(main)
+    net        y[8]
+    input  pin y_latch[8]/I2
+    instance   y_latch[8] (cell SB_LUT4)
+    output pin y_latch[8]/O
+    net        y[8]
+End of loops
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+Writing Analyst data base U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 77MB peak: 78MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+J-2014.09L
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 78MB peak: 79MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 78MB peak: 79MB)
+
+Warning: Found 22 combinational loops!
+@W: BN137 :|Found combinational loop during mapping at net x[7]
+1) instance clock_12MHz_ibuf_RNI2065_6 (view:work.SimpleVGA(main)), output net "x[7]" in work.SimpleVGA(main)
+    net        x[7]
+    input  pin clock_12MHz_ibuf_RNI2065_6/I1
+    instance   clock_12MHz_ibuf_RNI2065_6 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_6/O
+    net        x[7]
+@W: BN137 :|Found combinational loop during mapping at net x_3[7]
+2) instance un1_x_cry_6_c_RNIFFC6_0 (view:work.SimpleVGA(main)), output net "x_3[7]" in work.SimpleVGA(main)
+    net        x_3[7]
+    input  pin clock_12MHz_ibuf_RNI2065_6/I2
+    instance   clock_12MHz_ibuf_RNI2065_6 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_6/O
+    net        x[7]
+    input  pin un1_x_cry_6_c_RNIFFC6/I1
+    instance   un1_x_cry_6_c_RNIFFC6 (cell SB_LUT4)
+    output pin un1_x_cry_6_c_RNIFFC6/O
+    net        un1_x_cry_6_c_RNIFFC6
+    input  pin un1_x_cry_6_c_RNIFFC6_0/I0
+    instance   un1_x_cry_6_c_RNIFFC6_0 (cell SB_LUT4)
+    output pin un1_x_cry_6_c_RNIFFC6_0/O
+    net        x_3[7]
+@W: BN137 :|Found combinational loop during mapping at net x[0]
+3) instance clock_12MHz_ibuf_RNI2065_10 (view:work.SimpleVGA(main)), output net "x[0]" in work.SimpleVGA(main)
+    net        x[0]
+    input  pin clock_12MHz_ibuf_RNI2065_10/I0
+    instance   clock_12MHz_ibuf_RNI2065_10 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_10/O
+    net        x[0]
+@W: BN137 :|Found combinational loop during mapping at net x[1]
+4) instance clock_12MHz_ibuf_RNI2065_8 (view:work.SimpleVGA(main)), output net "x[1]" in work.SimpleVGA(main)
+    net        x[1]
+    input  pin clock_12MHz_ibuf_RNI2065_8/I0
+    instance   clock_12MHz_ibuf_RNI2065_8 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_8/O
+    net        x[1]
+@W: BN137 :|Found combinational loop during mapping at net x[2]
+5) instance un1_x_cry_1_c_RNIC5DB (view:work.SimpleVGA(main)), output net "x[2]" in work.SimpleVGA(main)
+    net        x[2]
+    input  pin un1_x_cry_1_c_RNIC5DB/I1
+    instance   un1_x_cry_1_c_RNIC5DB (cell SB_LUT4)
+    output pin un1_x_cry_1_c_RNIC5DB/O
+    net        x[2]
+@W: BN137 :|Found combinational loop during mapping at net x[3]
+6) instance un1_x_cry_2_c_RNID7EB (view:work.SimpleVGA(main)), output net "x[3]" in work.SimpleVGA(main)
+    net        x[3]
+    input  pin un1_x_cry_2_c_RNID7EB/I1
+    instance   un1_x_cry_2_c_RNID7EB (cell SB_LUT4)
+    output pin un1_x_cry_2_c_RNID7EB/O
+    net        x[3]
+@W: BN137 :|Found combinational loop during mapping at net x[4]
+7) instance un1_x_cry_3_c_RNIE9FB (view:work.SimpleVGA(main)), output net "x[4]" in work.SimpleVGA(main)
+    net        x[4]
+    input  pin un1_x_cry_3_c_RNIE9FB/I1
+    instance   un1_x_cry_3_c_RNIE9FB (cell SB_LUT4)
+    output pin un1_x_cry_3_c_RNIE9FB/O
+    net        x[4]
+@W: BN137 :|Found combinational loop during mapping at net x[5]
+8) instance un1_x_cry_4_c_RNIFBGB (view:work.SimpleVGA(main)), output net "x[5]" in work.SimpleVGA(main)
+    net        x[5]
+    input  pin un1_x_cry_4_c_RNIFBGB/I1
+    instance   un1_x_cry_4_c_RNIFBGB (cell SB_LUT4)
+    output pin un1_x_cry_4_c_RNIFBGB/O
+    net        x[5]
+@W: BN137 :|Found combinational loop during mapping at net x[6]
+9) instance un1_x_cry_5_c_RNIGDHB (view:work.SimpleVGA(main)), output net "x[6]" in work.SimpleVGA(main)
+    net        x[6]
+    input  pin un1_x_cry_5_c_RNIGDHB/I1
+    instance   un1_x_cry_5_c_RNIGDHB (cell SB_LUT4)
+    output pin un1_x_cry_5_c_RNIGDHB/O
+    net        x[6]
+@W: BN137 :|Found combinational loop during mapping at net x[8]
+10) instance un1_x_cry_7_c_RNIIHJB (view:work.SimpleVGA(main)), output net "x[8]" in work.SimpleVGA(main)
+    net        x[8]
+    input  pin un1_x_cry_7_c_RNIIHJB/I1
+    instance   un1_x_cry_7_c_RNIIHJB (cell SB_LUT4)
+    output pin un1_x_cry_7_c_RNIIHJB/O
+    net        x[8]
+@W: BN137 :|Found combinational loop during mapping at net x[9]
+11) instance clock_12MHz_ibuf_RNIJJKB (view:work.SimpleVGA(main)), output net "x[9]" in work.SimpleVGA(main)
+    net        x[9]
+    input  pin clock_12MHz_ibuf_RNIJJKB/I1
+    instance   clock_12MHz_ibuf_RNIJJKB (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNIJJKB/O
+    net        x[9]
+@W: BN137 :|Found combinational loop during mapping at net un3_clock_12mhz_6
+12) instance clock_12MHz_ibuf_RNI_1 (view:work.SimpleVGA(main)), output net "un3_clock_12mhz_6" in work.SimpleVGA(main)
+    net        un3_clock_12mhz_6
+    input  pin un1_x_cry_8_c_RNIHJE6_0/I2
+    instance   un1_x_cry_8_c_RNIHJE6_0 (cell SB_LUT4)
+    output pin un1_x_cry_8_c_RNIHJE6_0/O
+    net        x_3[9]
+    input  pin clock_12MHz_ibuf_RNIJJKB/I2
+    instance   clock_12MHz_ibuf_RNIJJKB (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNIJJKB/O
+    net        x[9]
+    input  pin clock_12MHz_ibuf_RNI_1/I3
+    instance   clock_12MHz_ibuf_RNI_1 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI_1/O
+    net        un3_clock_12mhz_6
+@W: BN137 :|Found combinational loop during mapping at net y[0]
+13) instance clock_12MHz_ibuf_RNI2065_9 (view:work.SimpleVGA(main)), output net "y[0]" in work.SimpleVGA(main)
+    net        y[0]
+    input  pin clock_12MHz_ibuf_RNI2065_9/I0
+    instance   clock_12MHz_ibuf_RNI2065_9 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_9/O
+    net        y[0]
+@W: BN137 :|Found combinational loop during mapping at net y[1]
+14) instance clock_12MHz_ibuf_RNI2065_7 (view:work.SimpleVGA(main)), output net "y[1]" in work.SimpleVGA(main)
+    net        y[1]
+    input  pin clock_12MHz_ibuf_RNI2065_7/I1
+    instance   clock_12MHz_ibuf_RNI2065_7 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_7/O
+    net        y[1]
+@W: BN137 :|Found combinational loop during mapping at net y[2]
+15) instance clock_12MHz_ibuf_RNI2065_0 (view:work.SimpleVGA(main)), output net "y[2]" in work.SimpleVGA(main)
+    net        y[2]
+    input  pin clock_12MHz_ibuf_RNI2065_0/I2
+    instance   clock_12MHz_ibuf_RNI2065_0 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_0/O
+    net        y[2]
+@W: BN137 :|Found combinational loop during mapping at net y[3]
+16) instance clock_12MHz_ibuf_RNI2065_1 (view:work.SimpleVGA(main)), output net "y[3]" in work.SimpleVGA(main)
+    net        y[3]
+    input  pin clock_12MHz_ibuf_RNI2065_1/I2
+    instance   clock_12MHz_ibuf_RNI2065_1 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_1/O
+    net        y[3]
+@W: BN137 :|Found combinational loop during mapping at net y[4]
+17) instance clock_12MHz_ibuf_RNI2065_2 (view:work.SimpleVGA(main)), output net "y[4]" in work.SimpleVGA(main)
+    net        y[4]
+    input  pin clock_12MHz_ibuf_RNI2065_2/I2
+    instance   clock_12MHz_ibuf_RNI2065_2 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_2/O
+    net        y[4]
+@W: BN137 :|Found combinational loop during mapping at net y[5]
+18) instance clock_12MHz_ibuf_RNI2065 (view:work.SimpleVGA(main)), output net "y[5]" in work.SimpleVGA(main)
+    net        y[5]
+    input  pin clock_12MHz_ibuf_RNI2065/I2
+    instance   clock_12MHz_ibuf_RNI2065 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065/O
+    net        y[5]
+@W: BN137 :|Found combinational loop during mapping at net y_3[5]
+19) instance clock_12MHz_ibuf_RNI_3 (view:work.SimpleVGA(main)), output net "y_3[5]" in work.SimpleVGA(main)
+    net        y_3[5]
+    input  pin clock_12MHz_ibuf_RNI2065/I3
+    instance   clock_12MHz_ibuf_RNI2065 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065/O
+    net        y[5]
+    input  pin clock_12MHz_ibuf_RNI_3/I1
+    instance   clock_12MHz_ibuf_RNI_3 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI_3/O
+    net        y_3[5]
+@W: BN137 :|Found combinational loop during mapping at net y[7]
+20) instance clock_12MHz_ibuf_RNI2065_5 (view:work.SimpleVGA(main)), output net "y[7]" in work.SimpleVGA(main)
+    net        y[7]
+    input  pin clock_12MHz_ibuf_RNI2065_5/I2
+    instance   clock_12MHz_ibuf_RNI2065_5 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_5/O
+    net        y[7]
+@W: BN137 :|Found combinational loop during mapping at net y[6]
+21) instance clock_12MHz_ibuf_RNI2065_3 (view:work.SimpleVGA(main)), output net "y[6]" in work.SimpleVGA(main)
+    net        y[6]
+    input  pin clock_12MHz_ibuf_RNI2065_3/I2
+    instance   clock_12MHz_ibuf_RNI2065_3 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_3/O
+    net        y[6]
+@W: BN137 :|Found combinational loop during mapping at net y[8]
+22) instance clock_12MHz_ibuf_RNI2065_4 (view:work.SimpleVGA(main)), output net "y[8]" in work.SimpleVGA(main)
+    net        y[8]
+    input  pin clock_12MHz_ibuf_RNI2065_4/I2
+    instance   clock_12MHz_ibuf_RNI2065_4 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_4/O
+    net        y[8]
+End of loops
+@W: MT420 |Found inferred clock SimpleVGA|clock_12MHz with period 6.76ns. Please declare a user-defined clock on object "p:clock_12MHz"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Tue May 26 15:34:35 2015
+#
+
+
+Top view:               SimpleVGA
+Requested Frequency:    148.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+                          Requested     Estimated     Requested     Estimated               Clock        Clock                
+Starting Clock            Frequency     Frequency     Period        Period        Slack     Type         Group                
+------------------------------------------------------------------------------------------------------------------------------
+SimpleVGA|clock_12MHz     148.0 MHz     NA            6.759         NA            NA        inferred     Autoconstr_clkgroup_0
+==============================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 78MB peak: 79MB)
+
+---------------------------------------
+Resource Usage Report for SimpleVGA 
+
+Mapping to part: ice40hx1ktq144
+Cell usage:
+SB_CARRY        65 uses
+SB_LUT4         125 uses
+
+I/O ports: 4
+I/O primitives: 4
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+Mapping Summary:
+Total  LUTs: 125 (9%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 125 = 125 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 37MB peak: 79MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Tue May 26 15:34:35 2015
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation SimpleVGA_iCEstick_Implmnt its sbt path: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 13 seconds
+
+
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\edifparser.exe" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf " "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist" "-pTQ144" -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2014.12.27052
+Build Date:     Dec  8 2014 15:01:03
+
+Parsing edif file: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf...
+start to read sdc/scf file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.scf
+sdc_reader OK U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.scf
+Stored edif netlist at U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA...
+
+write Timing Constraint to U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: SimpleVGA
+
+EDF Parser run-time: 3 (sec)
+edif parser succeed.
+"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+VHDL syntax check successful!
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.main 
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":35:4:35:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":40:20:40:20|Referenced variable y is not in sensitivity list
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":38:16:38:16|Referenced variable x is not in sensitivity list
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":53:4:53:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":57:36:57:36|Referenced variable y is not in sensitivity list
+Post processing for work.simplevga.main
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":37:8:37:9|Latch generated from process for signal x(9 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":37:8:37:9|Latch generated from process for signal y(8 downto 0); possible missing assignment in an if or case statement.
+@W: CL111 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":37:8:37:9|All reachable assignments to vsync assign '1'; register removed by optimization
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:44:06 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:44:06 2015
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:44:06 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+File U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_comp.srs changed - recompiling
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view main as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 35MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:44:07 2015
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1061R, Built Nov 12 2014 09:27:19
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@L: U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_scck.rpt 
+Printing clock  summary report in "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 60MB)
+
+@W: MT462 :"u:\simplevga_icestick\simplevga.vhdl":38:16:38:23|Net vsync_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist SimpleVGA
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+
+
+@S |Clock Summary
+****************
+
+Start                     Requested     Requested     Clock        Clock                
+Clock                     Frequency     Period        Type         Group                
+----------------------------------------------------------------------------------------
+SimpleVGA|clock_12MHz     4.1 MHz       243.835       inferred     Autoconstr_clkgroup_0
+System                    1.0 MHz       1000.000      system       system_clkgroup      
+========================================================================================
+
+@W: MT529 :"u:\simplevga_icestick\simplevga.vhdl":37:8:37:9|Found inferred clock SimpleVGA|clock_12MHz which controls 19 sequential elements including x[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue May 26 15:44:08 2015
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1061R, Built Nov 12 2014 09:27:19
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 57MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 57MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 59MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":57:15:57:22|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":57:36:57:43|Generating a type rem remainder 
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -3.89ns		 111 /         0
+------------------------------------------------------------
+
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -3.13ns		 115 /         0
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -3.13ns		 115 /         0
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+Warning: Found 22 combinational loops!
+@W: BN137 :|Found combinational loop during mapping at net x[7]
+1) instance x_latch[7] (view:work.SimpleVGA(main)), output net "x[7]" in work.SimpleVGA(main)
+    net        x[7]
+    input  pin x_latch[7]/I1
+    instance   x_latch[7] (cell SB_LUT4)
+    output pin x_latch[7]/O
+    net        x[7]
+@W: BN137 :|Found combinational loop during mapping at net x_3[7]
+2) instance x_3[7] (view:work.SimpleVGA(main)), output net "x_3[7]" in work.SimpleVGA(main)
+    net        x_3[7]
+    input  pin x_latch[7]/I2
+    instance   x_latch[7] (cell SB_LUT4)
+    output pin x_latch[7]/O
+    net        x[7]
+    input  pin un1_x_cry_7_s/I1
+    instance   un1_x_cry_7_s (cell SB_LUT4)
+    output pin un1_x_cry_7_s/O
+    net        N_187
+    input  pin x_3[7]/I0
+    instance   x_3[7] (cell SB_LUT4)
+    output pin x_3[7]/O
+    net        x_3[7]
+@W: BN137 :|Found combinational loop during mapping at net x[0]
+3) instance x_latch[0] (view:work.SimpleVGA(main)), output net "x[0]" in work.SimpleVGA(main)
+    net        x[0]
+    input  pin x_latch[0]/I0
+    instance   x_latch[0] (cell SB_LUT4)
+    output pin x_latch[0]/O
+    net        x[0]
+@W: BN137 :|Found combinational loop during mapping at net x[1]
+4) instance x_latch[1] (view:work.SimpleVGA(main)), output net "x[1]" in work.SimpleVGA(main)
+    net        x[1]
+    input  pin x_latch[1]/I0
+    instance   x_latch[1] (cell SB_LUT4)
+    output pin x_latch[1]/O
+    net        x[1]
+@W: BN137 :|Found combinational loop during mapping at net x[2]
+5) instance x_latch[2] (view:work.SimpleVGA(main)), output net "x[2]" in work.SimpleVGA(main)
+    net        x[2]
+    input  pin x_latch[2]/I1
+    instance   x_latch[2] (cell SB_LUT4)
+    output pin x_latch[2]/O
+    net        x[2]
+@W: BN137 :|Found combinational loop during mapping at net x[3]
+6) instance x_latch[3] (view:work.SimpleVGA(main)), output net "x[3]" in work.SimpleVGA(main)
+    net        x[3]
+    input  pin x_latch[3]/I1
+    instance   x_latch[3] (cell SB_LUT4)
+    output pin x_latch[3]/O
+    net        x[3]
+@W: BN137 :|Found combinational loop during mapping at net x[4]
+7) instance x_latch[4] (view:work.SimpleVGA(main)), output net "x[4]" in work.SimpleVGA(main)
+    net        x[4]
+    input  pin x_latch[4]/I1
+    instance   x_latch[4] (cell SB_LUT4)
+    output pin x_latch[4]/O
+    net        x[4]
+@W: BN137 :|Found combinational loop during mapping at net x[5]
+8) instance x_latch[5] (view:work.SimpleVGA(main)), output net "x[5]" in work.SimpleVGA(main)
+    net        x[5]
+    input  pin x_latch[5]/I1
+    instance   x_latch[5] (cell SB_LUT4)
+    output pin x_latch[5]/O
+    net        x[5]
+@W: BN137 :|Found combinational loop during mapping at net x[6]
+9) instance x_latch[6] (view:work.SimpleVGA(main)), output net "x[6]" in work.SimpleVGA(main)
+    net        x[6]
+    input  pin x_latch[6]/I1
+    instance   x_latch[6] (cell SB_LUT4)
+    output pin x_latch[6]/O
+    net        x[6]
+@W: BN137 :|Found combinational loop during mapping at net x[8]
+10) instance x_latch[8] (view:work.SimpleVGA(main)), output net "x[8]" in work.SimpleVGA(main)
+    net        x[8]
+    input  pin x_latch[8]/I1
+    instance   x_latch[8] (cell SB_LUT4)
+    output pin x_latch[8]/O
+    net        x[8]
+@W: BN137 :|Found combinational loop during mapping at net x[9]
+11) instance x_latch[9] (view:work.SimpleVGA(main)), output net "x[9]" in work.SimpleVGA(main)
+    net        x[9]
+    input  pin x_latch[9]/I1
+    instance   x_latch[9] (cell SB_LUT4)
+    output pin x_latch[9]/O
+    net        x[9]
+@W: BN137 :|Found combinational loop during mapping at net un3_clock_12mhz_6
+12) instance un3_clock_12mhz_6 (view:work.SimpleVGA(main)), output net "un3_clock_12mhz_6" in work.SimpleVGA(main)
+    net        un3_clock_12mhz_6
+    input  pin x_3[9]/I2
+    instance   x_3[9] (cell SB_LUT4)
+    output pin x_3[9]/O
+    net        x_3[9]
+    input  pin x_latch[9]/I2
+    instance   x_latch[9] (cell SB_LUT4)
+    output pin x_latch[9]/O
+    net        x[9]
+    input  pin un3_clock_12mhz_6/I3
+    instance   un3_clock_12mhz_6 (cell SB_LUT4)
+    output pin un3_clock_12mhz_6/O
+    net        un3_clock_12mhz_6
+@W: BN137 :|Found combinational loop during mapping at net y[0]
+13) instance y_latch[0] (view:work.SimpleVGA(main)), output net "y[0]" in work.SimpleVGA(main)
+    net        y[0]
+    input  pin y_latch[0]/I0
+    instance   y_latch[0] (cell SB_LUT4)
+    output pin y_latch[0]/O
+    net        y[0]
+@W: BN137 :|Found combinational loop during mapping at net y[1]
+14) instance y_latch[1] (view:work.SimpleVGA(main)), output net "y[1]" in work.SimpleVGA(main)
+    net        y[1]
+    input  pin y_latch[1]/I1
+    instance   y_latch[1] (cell SB_LUT4)
+    output pin y_latch[1]/O
+    net        y[1]
+@W: BN137 :|Found combinational loop during mapping at net y[2]
+15) instance y_latch[2] (view:work.SimpleVGA(main)), output net "y[2]" in work.SimpleVGA(main)
+    net        y[2]
+    input  pin y_latch[2]/I2
+    instance   y_latch[2] (cell SB_LUT4)
+    output pin y_latch[2]/O
+    net        y[2]
+@W: BN137 :|Found combinational loop during mapping at net y[3]
+16) instance y_latch[3] (view:work.SimpleVGA(main)), output net "y[3]" in work.SimpleVGA(main)
+    net        y[3]
+    input  pin y_latch[3]/I2
+    instance   y_latch[3] (cell SB_LUT4)
+    output pin y_latch[3]/O
+    net        y[3]
+@W: BN137 :|Found combinational loop during mapping at net y[4]
+17) instance y_latch[4] (view:work.SimpleVGA(main)), output net "y[4]" in work.SimpleVGA(main)
+    net        y[4]
+    input  pin y_latch[4]/I2
+    instance   y_latch[4] (cell SB_LUT4)
+    output pin y_latch[4]/O
+    net        y[4]
+@W: BN137 :|Found combinational loop during mapping at net y[5]
+18) instance y_latch[5] (view:work.SimpleVGA(main)), output net "y[5]" in work.SimpleVGA(main)
+    net        y[5]
+    input  pin y_latch[5]/I2
+    instance   y_latch[5] (cell SB_LUT4)
+    output pin y_latch[5]/O
+    net        y[5]
+@W: BN137 :|Found combinational loop during mapping at net y_3[5]
+19) instance g0_4_ns (view:work.SimpleVGA(main)), output net "y_3[5]" in work.SimpleVGA(main)
+    net        y_3[5]
+    input  pin y_latch[5]/I3
+    instance   y_latch[5] (cell SB_LUT4)
+    output pin y_latch[5]/O
+    net        y[5]
+    input  pin g0_4_ns/I1
+    instance   g0_4_ns (cell SB_LUT4)
+    output pin g0_4_ns/O
+    net        y_3[5]
+@W: BN137 :|Found combinational loop during mapping at net y[7]
+20) instance y_latch[7] (view:work.SimpleVGA(main)), output net "y[7]" in work.SimpleVGA(main)
+    net        y[7]
+    input  pin y_latch[7]/I2
+    instance   y_latch[7] (cell SB_LUT4)
+    output pin y_latch[7]/O
+    net        y[7]
+@W: BN137 :|Found combinational loop during mapping at net y[6]
+21) instance y_latch[6] (view:work.SimpleVGA(main)), output net "y[6]" in work.SimpleVGA(main)
+    net        y[6]
+    input  pin y_latch[6]/I2
+    instance   y_latch[6] (cell SB_LUT4)
+    output pin y_latch[6]/O
+    net        y[6]
+@W: BN137 :|Found combinational loop during mapping at net y[8]
+22) instance y_latch[8] (view:work.SimpleVGA(main)), output net "y[8]" in work.SimpleVGA(main)
+    net        y[8]
+    input  pin y_latch[8]/I2
+    instance   y_latch[8] (cell SB_LUT4)
+    output pin y_latch[8]/O
+    net        y[8]
+End of loops
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+
+Writing Analyst data base U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 77MB peak: 78MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+J-2014.09L
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 78MB peak: 79MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 78MB peak: 79MB)
+
+Warning: Found 22 combinational loops!
+@W: BN137 :|Found combinational loop during mapping at net x[7]
+1) instance clock_12MHz_ibuf_RNI2065_6 (view:work.SimpleVGA(main)), output net "x[7]" in work.SimpleVGA(main)
+    net        x[7]
+    input  pin clock_12MHz_ibuf_RNI2065_6/I1
+    instance   clock_12MHz_ibuf_RNI2065_6 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_6/O
+    net        x[7]
+@W: BN137 :|Found combinational loop during mapping at net x_3[7]
+2) instance un1_x_cry_6_c_RNIFFC6_0 (view:work.SimpleVGA(main)), output net "x_3[7]" in work.SimpleVGA(main)
+    net        x_3[7]
+    input  pin clock_12MHz_ibuf_RNI2065_6/I2
+    instance   clock_12MHz_ibuf_RNI2065_6 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_6/O
+    net        x[7]
+    input  pin un1_x_cry_6_c_RNIFFC6/I1
+    instance   un1_x_cry_6_c_RNIFFC6 (cell SB_LUT4)
+    output pin un1_x_cry_6_c_RNIFFC6/O
+    net        un1_x_cry_6_c_RNIFFC6
+    input  pin un1_x_cry_6_c_RNIFFC6_0/I0
+    instance   un1_x_cry_6_c_RNIFFC6_0 (cell SB_LUT4)
+    output pin un1_x_cry_6_c_RNIFFC6_0/O
+    net        x_3[7]
+@W: BN137 :|Found combinational loop during mapping at net x[0]
+3) instance clock_12MHz_ibuf_RNI2065_10 (view:work.SimpleVGA(main)), output net "x[0]" in work.SimpleVGA(main)
+    net        x[0]
+    input  pin clock_12MHz_ibuf_RNI2065_10/I0
+    instance   clock_12MHz_ibuf_RNI2065_10 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_10/O
+    net        x[0]
+@W: BN137 :|Found combinational loop during mapping at net x[1]
+4) instance clock_12MHz_ibuf_RNI2065_8 (view:work.SimpleVGA(main)), output net "x[1]" in work.SimpleVGA(main)
+    net        x[1]
+    input  pin clock_12MHz_ibuf_RNI2065_8/I0
+    instance   clock_12MHz_ibuf_RNI2065_8 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_8/O
+    net        x[1]
+@W: BN137 :|Found combinational loop during mapping at net x[2]
+5) instance un1_x_cry_1_c_RNIC5DB (view:work.SimpleVGA(main)), output net "x[2]" in work.SimpleVGA(main)
+    net        x[2]
+    input  pin un1_x_cry_1_c_RNIC5DB/I1
+    instance   un1_x_cry_1_c_RNIC5DB (cell SB_LUT4)
+    output pin un1_x_cry_1_c_RNIC5DB/O
+    net        x[2]
+@W: BN137 :|Found combinational loop during mapping at net x[3]
+6) instance un1_x_cry_2_c_RNID7EB (view:work.SimpleVGA(main)), output net "x[3]" in work.SimpleVGA(main)
+    net        x[3]
+    input  pin un1_x_cry_2_c_RNID7EB/I1
+    instance   un1_x_cry_2_c_RNID7EB (cell SB_LUT4)
+    output pin un1_x_cry_2_c_RNID7EB/O
+    net        x[3]
+@W: BN137 :|Found combinational loop during mapping at net x[4]
+7) instance un1_x_cry_3_c_RNIE9FB (view:work.SimpleVGA(main)), output net "x[4]" in work.SimpleVGA(main)
+    net        x[4]
+    input  pin un1_x_cry_3_c_RNIE9FB/I1
+    instance   un1_x_cry_3_c_RNIE9FB (cell SB_LUT4)
+    output pin un1_x_cry_3_c_RNIE9FB/O
+    net        x[4]
+@W: BN137 :|Found combinational loop during mapping at net x[5]
+8) instance un1_x_cry_4_c_RNIFBGB (view:work.SimpleVGA(main)), output net "x[5]" in work.SimpleVGA(main)
+    net        x[5]
+    input  pin un1_x_cry_4_c_RNIFBGB/I1
+    instance   un1_x_cry_4_c_RNIFBGB (cell SB_LUT4)
+    output pin un1_x_cry_4_c_RNIFBGB/O
+    net        x[5]
+@W: BN137 :|Found combinational loop during mapping at net x[6]
+9) instance un1_x_cry_5_c_RNIGDHB (view:work.SimpleVGA(main)), output net "x[6]" in work.SimpleVGA(main)
+    net        x[6]
+    input  pin un1_x_cry_5_c_RNIGDHB/I1
+    instance   un1_x_cry_5_c_RNIGDHB (cell SB_LUT4)
+    output pin un1_x_cry_5_c_RNIGDHB/O
+    net        x[6]
+@W: BN137 :|Found combinational loop during mapping at net x[8]
+10) instance un1_x_cry_7_c_RNIIHJB (view:work.SimpleVGA(main)), output net "x[8]" in work.SimpleVGA(main)
+    net        x[8]
+    input  pin un1_x_cry_7_c_RNIIHJB/I1
+    instance   un1_x_cry_7_c_RNIIHJB (cell SB_LUT4)
+    output pin un1_x_cry_7_c_RNIIHJB/O
+    net        x[8]
+@W: BN137 :|Found combinational loop during mapping at net x[9]
+11) instance clock_12MHz_ibuf_RNIJJKB (view:work.SimpleVGA(main)), output net "x[9]" in work.SimpleVGA(main)
+    net        x[9]
+    input  pin clock_12MHz_ibuf_RNIJJKB/I1
+    instance   clock_12MHz_ibuf_RNIJJKB (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNIJJKB/O
+    net        x[9]
+@W: BN137 :|Found combinational loop during mapping at net un3_clock_12mhz_6
+12) instance clock_12MHz_ibuf_RNI_1 (view:work.SimpleVGA(main)), output net "un3_clock_12mhz_6" in work.SimpleVGA(main)
+    net        un3_clock_12mhz_6
+    input  pin un1_x_cry_8_c_RNIHJE6_0/I2
+    instance   un1_x_cry_8_c_RNIHJE6_0 (cell SB_LUT4)
+    output pin un1_x_cry_8_c_RNIHJE6_0/O
+    net        x_3[9]
+    input  pin clock_12MHz_ibuf_RNIJJKB/I2
+    instance   clock_12MHz_ibuf_RNIJJKB (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNIJJKB/O
+    net        x[9]
+    input  pin clock_12MHz_ibuf_RNI_1/I3
+    instance   clock_12MHz_ibuf_RNI_1 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI_1/O
+    net        un3_clock_12mhz_6
+@W: BN137 :|Found combinational loop during mapping at net y[0]
+13) instance clock_12MHz_ibuf_RNI2065_9 (view:work.SimpleVGA(main)), output net "y[0]" in work.SimpleVGA(main)
+    net        y[0]
+    input  pin clock_12MHz_ibuf_RNI2065_9/I0
+    instance   clock_12MHz_ibuf_RNI2065_9 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_9/O
+    net        y[0]
+@W: BN137 :|Found combinational loop during mapping at net y[1]
+14) instance clock_12MHz_ibuf_RNI2065_7 (view:work.SimpleVGA(main)), output net "y[1]" in work.SimpleVGA(main)
+    net        y[1]
+    input  pin clock_12MHz_ibuf_RNI2065_7/I1
+    instance   clock_12MHz_ibuf_RNI2065_7 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_7/O
+    net        y[1]
+@W: BN137 :|Found combinational loop during mapping at net y[2]
+15) instance clock_12MHz_ibuf_RNI2065_0 (view:work.SimpleVGA(main)), output net "y[2]" in work.SimpleVGA(main)
+    net        y[2]
+    input  pin clock_12MHz_ibuf_RNI2065_0/I2
+    instance   clock_12MHz_ibuf_RNI2065_0 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_0/O
+    net        y[2]
+@W: BN137 :|Found combinational loop during mapping at net y[3]
+16) instance clock_12MHz_ibuf_RNI2065_1 (view:work.SimpleVGA(main)), output net "y[3]" in work.SimpleVGA(main)
+    net        y[3]
+    input  pin clock_12MHz_ibuf_RNI2065_1/I2
+    instance   clock_12MHz_ibuf_RNI2065_1 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_1/O
+    net        y[3]
+@W: BN137 :|Found combinational loop during mapping at net y[4]
+17) instance clock_12MHz_ibuf_RNI2065_2 (view:work.SimpleVGA(main)), output net "y[4]" in work.SimpleVGA(main)
+    net        y[4]
+    input  pin clock_12MHz_ibuf_RNI2065_2/I2
+    instance   clock_12MHz_ibuf_RNI2065_2 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_2/O
+    net        y[4]
+@W: BN137 :|Found combinational loop during mapping at net y[5]
+18) instance clock_12MHz_ibuf_RNI2065 (view:work.SimpleVGA(main)), output net "y[5]" in work.SimpleVGA(main)
+    net        y[5]
+    input  pin clock_12MHz_ibuf_RNI2065/I2
+    instance   clock_12MHz_ibuf_RNI2065 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065/O
+    net        y[5]
+@W: BN137 :|Found combinational loop during mapping at net y_3[5]
+19) instance clock_12MHz_ibuf_RNI_3 (view:work.SimpleVGA(main)), output net "y_3[5]" in work.SimpleVGA(main)
+    net        y_3[5]
+    input  pin clock_12MHz_ibuf_RNI2065/I3
+    instance   clock_12MHz_ibuf_RNI2065 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065/O
+    net        y[5]
+    input  pin clock_12MHz_ibuf_RNI_3/I1
+    instance   clock_12MHz_ibuf_RNI_3 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI_3/O
+    net        y_3[5]
+@W: BN137 :|Found combinational loop during mapping at net y[7]
+20) instance clock_12MHz_ibuf_RNI2065_5 (view:work.SimpleVGA(main)), output net "y[7]" in work.SimpleVGA(main)
+    net        y[7]
+    input  pin clock_12MHz_ibuf_RNI2065_5/I2
+    instance   clock_12MHz_ibuf_RNI2065_5 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_5/O
+    net        y[7]
+@W: BN137 :|Found combinational loop during mapping at net y[6]
+21) instance clock_12MHz_ibuf_RNI2065_3 (view:work.SimpleVGA(main)), output net "y[6]" in work.SimpleVGA(main)
+    net        y[6]
+    input  pin clock_12MHz_ibuf_RNI2065_3/I2
+    instance   clock_12MHz_ibuf_RNI2065_3 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_3/O
+    net        y[6]
+@W: BN137 :|Found combinational loop during mapping at net y[8]
+22) instance clock_12MHz_ibuf_RNI2065_4 (view:work.SimpleVGA(main)), output net "y[8]" in work.SimpleVGA(main)
+    net        y[8]
+    input  pin clock_12MHz_ibuf_RNI2065_4/I2
+    instance   clock_12MHz_ibuf_RNI2065_4 (cell SB_LUT4)
+    output pin clock_12MHz_ibuf_RNI2065_4/O
+    net        y[8]
+End of loops
+@W: MT420 |Found inferred clock SimpleVGA|clock_12MHz with period 6.76ns. Please declare a user-defined clock on object "p:clock_12MHz"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Tue May 26 15:44:13 2015
+#
+
+
+Top view:               SimpleVGA
+Requested Frequency:    148.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+                          Requested     Estimated     Requested     Estimated               Clock        Clock                
+Starting Clock            Frequency     Frequency     Period        Period        Slack     Type         Group                
+------------------------------------------------------------------------------------------------------------------------------
+SimpleVGA|clock_12MHz     148.0 MHz     NA            6.759         NA            NA        inferred     Autoconstr_clkgroup_0
+==============================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 78MB peak: 79MB)
+
+---------------------------------------
+Resource Usage Report for SimpleVGA 
+
+Mapping to part: ice40hx1ktq144
+Cell usage:
+SB_CARRY        65 uses
+SB_LUT4         125 uses
+
+I/O ports: 4
+I/O primitives: 4
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+Mapping Summary:
+Total  LUTs: 125 (9%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 125 = 125 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 37MB peak: 79MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Tue May 26 15:44:13 2015
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation SimpleVGA_iCEstick_Implmnt its sbt path: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 9 seconds

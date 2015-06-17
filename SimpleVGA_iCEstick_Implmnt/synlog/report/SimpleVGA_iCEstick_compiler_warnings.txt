@@ -1,0 +1,2 @@
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":48:8:48:9|Latch generated from process for signal Reset; possible missing assignment in an if or case statement.
+

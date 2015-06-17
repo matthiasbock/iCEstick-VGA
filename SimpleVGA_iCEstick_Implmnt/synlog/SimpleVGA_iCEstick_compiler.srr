@@ -1,0 +1,41 @@
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+Post processing for work.simplevga.vga
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":48:8:48:9|Latch generated from process for signal Reset; possible missing assignment in an if or case statement.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jun 17 16:18:49 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jun 17 16:18:49 2015
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jun 17 16:18:49 2015
+
+###########################################################]

@@ -1,0 +1,149 @@
+17:12:06
+"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+VHDL syntax check successful!
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.main 
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":48:4:48:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":55:20:55:24|Referenced variable clock is not in sensitivity list
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":51:16:51:28|Referenced variable clock_divider is not in sensitivity list
+@W: CD434 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":66:12:66:16|Signal clock in the sensitivity list is not used in the process
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":66:4:66:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":77:12:77:12|Referenced variable y is not in sensitivity list
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":69:12:69:12|Referenced variable x is not in sensitivity list
+Post processing for work.simplevga.main
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":50:8:50:9|Latch generated from process for signal clock_divider(13 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":39:42:39:42|Latch generated from process for signal y(9 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":50:8:50:9|Latch generated from process for signal debug; possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":50:8:50:9|Latch generated from process for signal clock; possible missing assignment in an if or case statement.
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[0]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[1]
+@W: FX105 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:12:96:19|Found combinational loop at un11_x
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[2]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[3]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[4]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[5]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[6]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[7]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[8]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[9]
+@E: CL219 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":8:8:8:12|Multiple non-tristate drivers for net debug in SimpleVGA
+@E: CL229 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":8:8:8:12|Unresolved tristate drivers for net debug in SimpleVGA
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 08 17:12:12 2015
+
+###########################################################]
+@E: MF420 |Netlist read from file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\layer0.srs failed
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@E:Cannot find top netlist, aborting.Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 08 17:12:12 2015
+
+###########################################################]
+@E::Error while linking, aborting.
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 08 17:12:12 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 4 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+VHDL syntax check successful!
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.main 
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":48:4:48:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":55:20:55:24|Referenced variable clock is not in sensitivity list
+@W: CD434 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":66:12:66:16|Signal clock in the sensitivity list is not used in the process
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":66:4:66:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":77:12:77:12|Referenced variable y is not in sensitivity list
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":69:12:69:12|Referenced variable x is not in sensitivity list
+Post processing for work.simplevga.main
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":50:8:50:9|Latch generated from process for signal clock_divider(13 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":39:42:39:42|Latch generated from process for signal y(9 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":50:8:50:9|Latch generated from process for signal debug; possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":50:8:50:9|Latch generated from process for signal clock; possible missing assignment in an if or case statement.
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[0]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[1]
+@W: FX105 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:12:96:19|Found combinational loop at un11_x
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[2]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[3]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[4]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[5]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[6]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[7]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[8]
+@W: CL179 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":96:8:96:9|Found combinational loop at x[9]
+@E: CL219 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":8:8:8:12|Multiple non-tristate drivers for net debug in SimpleVGA
+@E: CL229 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":8:8:8:12|Unresolved tristate drivers for net debug in SimpleVGA
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 08 17:14:29 2015
+
+###########################################################]
+@E: MF420 |Netlist read from file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\layer0.srs failed
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@E:Cannot find top netlist, aborting.Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 08 17:14:29 2015
+
+###########################################################]
+@E::Error while linking, aborting.
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 08 17:14:29 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 2 seconds17:15:36

@@ -1,0 +1,299 @@
+16:38:39
+
+
+"C:/Programme/iCEcube2.2014.12/sbt_backend/bin/win32/opt\edifparser.exe" "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf " "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist" "-pTQ144" -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2014.12.27052
+Build Date:     Dec  8 2014 15:01:03
+
+Parsing edif file: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf...
+start to read sdc/scf file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.scf
+sdc_reader OK U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.scf
+Stored edif netlist at U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA...
+
+write Timing Constraint to U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: SimpleVGA
+
+EDF Parser run-time: 2 (sec)
+edif parser succeed.
+
+
+"C:/Programme/iCEcube2.2014.12/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer" --device-file "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" --package TQ144 --deviceMarketName iCE40HX1K --sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc"
+starting placerrunning placerExecuting : C:\Programme\iCEcube2.2014.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA --outdir U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer --device-file C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev --package TQ144 --deviceMarketName iCE40HX1K --sdc-file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2014.12.27052
+Build Date:     Dec  8 2014 15:08:49
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev
+Package              - TQ144
+Design database      - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA
+SDC file             - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer
+Timing library       - C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	125
+    Number of DFFs      	:	0
+    Number of Carrys    	:	65
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	0
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+E2652: Tcl initialization failed
+E2657: Errors found in Tcl file callback.tcl which is required for sdc parsing
+E2658: Failed to translate SDC file: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc
+E2055: Error while doing placement of the design
+
+
+"C:/Programme/iCEcube2.2014.12/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer" --device-file "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" --package TQ144 --deviceMarketName iCE40HX1K --sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc"
+starting placerrunning placerExecuting : C:\Programme\iCEcube2.2014.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA --outdir U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer --device-file C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev --package TQ144 --deviceMarketName iCE40HX1K --sdc-file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2014.12.27052
+Build Date:     Dec  8 2014 15:08:49
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev
+Package              - TQ144
+Design database      - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA
+SDC file             - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer
+Timing library       - C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	125
+    Number of DFFs      	:	0
+    Number of Carrys    	:	65
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	0
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+E2652: Tcl initialization failed
+E2657: Errors found in Tcl file callback.tcl which is required for sdc parsing
+E2658: Failed to translate SDC file: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc
+E2055: Error while doing placement of the design
+
+
+"C:/Programme/iCEcube2.2014.12/sbt_backend/bin/win32/opt\edifparser.exe" "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf " "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist" "-pTQ144" "-yU:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\constraint\SimpleVGA_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2014.12.27052
+Build Date:     Dec  8 2014 15:01:03
+
+Parsing edif file: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf...
+Parsing constraint file: U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\constraint\SimpleVGA_pcf_sbt.pcf ...
+start to read sdc/scf file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.scf
+sdc_reader OK U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.scf
+Stored edif netlist at U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA...
+
+write Timing Constraint to U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: SimpleVGA
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"C:/Programme/iCEcube2.2014.12/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer" --device-file "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" --package TQ144 --deviceMarketName iCE40HX1K --sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc"
+starting placerrunning placerExecuting : C:\Programme\iCEcube2.2014.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA --outdir U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer --device-file C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev --package TQ144 --deviceMarketName iCE40HX1K --sdc-file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2014.12.27052
+Build Date:     Dec  8 2014 15:08:49
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev
+Package              - TQ144
+Design database      - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA
+SDC file             - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer
+Timing library       - C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\Programme\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	125
+    Number of DFFs      	:	0
+    Number of Carrys    	:	65
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	0
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+E2652: Tcl initialization failed
+E2657: Errors found in Tcl file callback.tcl which is required for sdc parsing
+E2658: Failed to translate SDC file: U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc
+E2055: Error while doing placement of the design
+"C:\Programme\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+Error of dumping file SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr, 'stdout.log' is instead. 
+
+==contents of stdout.log
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+
+Running in Lattice mode
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+
+
+Starting:    C:\Programme\iCEcube2.2014.12\synpbase\bin\mbin\synbatch.exe
+Install:     C:\Programme\iCEcube2.2014.12\synpbase
+Hostname:    MPNT925109O
+Date:        Wed May 27 16:43:36 2015
+Version:     J-2014.09L
+
+Arguments:   -product synplify_pro  -batch SimpleVGA_iCEstick_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+exit status=7
+
+exit status=7
+
+
+
+Synthesis exit by 7.
+Synthesis failed.
+Synthesis batch mode runtime 4 seconds16:43:54

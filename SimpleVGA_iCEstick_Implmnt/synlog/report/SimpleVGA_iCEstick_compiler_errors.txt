@@ -1,0 +1,4 @@
+@E: CD242 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":80:25:80:28|Expecting ;
+@E: CD204 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":80:25:80:28|Expecting sequential statement
+@E|Parse errors encountered - exiting
+

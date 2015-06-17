@@ -1,0 +1,41 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=SimpleVGA
+[Library]
+SimpleVGA=.\SimpleVGA\SimpleVGA.lib
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+LibNames=ovi_ice;ice
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+SimpleVGA=.
+[Files]
+/..\..\..\SimpleVGA.vhdl=-1
+/simulation.awc=-1
+[Files.Data]
+.\..\..\SimpleVGA.vhdl=VHDL Source Code
+.\src\simulation.awc=Accelerated Waveform Configuration
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=simplevga|main|0  
+ShowHide=ShowTopLevel
+Selected=

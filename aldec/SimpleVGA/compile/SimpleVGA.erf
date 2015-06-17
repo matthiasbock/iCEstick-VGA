@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" 
+MESSAGE "Compile Entity "SimpleVGA"" 
+MESSAGE "Compile Architecture "main" of Entity "SimpleVGA"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

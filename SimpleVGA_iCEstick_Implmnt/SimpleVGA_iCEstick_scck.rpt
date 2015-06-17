@@ -1,0 +1,30 @@
+# Synopsys Constraint Checker(syntax only), version maplat, Build 1061R, built Nov 12 2014
+# Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+# Written on Wed Jun 17 16:18:52 2015
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "SimpleVGA"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+**************
+
+Start                                Requested     Requested     Clock                                   Clock                
+Clock                                Frequency     Period        Type                                    Group                
+------------------------------------------------------------------------------------------------------------------------------
+SimpleVGA|Clock12MHz                 1.0 MHz       1000.000      inferred                                Autoconstr_clkgroup_0
+SimpleVGA|ClockVGA_derived_clock     1.0 MHz       1000.000      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+System                               1.0 MHz       1000.000      system                                  system_clkgroup      
+==============================================================================================================================

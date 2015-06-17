@@ -1,0 +1,3 @@
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+Post processing for work.simplevga.vga
+@W: CL117 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":48:8:48:9|Latch generated from process for signal Reset; possible missing assignment in an if or case statement.

@@ -1,0 +1,70 @@
+# Design Explorer: Shortcut to "U:\SimpleVGA_iCEstick\aldec\SimpleVGA\SimpleVGA.aws" design added.
+# Design: Design SimpleVGA already active.
+# 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+# Compile Entity "SimpleVGA"
+# Compile Architecture "main" of Entity "SimpleVGA"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Design: Design simplevga already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_ice -L ice +access +r +m+SimpleVGA SimpleVGA main
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5803 kB (elbread=1023 elab2=4630 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location U:\SimpleVGA_iCEstick\aldec\SimpleVGA\src\wave.asdb
+#  19:00, Mittwoch, 27. Mai 2015
+#  Simulation has been initialized
+#  Selected Top-Level: SimpleVGA (main)
+# add wave -noreg {/SimpleVGA/x}
+# add wave -noreg {/SimpleVGA/y}
+# add wave -noreg {/SimpleVGA/clock_divider}
+# add wave -noreg {/SimpleVGA/clock}
+# add wave -noreg {/SimpleVGA/clock_12MHz}
+# add wave -noreg {/SimpleVGA/pixel}
+# add wave -noreg {/SimpleVGA/hsync}
+# add wave -noreg {/SimpleVGA/vsync}
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'U:/SimpleVGA_iCEstick/aldec/SimpleVGA/src/wave.asdb'.
+run 100us
+# KERNEL: stopped at time: 100 us
+run 100us
+# KERNEL: stopped at time: 200 us
+run 100us
+# KERNEL: stopped at time: 300 us
+run 1000us
+# KERNEL: stopped at time: 1300 us
+run 1000us
+# KERNEL: stopped at time: 2300 us
+run 1000us
+# KERNEL: stopped at time: 3300 us
+run 1000us
+# KERNEL: stopped at time: 4300 us
+run 1000us
+# KERNEL: stopped at time: 5300 us
+run 1000us
+# KERNEL: stopped at time: 6300 us
+run 1000us
+# KERNEL: stopped at time: 7300 us
+#  Simulation has been stopped
+# Adding file U:\SimpleVGA_iCEstick\aldec\SimpleVGA\src\simulation.awc ... Done

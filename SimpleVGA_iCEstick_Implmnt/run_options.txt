@@ -1,0 +1,61 @@
+#--  Synopsys, Inc.
+#--  Version J-2014.09L
+#--  Project file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\run_options.txt
+#--  Written on Wed Jun 17 16:18:48 2015
+
+
+#project files
+add_file -vhdl -lib work "SimpleVGA.vhdl"
+
+
+
+#implementation: "SimpleVGA_iCEstick_Implmnt"
+impl -add SimpleVGA_iCEstick_Implmnt -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology SBTiCE40
+set_option -part iCE40HX1K
+set_option -package TQ144
+set_option -speed_grade ""
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+set_option -srs_instrumentation 1
+
+# Lattice iCE40
+set_option -maxfan 10000
+set_option -RWCheckOnRam 0
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fix_gated_and_generated_clocks 1
+set_option -run_prop_extract 1
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf"
+impl -active "SimpleVGA_iCEstick_Implmnt"

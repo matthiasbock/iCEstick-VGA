@@ -1,0 +1,4 @@
+OUTPUT VSync 	 location (8, 0, 1) 	 60 	 SB_LVCMOS
+OUTPUT Pixel 	 location (9, 0, 1) 	 62 	 SB_LVCMOS
+OUTPUT HSync 	 location (9, 0, 0) 	 61 	 SB_LVCMOS
+INPUT  Clock12MHz 	 location (0, 8, 1) 	 21 	 SB_LVCMOS

@@ -1,0 +1,14 @@
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":95:27:95:34|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":95:49:95:56|Generating a type rem remainder 
+@N: MF578 :"u:\simplevga_icestick\simplevga.vhdl":73:8:73:9|Incompatible asynchronous control logic preventing generated clock conversion of Pixel (view:work.SimpleVGA(vga)).
+@N: FX1017 :|SB_GB inserted on the net ClockVGA.
+@N: FX1016 :"u:\simplevga_icestick\simplevga.vhdl":7:8:7:17|SB_GB_IO inserted on the port Clock12MHz.
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

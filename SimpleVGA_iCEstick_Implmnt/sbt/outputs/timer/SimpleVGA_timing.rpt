@@ -1,0 +1,1277 @@
+# ******************************************************************************
+
+# iCEcube Static Timer
+
+# Version:            2014.12.27052
+
+# Build Date:         Dec  8 2014 15:01:54
+
+# File Generated:     Jun 17 2015 16:22:04
+
+# Purpose:            Timing Report with critical paths info
+
+# Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+# ******************************************************************************
+
+Device: iCE40HX1K
+Derating factors (Best:Typical:Worst) :-  ( 0.563724 : 0.623363 : 0.701346 )
+Derating factor used to generate this timing report:  Worst
+Based on the following operating conditions 
+Junction Temperature(degree Celsius): 85
+Core Voltage(V): 1.14
+Process Corner:  Worst
+NOTE:
+Please check both worst-case and best-case scenarios for "Setup Times" 
+and "Hold Times" checks
+ #####################################################################
+                    Table of Contents
+ =====================================================================
+	1::Clock Frequency Summary
+	2::Clock Relationship Summary
+	3::Datasheet Report
+		3.1::Setup Times
+		3.2::Clock to Out
+		3.3::Pad to Pad
+		3.4::Hold Times
+		3.5::Minimum Clock to Out
+		3.6::Minimum Pad To Pad
+	4::Path Details for Clock Frequency Summary
+		4.1::Critical Path Report for SimpleVGA|Clock12MHz
+		4.2::Critical Path Report for SimpleVGA|ClockVGA_derived_clock
+	5::Path Details for Clock Relationship Summary
+		5.1::Critical Path Report for (SimpleVGA|Clock12MHz:R vs. SimpleVGA|Clock12MHz:R)
+		5.2::Critical Path Report for (SimpleVGA|ClockVGA_derived_clock:R vs. SimpleVGA|ClockVGA_derived_clock:R)
+	6::Path Details for DataSheet
+		6.1::Setup Times Path Details
+		6.2::Clock to Out Path Details
+			6.2.1::Path details for port: HSync
+			6.2.2::Path details for port: Pixel
+			6.2.3::Path details for port: VSync
+		6.3::PI to PO Path Details
+		6.4::Hold Times Path Details
+		6.5::Minimum Clock to Out Path Details
+			6.5.1::Path details for port: HSync
+			6.5.2::Path details for port: Pixel
+			6.5.3::Path details for port: VSync
+		6.6::Minimum Pad To Pad Path Details
+ =====================================================================
+                    End of Table of Contents
+ #####################################################################
+
+ #####################################################################
+                    1::Clock Frequency Summary
+ =====================================================================
+Number of clocks: 2
+Clock: SimpleVGA|Clock12MHz              | Frequency: 209.07 MHz  | Target: 1.00 MHz  | 
+Clock: SimpleVGA|ClockVGA_derived_clock  | Frequency: 88.18 MHz   | Target: 1.00 MHz  | 
+
+ =====================================================================
+                    End of Clock Frequency Summary
+ #####################################################################
+
+
+ #####################################################################
+                    2::Clock Relationship Summary
+ =====================================================================
+
+Launch Clock                      Capture Clock                     Constraint(R-R)  Slack(R-R)  Constraint(R-F)  Slack(R-F)  Constraint(F-F)  Slack(F-F)  Constraint(F-R)  Slack(F-R)  
+--------------------------------  --------------------------------  ---------------  ----------  ---------------  ----------  ---------------  ----------  ---------------  ----------  
+SimpleVGA|Clock12MHz              SimpleVGA|Clock12MHz              1e+006           995217      N/A              N/A         N/A              N/A         N/A              N/A         
+SimpleVGA|ClockVGA_derived_clock  SimpleVGA|ClockVGA_derived_clock  2e+006           1977318     N/A              N/A         N/A              N/A         N/A              N/A         
+
+ =====================================================================
+                    End of Clock Relationship Summary
+ #####################################################################
+
+
+ #####################################################################
+                    3::Datasheet Report
+
+All values are in Picoseconds
+ =====================================================================
+
+                        3.1::Setup Times
+                        ----------------
+
+Data Port  Clock Port  Setup Times  Clock Reference:Phase  
+---------  ----------  -----------  ---------------------  
+
+
+                       3.2::Clock to Out
+                       -----------------
+
+Data Port  Clock Port  Clock to Out  Clock Reference:Phase               
+---------  ----------  ------------  ----------------------------------  
+HSync      Clock12MHz  11574         SimpleVGA|ClockVGA_derived_clock:R  
+Pixel      Clock12MHz  11237         SimpleVGA|ClockVGA_derived_clock:R  
+VSync      Clock12MHz  11174         SimpleVGA|ClockVGA_derived_clock:R  
+
+
+                         3.3::Pad to Pad
+                         ---------------
+
+Port Name (Input)  Port Name (Output)  Pad to Pad  
+-----------------  ------------------  ----------  
+
+
+                         3.4::Hold Times
+                         ---------------
+
+Data Port  Clock Port  Hold Times  Clock Reference:Phase  
+---------  ----------  ----------  ---------------------  
+
+
+               3.5::Minimum Clock to Out
+               -------------------------
+
+Data Port  Clock Port  Minimum Clock to Out  Clock Reference:Phase               
+---------  ----------  --------------------  ----------------------------------  
+HSync      Clock12MHz  11162                 SimpleVGA|ClockVGA_derived_clock:R  
+Pixel      Clock12MHz  10776                 SimpleVGA|ClockVGA_derived_clock:R  
+VSync      Clock12MHz  10755                 SimpleVGA|ClockVGA_derived_clock:R  
+
+
+                 3.6::Minimum Pad To Pad
+                 -----------------------
+
+Port Name (Input)  Port Name (Output)  Minimum Pad To Pad  
+-----------------  ------------------  ------------------  
+
+===================================================================== 
+                    End of Datasheet Report
+##################################################################### 
+##################################################################### 
+                    4::Path Details for Clock Frequency Summary
+===================================================================== 
+4.1::Critical Path Report for SimpleVGA|Clock12MHz
+**************************************************
+Clock: SimpleVGA|Clock12MHz
+Frequency: 209.07 MHz | Target: 1.00 MHz
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : Counter_4_LC_1_6_4/lcout
+Path End         : Counter_1_LC_1_6_1/in0
+Capture Clock    : Counter_1_LC_1_6_1/clk
+Setup Constraint : 1000000p
+Path slack       : 995217p
+
+Capture Clock Arrival Time (SimpleVGA|Clock12MHz:R#2)   1000000
++ Capture Clock Source Latency                                0
++ Capture Clock Path Delay                                 2381
+- Setup Time                                               -470
+-----------------------------------------------------   ------- 
+End-of-path required time (ps)                          1001911
+
+Launch Clock Arrival Time (SimpleVGA|Clock12MHz:R#1)      0
++ Launch Clock Source Latency                             0
++ Launch Clock Path Delay                              2381
++ Clock To Q                                            540
++ Data Path Delay                                      3774
+----------------------------------------------------   ---- 
+End-of-path arrival time (ps)                          6695
+ 
+Launch Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__320/I                                                 ClkMux                         0              2073  RISE       1
+I__320/O                                                 ClkMux                       309              2381  RISE       1
+Counter_4_LC_1_6_4/clk                                   LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+
+Data path
+pin name                            model name                 delay  cumulative delay  slack  edge  Fanout
+----------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+Counter_4_LC_1_6_4/lcout            LogicCell40_SEQ_MODE_1010    540              2921  995217  RISE       2
+I__599/I                            LocalMux                       0              2921  995217  RISE       1
+I__599/O                            LocalMux                     330              3251  995217  RISE       1
+I__601/I                            InMux                          0              3251  995217  RISE       1
+I__601/O                            InMux                        259              3510  995217  RISE       1
+Counter_RNIVB1D1_0_LC_2_6_3/in0     LogicCell40_SEQ_MODE_0000      0              3510  995217  RISE       1
+Counter_RNIVB1D1_0_LC_2_6_3/lcout   LogicCell40_SEQ_MODE_0000    449              3959  995217  RISE       1
+I__576/I                            LocalMux                       0              3959  995217  RISE       1
+I__576/O                            LocalMux                     330              4289  995217  RISE       1
+I__577/I                            InMux                          0              4289  995217  RISE       1
+I__577/O                            InMux                        259              4548  995217  RISE       1
+Counter_RNIVO2Q2_1_LC_2_6_4/in3     LogicCell40_SEQ_MODE_0000      0              4548  995217  RISE       1
+Counter_RNIVO2Q2_1_LC_2_6_4/lcout   LogicCell40_SEQ_MODE_0000    316              4864  995217  RISE       1
+I__574/I                            LocalMux                       0              4864  995217  RISE       1
+I__574/O                            LocalMux                     330              5194  995217  RISE       1
+I__575/I                            InMux                          0              5194  995217  RISE       1
+I__575/O                            InMux                        259              5453  995217  RISE       1
+Counter_RNICJ474_6_LC_2_6_1/in3     LogicCell40_SEQ_MODE_0000      0              5453  995217  RISE       1
+Counter_RNICJ474_6_LC_2_6_1/ltout   LogicCell40_SEQ_MODE_0000    274              5727  995217  FALL       1
+I__622/I                            CascadeMux                     0              5727  995217  FALL       1
+I__622/O                            CascadeMux                     0              5727  995217  FALL       1
+Counter_RNI7QMJ6_13_LC_2_6_2/in2    LogicCell40_SEQ_MODE_0000      0              5727  995217  FALL       1
+Counter_RNI7QMJ6_13_LC_2_6_2/lcout  LogicCell40_SEQ_MODE_0000    379              6105  995217  RISE      15
+I__603/I                            LocalMux                       0              6105  995217  RISE       1
+I__603/O                            LocalMux                     330              6435  995217  RISE       1
+I__607/I                            InMux                          0              6435  995217  RISE       1
+I__607/O                            InMux                        259              6695  995217  RISE       1
+Counter_1_LC_1_6_1/in0              LogicCell40_SEQ_MODE_1010      0              6695  995217  RISE       1
+
+Capture Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__320/I                                                 ClkMux                         0              2073  RISE       1
+I__320/O                                                 ClkMux                       309              2381  RISE       1
+Counter_1_LC_1_6_1/clk                                   LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+
+
+===================================================================== 
+4.2::Critical Path Report for SimpleVGA|ClockVGA_derived_clock
+**************************************************************
+Clock: SimpleVGA|ClockVGA_derived_clock
+Frequency: 88.18 MHz | Target: 1.00 MHz
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : y_9_LC_2_6_0/lcout
+Path End         : PixelZ0_LC_6_1_7/in3
+Capture Clock    : PixelZ0_LC_6_1_7/clk
+Setup Constraint : 2000000p
+Path slack       : 1977318p
+
+Capture Clock Arrival Time (SimpleVGA|ClockVGA_derived_clock:R#3)   2000000
++ Master Clock Source Latency                                             0
++ Capture Clock Path Delay                                             5229
+- Setup Time                                                           -274
+-----------------------------------------------------------------   ------- 
+End-of-path required time (ps)                                      2004955
+
+Launch Clock Arrival Time (SimpleVGA|ClockVGA_derived_clock:R#1)       0
++ Master Clock Source Latency                                          0
++ Launch Clock Path Delay                                           5229
++ Clock To Q                                                         540
++ Data Path Delay                                                  21868
+----------------------------------------------------------------   ----- 
+End-of-path arrival time (ps)                                      27637
+ 
+Launch Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__319/I                                                 ClkMux                         0              2073  RISE       1
+I__319/O                                                 ClkMux                       309              2381  RISE       1
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010    540              2921  RISE       2
+I__322/I                                                 Odrv4                          0              2921  RISE       1
+I__322/O                                                 Odrv4                        351              3272  RISE       1
+I__324/I                                                 IoSpan4Mux                     0              3272  RISE       1
+I__324/O                                                 IoSpan4Mux                   288              3560  RISE       1
+I__325/I                                                 LocalMux                       0              3560  RISE       1
+I__325/O                                                 LocalMux                     330              3889  RISE       1
+I__326/I                                                 IoInMux                        0              3889  RISE       1
+I__326/O                                                 IoInMux                      259              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                         0              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                       617              4766  RISE      23
+I__932/I                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__932/O                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__933/I                                                 GlobalMux                      0              4766  RISE       1
+I__933/O                                                 GlobalMux                    154              4920  RISE       1
+I__935/I                                                 ClkMux                         0              4920  RISE       1
+I__935/O                                                 ClkMux                       309              5229  RISE       1
+y_9_LC_2_6_0/clk                                         LogicCell40_SEQ_MODE_1000      0              5229  RISE       1
+
+Data path
+pin name                                                                  model name                 delay  cumulative delay  slack  edge  Fanout
+------------------------------------------------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+y_9_LC_2_6_0/lcout                                                        LogicCell40_SEQ_MODE_1000    540              5769  1977318  RISE       5
+I__458/I                                                                  Odrv4                          0              5769  1977318  RISE       1
+I__458/O                                                                  Odrv4                        351              6120  1977318  RISE       1
+I__461/I                                                                  LocalMux                       0              6120  1977318  RISE       1
+I__461/O                                                                  LocalMux                     330              6449  1977318  RISE       1
+I__466/I                                                                  InMux                          0              6449  1977318  RISE       1
+I__466/O                                                                  InMux                        259              6709  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_LC_2_4_0/in1                LogicCell40_SEQ_MODE_0000      0              6709  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_LC_2_4_0/carryout           LogicCell40_SEQ_MODE_0000    259              6968  1977318  RISE       2
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_RNI7OJC_LC_2_4_1/carryin    LogicCell40_SEQ_MODE_0000      0              6968  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_RNI7OJC_LC_2_4_1/carryout   LogicCell40_SEQ_MODE_0000    126              7094  1977318  RISE       2
+un2_y_if_generate_plus_mult1_un26_sum_cry_3_c_RNI8QKC_LC_2_4_2/carryin    LogicCell40_SEQ_MODE_0000      0              7094  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_3_c_RNI8QKC_LC_2_4_2/carryout   LogicCell40_SEQ_MODE_0000    126              7221  1977318  RISE       2
+I__433/I                                                                  InMux                          0              7221  1977318  RISE       1
+I__433/O                                                                  InMux                        259              7480  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNI9SLC_LC_2_4_3/in3        LogicCell40_SEQ_MODE_0000      0              7480  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNI9SLC_LC_2_4_3/lcout      LogicCell40_SEQ_MODE_0000    316              7796  1977318  RISE       3
+I__434/I                                                                  LocalMux                       0              7796  1977318  RISE       1
+I__434/O                                                                  LocalMux                     330              8125  1977318  RISE       1
+I__436/I                                                                  InMux                          0              8125  1977318  RISE       1
+I__436/O                                                                  InMux                        259              8385  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNIIOBP_LC_1_4_6/in0        LogicCell40_SEQ_MODE_0000      0              8385  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNIIOBP_LC_1_4_6/lcout      LogicCell40_SEQ_MODE_0000    449              8834  1977318  RISE       1
+I__255/I                                                                  LocalMux                       0              8834  1977318  RISE       1
+I__255/O                                                                  LocalMux                     330              9163  1977318  RISE       1
+I__256/I                                                                  InMux                          0              9163  1977318  RISE       1
+I__256/O                                                                  InMux                        259              9423  1977318  RISE       1
+I__257/I                                                                  CascadeMux                     0              9423  1977318  RISE       1
+I__257/O                                                                  CascadeMux                     0              9423  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/in2       LogicCell40_SEQ_MODE_0000      0              9423  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/carryout  LogicCell40_SEQ_MODE_0000    231              9654  1977318  RISE       1
+I__258/I                                                                  InMux                          0              9654  1977318  RISE       1
+I__258/O                                                                  InMux                        259              9914  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_THRU_LUT4_0_LC_1_4_5/in3      LogicCell40_SEQ_MODE_0000      0              9914  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_THRU_LUT4_0_LC_1_4_5/lcout    LogicCell40_SEQ_MODE_0000    316             10229  1977318  RISE       1
+I__431/I                                                                  LocalMux                       0             10229  1977318  RISE       1
+I__431/O                                                                  LocalMux                     330             10559  1977318  RISE       1
+I__432/I                                                                  InMux                          0             10559  1977318  RISE       1
+I__432/O                                                                  InMux                        259             10819  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_c_RNIJ7MF_LC_2_4_4/in1        LogicCell40_SEQ_MODE_0000      0             10819  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_c_RNIJ7MF_LC_2_4_4/lcout      LogicCell40_SEQ_MODE_0000    400             11218  1977318  RISE       4
+I__423/I                                                                  LocalMux                       0             11218  1977318  RISE       1
+I__423/O                                                                  LocalMux                     330             11548  1977318  RISE       1
+I__425/I                                                                  InMux                          0             11548  1977318  RISE       1
+I__425/O                                                                  InMux                        259             11807  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/in0       LogicCell40_SEQ_MODE_0000      0             11807  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/lcout     LogicCell40_SEQ_MODE_0000    449             12256  1977318  RISE       1
+I__260/I                                                                  LocalMux                       0             12256  1977318  RISE       1
+I__260/O                                                                  LocalMux                     330             12586  1977318  RISE       1
+I__261/I                                                                  InMux                          0             12586  1977318  RISE       1
+I__261/O                                                                  InMux                        259             12845  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_6_c_RNITLS12_LC_1_3_5/in1       LogicCell40_SEQ_MODE_0000      0             12845  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_6_c_RNITLS12_LC_1_3_5/lcout     LogicCell40_SEQ_MODE_0000    400             13245  1977318  RISE       4
+I__386/I                                                                  LocalMux                       0             13245  1977318  RISE       1
+I__386/O                                                                  LocalMux                     330             13575  1977318  RISE       1
+I__388/I                                                                  InMux                          0             13575  1977318  RISE       1
+I__388/O                                                                  InMux                        259             13834  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_5_c_RNI5DAA3_LC_1_3_4/in0       LogicCell40_SEQ_MODE_0000      0             13834  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_5_c_RNI5DAA3_LC_1_3_4/lcout     LogicCell40_SEQ_MODE_0000    449             14283  1977318  RISE       1
+I__370/I                                                                  LocalMux                       0             14283  1977318  RISE       1
+I__370/O                                                                  LocalMux                     330             14613  1977318  RISE       1
+I__371/I                                                                  InMux                          0             14613  1977318  RISE       1
+I__371/O                                                                  InMux                        259             14872  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_6_c_RNIJJ1M3_LC_2_3_5/in1       LogicCell40_SEQ_MODE_0000      0             14872  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_6_c_RNIJJ1M3_LC_2_3_5/lcout     LogicCell40_SEQ_MODE_0000    400             15272  1977318  RISE       4
+I__362/I                                                                  LocalMux                       0             15272  1977318  RISE       1
+I__362/O                                                                  LocalMux                     330             15602  1977318  RISE       1
+I__364/I                                                                  InMux                          0             15602  1977318  RISE       1
+I__364/O                                                                  InMux                        259             15861  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_5_c_RNI2VUB7_LC_2_3_4/in0       LogicCell40_SEQ_MODE_0000      0             15861  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_5_c_RNI2VUB7_LC_2_3_4/lcout     LogicCell40_SEQ_MODE_0000    449             16310  1977318  RISE       1
+I__373/I                                                                  LocalMux                       0             16310  1977318  RISE       1
+I__373/O                                                                  LocalMux                     330             16640  1977318  RISE       1
+I__374/I                                                                  InMux                          0             16640  1977318  RISE       1
+I__374/O                                                                  InMux                        259             16899  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_6_c_RNIEETD7_LC_2_2_5/in1       LogicCell40_SEQ_MODE_0000      0             16899  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_6_c_RNIEETD7_LC_2_2_5/lcout     LogicCell40_SEQ_MODE_0000    400             17299  1977318  RISE       4
+I__332/I                                                                  LocalMux                       0             17299  1977318  RISE       1
+I__332/O                                                                  LocalMux                     330             17629  1977318  RISE       1
+I__334/I                                                                  InMux                          0             17629  1977318  RISE       1
+I__334/O                                                                  InMux                        259             17888  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_5_c_RNIR1SME_LC_2_2_4/in0       LogicCell40_SEQ_MODE_0000      0             17888  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_5_c_RNIR1SME_LC_2_2_4/lcout     LogicCell40_SEQ_MODE_0000    449             18337  1977318  RISE       1
+I__341/I                                                                  LocalMux                       0             18337  1977318  RISE       1
+I__341/O                                                                  LocalMux                     330             18667  1977318  RISE       1
+I__342/I                                                                  InMux                          0             18667  1977318  RISE       1
+I__342/O                                                                  InMux                        259             18926  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_6_c_RNI5Q1VE_LC_1_2_5/in1       LogicCell40_SEQ_MODE_0000      0             18926  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_6_c_RNI5Q1VE_LC_1_2_5/lcout     LogicCell40_SEQ_MODE_0000    400             19326  1977318  RISE       4
+I__212/I                                                                  Odrv4                          0             19326  1977318  RISE       1
+I__212/O                                                                  Odrv4                        351             19677  1977318  RISE       1
+I__214/I                                                                  LocalMux                       0             19677  1977318  RISE       1
+I__214/O                                                                  LocalMux                     330             20006  1977318  RISE       1
+I__218/I                                                                  InMux                          0             20006  1977318  RISE       1
+I__218/O                                                                  InMux                        259             20266  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_5_c_RNIHL7KT_LC_1_2_4/in0       LogicCell40_SEQ_MODE_0000      0             20266  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_5_c_RNIHL7KT_LC_1_2_4/lcout     LogicCell40_SEQ_MODE_0000    449             20715  1977318  RISE       1
+I__222/I                                                                  LocalMux                       0             20715  1977318  RISE       1
+I__222/O                                                                  LocalMux                     330             21044  1977318  RISE       1
+I__223/I                                                                  InMux                          0             21044  1977318  RISE       1
+I__223/O                                                                  InMux                        259             21304  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un68_sum_cry_6_c_RNI22UUT_LC_1_1_5/in1       LogicCell40_SEQ_MODE_0000      0             21304  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un68_sum_cry_6_c_RNI22UUT_LC_1_1_5/lcout     LogicCell40_SEQ_MODE_0000    400             21703  1977318  RISE       5
+I__289/I                                                                  LocalMux                       0             21703  1977318  RISE       1
+I__289/O                                                                  LocalMux                     330             22033  1977318  RISE       1
+I__291/I                                                                  InMux                          0             22033  1977318  RISE       1
+I__291/O                                                                  InMux                        259             22293  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/in3            LogicCell40_SEQ_MODE_0000      0             22293  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/lcout          LogicCell40_SEQ_MODE_0000    316             22608  1977318  RISE       1
+I__286/I                                                                  LocalMux                       0             22608  1977318  RISE       1
+I__286/O                                                                  LocalMux                     330             22938  1977318  RISE       1
+I__287/I                                                                  InMux                          0             22938  1977318  RISE       1
+I__287/O                                                                  InMux                        259             23197  1977318  RISE       1
+I__288/I                                                                  CascadeMux                     0             23197  1977318  RISE       1
+I__288/O                                                                  CascadeMux                     0             23197  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/in2            LogicCell40_SEQ_MODE_0000      0             23197  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/carryout       LogicCell40_SEQ_MODE_0000    231             23429  1977318  RISE       1
+I__283/I                                                                  InMux                          0             23429  1977318  RISE       1
+I__283/O                                                                  InMux                        259             23688  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_RNINAPFR1_LC_2_1_5/in3      LogicCell40_SEQ_MODE_0000      0             23688  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_RNINAPFR1_LC_2_1_5/lcout    LogicCell40_SEQ_MODE_0000    316             24004  1977318  RISE       4
+I__637/I                                                                  Odrv12                         0             24004  1977318  RISE       1
+I__637/O                                                                  Odrv12                       491             24495  1977318  RISE       1
+I__638/I                                                                  LocalMux                       0             24495  1977318  RISE       1
+I__638/O                                                                  LocalMux                     330             24824  1977318  RISE       1
+I__640/I                                                                  InMux                          0             24824  1977318  RISE       1
+I__640/O                                                                  InMux                        259             25084  1977318  RISE       1
+Pixel_RNO_11_LC_4_1_1/in3                                                 LogicCell40_SEQ_MODE_0000      0             25084  1977318  RISE       1
+Pixel_RNO_11_LC_4_1_1/ltout                                               LogicCell40_SEQ_MODE_0000    274             25357  1977318  FALL       1
+I__559/I                                                                  CascadeMux                     0             25357  1977318  FALL       1
+I__559/O                                                                  CascadeMux                     0             25357  1977318  FALL       1
+Pixel_RNO_9_LC_4_1_2/in2                                                  LogicCell40_SEQ_MODE_0000      0             25357  1977318  FALL       1
+Pixel_RNO_9_LC_4_1_2/ltout                                                LogicCell40_SEQ_MODE_0000    344             25701  1977318  FALL       1
+I__548/I                                                                  CascadeMux                     0             25701  1977318  FALL       1
+I__548/O                                                                  CascadeMux                     0             25701  1977318  FALL       1
+Pixel_RNO_5_LC_4_1_3/in2                                                  LogicCell40_SEQ_MODE_0000      0             25701  1977318  FALL       1
+Pixel_RNO_5_LC_4_1_3/lcout                                                LogicCell40_SEQ_MODE_0000    379             26080  1977318  RISE       1
+I__634/I                                                                  LocalMux                       0             26080  1977318  RISE       1
+I__634/O                                                                  LocalMux                     330             26409  1977318  RISE       1
+I__635/I                                                                  InMux                          0             26409  1977318  RISE       1
+I__635/O                                                                  InMux                        259             26669  1977318  RISE       1
+I__636/I                                                                  CascadeMux                     0             26669  1977318  RISE       1
+I__636/O                                                                  CascadeMux                     0             26669  1977318  RISE       1
+Pixel_RNO_0_LC_5_1_3/in2                                                  LogicCell40_SEQ_MODE_0000      0             26669  1977318  RISE       1
+Pixel_RNO_0_LC_5_1_3/lcout                                                LogicCell40_SEQ_MODE_0000    379             27048  1977318  RISE       1
+I__753/I                                                                  LocalMux                       0             27048  1977318  RISE       1
+I__753/O                                                                  LocalMux                     330             27377  1977318  RISE       1
+I__754/I                                                                  InMux                          0             27377  1977318  RISE       1
+I__754/O                                                                  InMux                        259             27637  1977318  RISE       1
+PixelZ0_LC_6_1_7/in3                                                      LogicCell40_SEQ_MODE_1000      0             27637  1977318  RISE       1
+
+Capture Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__319/I                                                 ClkMux                         0              2073  RISE       1
+I__319/O                                                 ClkMux                       309              2381  RISE       1
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010    540              2921  RISE       2
+I__322/I                                                 Odrv4                          0              2921  RISE       1
+I__322/O                                                 Odrv4                        351              3272  RISE       1
+I__324/I                                                 IoSpan4Mux                     0              3272  RISE       1
+I__324/O                                                 IoSpan4Mux                   288              3560  RISE       1
+I__325/I                                                 LocalMux                       0              3560  RISE       1
+I__325/O                                                 LocalMux                     330              3889  RISE       1
+I__326/I                                                 IoInMux                        0              3889  RISE       1
+I__326/O                                                 IoInMux                      259              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                         0              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                       617              4766  RISE      23
+I__932/I                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__932/O                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__933/I                                                 GlobalMux                      0              4766  RISE       1
+I__933/O                                                 GlobalMux                    154              4920  RISE       1
+I__942/I                                                 ClkMux                         0              4920  RISE       1
+I__942/O                                                 ClkMux                       309              5229  RISE       1
+PixelZ0_LC_6_1_7/clk                                     LogicCell40_SEQ_MODE_1000      0              5229  RISE       1
+
+
+
+===================================================================== 
+                    End of Path Details for Clock Frequency Summary
+##################################################################### 
+
+
+##################################################################### 
+                    5::Path Details for Clock Relationship Summary
+===================================================================== 
+
+5.1::Critical Path Report for (SimpleVGA|Clock12MHz:R vs. SimpleVGA|Clock12MHz:R)
+*********************************************************************************
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : Counter_4_LC_1_6_4/lcout
+Path End         : Counter_1_LC_1_6_1/in0
+Capture Clock    : Counter_1_LC_1_6_1/clk
+Setup Constraint : 1000000p
+Path slack       : 995217p
+
+Capture Clock Arrival Time (SimpleVGA|Clock12MHz:R#2)   1000000
++ Capture Clock Source Latency                                0
++ Capture Clock Path Delay                                 2381
+- Setup Time                                               -470
+-----------------------------------------------------   ------- 
+End-of-path required time (ps)                          1001911
+
+Launch Clock Arrival Time (SimpleVGA|Clock12MHz:R#1)      0
++ Launch Clock Source Latency                             0
++ Launch Clock Path Delay                              2381
++ Clock To Q                                            540
++ Data Path Delay                                      3774
+----------------------------------------------------   ---- 
+End-of-path arrival time (ps)                          6695
+ 
+Launch Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__320/I                                                 ClkMux                         0              2073  RISE       1
+I__320/O                                                 ClkMux                       309              2381  RISE       1
+Counter_4_LC_1_6_4/clk                                   LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+
+Data path
+pin name                            model name                 delay  cumulative delay  slack  edge  Fanout
+----------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+Counter_4_LC_1_6_4/lcout            LogicCell40_SEQ_MODE_1010    540              2921  995217  RISE       2
+I__599/I                            LocalMux                       0              2921  995217  RISE       1
+I__599/O                            LocalMux                     330              3251  995217  RISE       1
+I__601/I                            InMux                          0              3251  995217  RISE       1
+I__601/O                            InMux                        259              3510  995217  RISE       1
+Counter_RNIVB1D1_0_LC_2_6_3/in0     LogicCell40_SEQ_MODE_0000      0              3510  995217  RISE       1
+Counter_RNIVB1D1_0_LC_2_6_3/lcout   LogicCell40_SEQ_MODE_0000    449              3959  995217  RISE       1
+I__576/I                            LocalMux                       0              3959  995217  RISE       1
+I__576/O                            LocalMux                     330              4289  995217  RISE       1
+I__577/I                            InMux                          0              4289  995217  RISE       1
+I__577/O                            InMux                        259              4548  995217  RISE       1
+Counter_RNIVO2Q2_1_LC_2_6_4/in3     LogicCell40_SEQ_MODE_0000      0              4548  995217  RISE       1
+Counter_RNIVO2Q2_1_LC_2_6_4/lcout   LogicCell40_SEQ_MODE_0000    316              4864  995217  RISE       1
+I__574/I                            LocalMux                       0              4864  995217  RISE       1
+I__574/O                            LocalMux                     330              5194  995217  RISE       1
+I__575/I                            InMux                          0              5194  995217  RISE       1
+I__575/O                            InMux                        259              5453  995217  RISE       1
+Counter_RNICJ474_6_LC_2_6_1/in3     LogicCell40_SEQ_MODE_0000      0              5453  995217  RISE       1
+Counter_RNICJ474_6_LC_2_6_1/ltout   LogicCell40_SEQ_MODE_0000    274              5727  995217  FALL       1
+I__622/I                            CascadeMux                     0              5727  995217  FALL       1
+I__622/O                            CascadeMux                     0              5727  995217  FALL       1
+Counter_RNI7QMJ6_13_LC_2_6_2/in2    LogicCell40_SEQ_MODE_0000      0              5727  995217  FALL       1
+Counter_RNI7QMJ6_13_LC_2_6_2/lcout  LogicCell40_SEQ_MODE_0000    379              6105  995217  RISE      15
+I__603/I                            LocalMux                       0              6105  995217  RISE       1
+I__603/O                            LocalMux                     330              6435  995217  RISE       1
+I__607/I                            InMux                          0              6435  995217  RISE       1
+I__607/O                            InMux                        259              6695  995217  RISE       1
+Counter_1_LC_1_6_1/in0              LogicCell40_SEQ_MODE_1010      0              6695  995217  RISE       1
+
+Capture Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__320/I                                                 ClkMux                         0              2073  RISE       1
+I__320/O                                                 ClkMux                       309              2381  RISE       1
+Counter_1_LC_1_6_1/clk                                   LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+
+
+5.2::Critical Path Report for (SimpleVGA|ClockVGA_derived_clock:R vs. SimpleVGA|ClockVGA_derived_clock:R)
+*********************************************************************************************************
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : y_9_LC_2_6_0/lcout
+Path End         : PixelZ0_LC_6_1_7/in3
+Capture Clock    : PixelZ0_LC_6_1_7/clk
+Setup Constraint : 2000000p
+Path slack       : 1977318p
+
+Capture Clock Arrival Time (SimpleVGA|ClockVGA_derived_clock:R#3)   2000000
++ Master Clock Source Latency                                             0
++ Capture Clock Path Delay                                             5229
+- Setup Time                                                           -274
+-----------------------------------------------------------------   ------- 
+End-of-path required time (ps)                                      2004955
+
+Launch Clock Arrival Time (SimpleVGA|ClockVGA_derived_clock:R#1)       0
++ Master Clock Source Latency                                          0
++ Launch Clock Path Delay                                           5229
++ Clock To Q                                                         540
++ Data Path Delay                                                  21868
+----------------------------------------------------------------   ----- 
+End-of-path arrival time (ps)                                      27637
+ 
+Launch Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__319/I                                                 ClkMux                         0              2073  RISE       1
+I__319/O                                                 ClkMux                       309              2381  RISE       1
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010    540              2921  RISE       2
+I__322/I                                                 Odrv4                          0              2921  RISE       1
+I__322/O                                                 Odrv4                        351              3272  RISE       1
+I__324/I                                                 IoSpan4Mux                     0              3272  RISE       1
+I__324/O                                                 IoSpan4Mux                   288              3560  RISE       1
+I__325/I                                                 LocalMux                       0              3560  RISE       1
+I__325/O                                                 LocalMux                     330              3889  RISE       1
+I__326/I                                                 IoInMux                        0              3889  RISE       1
+I__326/O                                                 IoInMux                      259              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                         0              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                       617              4766  RISE      23
+I__932/I                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__932/O                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__933/I                                                 GlobalMux                      0              4766  RISE       1
+I__933/O                                                 GlobalMux                    154              4920  RISE       1
+I__935/I                                                 ClkMux                         0              4920  RISE       1
+I__935/O                                                 ClkMux                       309              5229  RISE       1
+y_9_LC_2_6_0/clk                                         LogicCell40_SEQ_MODE_1000      0              5229  RISE       1
+
+Data path
+pin name                                                                  model name                 delay  cumulative delay  slack  edge  Fanout
+------------------------------------------------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+y_9_LC_2_6_0/lcout                                                        LogicCell40_SEQ_MODE_1000    540              5769  1977318  RISE       5
+I__458/I                                                                  Odrv4                          0              5769  1977318  RISE       1
+I__458/O                                                                  Odrv4                        351              6120  1977318  RISE       1
+I__461/I                                                                  LocalMux                       0              6120  1977318  RISE       1
+I__461/O                                                                  LocalMux                     330              6449  1977318  RISE       1
+I__466/I                                                                  InMux                          0              6449  1977318  RISE       1
+I__466/O                                                                  InMux                        259              6709  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_LC_2_4_0/in1                LogicCell40_SEQ_MODE_0000      0              6709  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_LC_2_4_0/carryout           LogicCell40_SEQ_MODE_0000    259              6968  1977318  RISE       2
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_RNI7OJC_LC_2_4_1/carryin    LogicCell40_SEQ_MODE_0000      0              6968  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_2_c_RNI7OJC_LC_2_4_1/carryout   LogicCell40_SEQ_MODE_0000    126              7094  1977318  RISE       2
+un2_y_if_generate_plus_mult1_un26_sum_cry_3_c_RNI8QKC_LC_2_4_2/carryin    LogicCell40_SEQ_MODE_0000      0              7094  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_3_c_RNI8QKC_LC_2_4_2/carryout   LogicCell40_SEQ_MODE_0000    126              7221  1977318  RISE       2
+I__433/I                                                                  InMux                          0              7221  1977318  RISE       1
+I__433/O                                                                  InMux                        259              7480  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNI9SLC_LC_2_4_3/in3        LogicCell40_SEQ_MODE_0000      0              7480  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNI9SLC_LC_2_4_3/lcout      LogicCell40_SEQ_MODE_0000    316              7796  1977318  RISE       3
+I__434/I                                                                  LocalMux                       0              7796  1977318  RISE       1
+I__434/O                                                                  LocalMux                     330              8125  1977318  RISE       1
+I__436/I                                                                  InMux                          0              8125  1977318  RISE       1
+I__436/O                                                                  InMux                        259              8385  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNIIOBP_LC_1_4_6/in0        LogicCell40_SEQ_MODE_0000      0              8385  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un26_sum_cry_4_c_RNIIOBP_LC_1_4_6/lcout      LogicCell40_SEQ_MODE_0000    449              8834  1977318  RISE       1
+I__255/I                                                                  LocalMux                       0              8834  1977318  RISE       1
+I__255/O                                                                  LocalMux                     330              9163  1977318  RISE       1
+I__256/I                                                                  InMux                          0              9163  1977318  RISE       1
+I__256/O                                                                  InMux                        259              9423  1977318  RISE       1
+I__257/I                                                                  CascadeMux                     0              9423  1977318  RISE       1
+I__257/O                                                                  CascadeMux                     0              9423  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/in2       LogicCell40_SEQ_MODE_0000      0              9423  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/carryout  LogicCell40_SEQ_MODE_0000    231              9654  1977318  RISE       1
+I__258/I                                                                  InMux                          0              9654  1977318  RISE       1
+I__258/O                                                                  InMux                        259              9914  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_THRU_LUT4_0_LC_1_4_5/in3      LogicCell40_SEQ_MODE_0000      0              9914  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_THRU_LUT4_0_LC_1_4_5/lcout    LogicCell40_SEQ_MODE_0000    316             10229  1977318  RISE       1
+I__431/I                                                                  LocalMux                       0             10229  1977318  RISE       1
+I__431/O                                                                  LocalMux                     330             10559  1977318  RISE       1
+I__432/I                                                                  InMux                          0             10559  1977318  RISE       1
+I__432/O                                                                  InMux                        259             10819  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_c_RNIJ7MF_LC_2_4_4/in1        LogicCell40_SEQ_MODE_0000      0             10819  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_6_c_RNIJ7MF_LC_2_4_4/lcout      LogicCell40_SEQ_MODE_0000    400             11218  1977318  RISE       4
+I__423/I                                                                  LocalMux                       0             11218  1977318  RISE       1
+I__423/O                                                                  LocalMux                     330             11548  1977318  RISE       1
+I__425/I                                                                  InMux                          0             11548  1977318  RISE       1
+I__425/O                                                                  InMux                        259             11807  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/in0       LogicCell40_SEQ_MODE_0000      0             11807  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un33_sum_cry_5_c_RNIM3MO1_LC_1_4_4/lcout     LogicCell40_SEQ_MODE_0000    449             12256  1977318  RISE       1
+I__260/I                                                                  LocalMux                       0             12256  1977318  RISE       1
+I__260/O                                                                  LocalMux                     330             12586  1977318  RISE       1
+I__261/I                                                                  InMux                          0             12586  1977318  RISE       1
+I__261/O                                                                  InMux                        259             12845  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_6_c_RNITLS12_LC_1_3_5/in1       LogicCell40_SEQ_MODE_0000      0             12845  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_6_c_RNITLS12_LC_1_3_5/lcout     LogicCell40_SEQ_MODE_0000    400             13245  1977318  RISE       4
+I__386/I                                                                  LocalMux                       0             13245  1977318  RISE       1
+I__386/O                                                                  LocalMux                     330             13575  1977318  RISE       1
+I__388/I                                                                  InMux                          0             13575  1977318  RISE       1
+I__388/O                                                                  InMux                        259             13834  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_5_c_RNI5DAA3_LC_1_3_4/in0       LogicCell40_SEQ_MODE_0000      0             13834  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un40_sum_cry_5_c_RNI5DAA3_LC_1_3_4/lcout     LogicCell40_SEQ_MODE_0000    449             14283  1977318  RISE       1
+I__370/I                                                                  LocalMux                       0             14283  1977318  RISE       1
+I__370/O                                                                  LocalMux                     330             14613  1977318  RISE       1
+I__371/I                                                                  InMux                          0             14613  1977318  RISE       1
+I__371/O                                                                  InMux                        259             14872  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_6_c_RNIJJ1M3_LC_2_3_5/in1       LogicCell40_SEQ_MODE_0000      0             14872  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_6_c_RNIJJ1M3_LC_2_3_5/lcout     LogicCell40_SEQ_MODE_0000    400             15272  1977318  RISE       4
+I__362/I                                                                  LocalMux                       0             15272  1977318  RISE       1
+I__362/O                                                                  LocalMux                     330             15602  1977318  RISE       1
+I__364/I                                                                  InMux                          0             15602  1977318  RISE       1
+I__364/O                                                                  InMux                        259             15861  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_5_c_RNI2VUB7_LC_2_3_4/in0       LogicCell40_SEQ_MODE_0000      0             15861  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un47_sum_cry_5_c_RNI2VUB7_LC_2_3_4/lcout     LogicCell40_SEQ_MODE_0000    449             16310  1977318  RISE       1
+I__373/I                                                                  LocalMux                       0             16310  1977318  RISE       1
+I__373/O                                                                  LocalMux                     330             16640  1977318  RISE       1
+I__374/I                                                                  InMux                          0             16640  1977318  RISE       1
+I__374/O                                                                  InMux                        259             16899  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_6_c_RNIEETD7_LC_2_2_5/in1       LogicCell40_SEQ_MODE_0000      0             16899  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_6_c_RNIEETD7_LC_2_2_5/lcout     LogicCell40_SEQ_MODE_0000    400             17299  1977318  RISE       4
+I__332/I                                                                  LocalMux                       0             17299  1977318  RISE       1
+I__332/O                                                                  LocalMux                     330             17629  1977318  RISE       1
+I__334/I                                                                  InMux                          0             17629  1977318  RISE       1
+I__334/O                                                                  InMux                        259             17888  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_5_c_RNIR1SME_LC_2_2_4/in0       LogicCell40_SEQ_MODE_0000      0             17888  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un54_sum_cry_5_c_RNIR1SME_LC_2_2_4/lcout     LogicCell40_SEQ_MODE_0000    449             18337  1977318  RISE       1
+I__341/I                                                                  LocalMux                       0             18337  1977318  RISE       1
+I__341/O                                                                  LocalMux                     330             18667  1977318  RISE       1
+I__342/I                                                                  InMux                          0             18667  1977318  RISE       1
+I__342/O                                                                  InMux                        259             18926  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_6_c_RNI5Q1VE_LC_1_2_5/in1       LogicCell40_SEQ_MODE_0000      0             18926  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_6_c_RNI5Q1VE_LC_1_2_5/lcout     LogicCell40_SEQ_MODE_0000    400             19326  1977318  RISE       4
+I__212/I                                                                  Odrv4                          0             19326  1977318  RISE       1
+I__212/O                                                                  Odrv4                        351             19677  1977318  RISE       1
+I__214/I                                                                  LocalMux                       0             19677  1977318  RISE       1
+I__214/O                                                                  LocalMux                     330             20006  1977318  RISE       1
+I__218/I                                                                  InMux                          0             20006  1977318  RISE       1
+I__218/O                                                                  InMux                        259             20266  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_5_c_RNIHL7KT_LC_1_2_4/in0       LogicCell40_SEQ_MODE_0000      0             20266  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un61_sum_cry_5_c_RNIHL7KT_LC_1_2_4/lcout     LogicCell40_SEQ_MODE_0000    449             20715  1977318  RISE       1
+I__222/I                                                                  LocalMux                       0             20715  1977318  RISE       1
+I__222/O                                                                  LocalMux                     330             21044  1977318  RISE       1
+I__223/I                                                                  InMux                          0             21044  1977318  RISE       1
+I__223/O                                                                  InMux                        259             21304  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un68_sum_cry_6_c_RNI22UUT_LC_1_1_5/in1       LogicCell40_SEQ_MODE_0000      0             21304  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un68_sum_cry_6_c_RNI22UUT_LC_1_1_5/lcout     LogicCell40_SEQ_MODE_0000    400             21703  1977318  RISE       5
+I__289/I                                                                  LocalMux                       0             21703  1977318  RISE       1
+I__289/O                                                                  LocalMux                     330             22033  1977318  RISE       1
+I__291/I                                                                  InMux                          0             22033  1977318  RISE       1
+I__291/O                                                                  InMux                        259             22293  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/in3            LogicCell40_SEQ_MODE_0000      0             22293  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/lcout          LogicCell40_SEQ_MODE_0000    316             22608  1977318  RISE       1
+I__286/I                                                                  LocalMux                       0             22608  1977318  RISE       1
+I__286/O                                                                  LocalMux                     330             22938  1977318  RISE       1
+I__287/I                                                                  InMux                          0             22938  1977318  RISE       1
+I__287/O                                                                  InMux                        259             23197  1977318  RISE       1
+I__288/I                                                                  CascadeMux                     0             23197  1977318  RISE       1
+I__288/O                                                                  CascadeMux                     0             23197  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/in2            LogicCell40_SEQ_MODE_0000      0             23197  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_inv_LC_2_1_4/carryout       LogicCell40_SEQ_MODE_0000    231             23429  1977318  RISE       1
+I__283/I                                                                  InMux                          0             23429  1977318  RISE       1
+I__283/O                                                                  InMux                        259             23688  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_RNINAPFR1_LC_2_1_5/in3      LogicCell40_SEQ_MODE_0000      0             23688  1977318  RISE       1
+un2_y_if_generate_plus_mult1_un75_sum_cry_6_c_RNINAPFR1_LC_2_1_5/lcout    LogicCell40_SEQ_MODE_0000    316             24004  1977318  RISE       4
+I__637/I                                                                  Odrv12                         0             24004  1977318  RISE       1
+I__637/O                                                                  Odrv12                       491             24495  1977318  RISE       1
+I__638/I                                                                  LocalMux                       0             24495  1977318  RISE       1
+I__638/O                                                                  LocalMux                     330             24824  1977318  RISE       1
+I__640/I                                                                  InMux                          0             24824  1977318  RISE       1
+I__640/O                                                                  InMux                        259             25084  1977318  RISE       1
+Pixel_RNO_11_LC_4_1_1/in3                                                 LogicCell40_SEQ_MODE_0000      0             25084  1977318  RISE       1
+Pixel_RNO_11_LC_4_1_1/ltout                                               LogicCell40_SEQ_MODE_0000    274             25357  1977318  FALL       1
+I__559/I                                                                  CascadeMux                     0             25357  1977318  FALL       1
+I__559/O                                                                  CascadeMux                     0             25357  1977318  FALL       1
+Pixel_RNO_9_LC_4_1_2/in2                                                  LogicCell40_SEQ_MODE_0000      0             25357  1977318  FALL       1
+Pixel_RNO_9_LC_4_1_2/ltout                                                LogicCell40_SEQ_MODE_0000    344             25701  1977318  FALL       1
+I__548/I                                                                  CascadeMux                     0             25701  1977318  FALL       1
+I__548/O                                                                  CascadeMux                     0             25701  1977318  FALL       1
+Pixel_RNO_5_LC_4_1_3/in2                                                  LogicCell40_SEQ_MODE_0000      0             25701  1977318  FALL       1
+Pixel_RNO_5_LC_4_1_3/lcout                                                LogicCell40_SEQ_MODE_0000    379             26080  1977318  RISE       1
+I__634/I                                                                  LocalMux                       0             26080  1977318  RISE       1
+I__634/O                                                                  LocalMux                     330             26409  1977318  RISE       1
+I__635/I                                                                  InMux                          0             26409  1977318  RISE       1
+I__635/O                                                                  InMux                        259             26669  1977318  RISE       1
+I__636/I                                                                  CascadeMux                     0             26669  1977318  RISE       1
+I__636/O                                                                  CascadeMux                     0             26669  1977318  RISE       1
+Pixel_RNO_0_LC_5_1_3/in2                                                  LogicCell40_SEQ_MODE_0000      0             26669  1977318  RISE       1
+Pixel_RNO_0_LC_5_1_3/lcout                                                LogicCell40_SEQ_MODE_0000    379             27048  1977318  RISE       1
+I__753/I                                                                  LocalMux                       0             27048  1977318  RISE       1
+I__753/O                                                                  LocalMux                     330             27377  1977318  RISE       1
+I__754/I                                                                  InMux                          0             27377  1977318  RISE       1
+I__754/O                                                                  InMux                        259             27637  1977318  RISE       1
+PixelZ0_LC_6_1_7/in3                                                      LogicCell40_SEQ_MODE_1000      0             27637  1977318  RISE       1
+
+Capture Clock Path
+pin name                                                 model name                 delay  cumulative delay  edge  Fanout
+-------------------------------------------------------  -------------------------  -----  ----------------  ----  ------
+Clock12MHz                                               SimpleVGA                      0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                         0                 0  RISE       1
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                       510               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                    0               510  RISE       1
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                 1408              1918  RISE       1
+I__317/I                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__317/O                                                 gio2CtrlBuf                    0              1918  RISE       1
+I__318/I                                                 GlobalMux                      0              1918  RISE       1
+I__318/O                                                 GlobalMux                    154              2073  RISE       1
+I__319/I                                                 ClkMux                         0              2073  RISE       1
+I__319/O                                                 ClkMux                       309              2381  RISE       1
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010      0              2381  RISE       1
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010    540              2921  RISE       2
+I__322/I                                                 Odrv4                          0              2921  RISE       1
+I__322/O                                                 Odrv4                        351              3272  RISE       1
+I__324/I                                                 IoSpan4Mux                     0              3272  RISE       1
+I__324/O                                                 IoSpan4Mux                   288              3560  RISE       1
+I__325/I                                                 LocalMux                       0              3560  RISE       1
+I__325/O                                                 LocalMux                     330              3889  RISE       1
+I__326/I                                                 IoInMux                        0              3889  RISE       1
+I__326/O                                                 IoInMux                      259              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                         0              4149  RISE       1
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                       617              4766  RISE      23
+I__932/I                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__932/O                                                 gio2CtrlBuf                    0              4766  RISE       1
+I__933/I                                                 GlobalMux                      0              4766  RISE       1
+I__933/O                                                 GlobalMux                    154              4920  RISE       1
+I__942/I                                                 ClkMux                         0              4920  RISE       1
+I__942/O                                                 ClkMux                       309              5229  RISE       1
+PixelZ0_LC_6_1_7/clk                                     LogicCell40_SEQ_MODE_1000      0              5229  RISE       1
+
+
+
+===================================================================== 
+                    End of Path Details for Clock Relationship Summary
+##################################################################### 
+
+
+##################################################################### 
+                    6::Path Details for DataSheet
+===================================================================== 
+
+
+          6.2::Clock to Out Path Details
+--------------------------------------------------
+
+     6.2.1::Path details for port: HSync
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : HSync
+Clock Port         : Clock12MHz
+Clock Reference    : SimpleVGA|ClockVGA_derived_clock:R
+Clock to Out Delay : 11574
+
+
+Launch Clock Path Delay        5229
++ Clock To Q Delay              540
++ Data Path Delay              5805
+---------------------------- ------
+Clock To Out Delay            11574
+
+Launch Clock Path
+pin name                                                 model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+Clock12MHz                                               SimpleVGA                  0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                     0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                     510    510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                0      510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                1408   1918               RISE  1       
+I__317/I                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__317/O                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__318/I                                                 GlobalMux                  0      1918               RISE  1       
+I__318/O                                                 GlobalMux                  154    2073               RISE  1       
+I__319/I                                                 ClkMux                     0      2073               RISE  1       
+I__319/O                                                 ClkMux                     309    2381               RISE  1       
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010  0      2381               RISE  1       
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010  540    2921               RISE  2       
+I__322/I                                                 Odrv4                      0      2921               RISE  1       
+I__322/O                                                 Odrv4                      351    3272               RISE  1       
+I__324/I                                                 IoSpan4Mux                 0      3272               RISE  1       
+I__324/O                                                 IoSpan4Mux                 288    3560               RISE  1       
+I__325/I                                                 LocalMux                   0      3560               RISE  1       
+I__325/O                                                 LocalMux                   330    3889               RISE  1       
+I__326/I                                                 IoInMux                    0      3889               RISE  1       
+I__326/O                                                 IoInMux                    259    4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                     0      4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                     617    4766               RISE  23      
+I__932/I                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__932/O                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__933/I                                                 GlobalMux                  0      4766               RISE  1       
+I__933/O                                                 GlobalMux                  154    4920               RISE  1       
+I__940/I                                                 ClkMux                     0      4920               RISE  1       
+I__940/O                                                 ClkMux                     309    5229               RISE  1       
+HSyncZ0_LC_6_4_4/clk                                     LogicCell40_SEQ_MODE_1000  0      5229               RISE  1       
+
+Data Path
+pin name                         model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------  -------------------------  -----  -----------------  ----  ------  
+HSyncZ0_LC_6_4_4/lcout           LogicCell40_SEQ_MODE_1000  540    5769               RISE  1       
+I__879/I                         Odrv4                      0      5769               RISE  1       
+I__879/O                         Odrv4                      351    6120               RISE  1       
+I__880/I                         Span4Mux_s2_v              0      6120               RISE  1       
+I__880/O                         Span4Mux_s2_v              252    6372               RISE  1       
+I__881/I                         IoSpan4Mux                 0      6372               RISE  1       
+I__881/O                         IoSpan4Mux                 288    6660               RISE  1       
+I__882/I                         LocalMux                   0      6660               RISE  1       
+I__882/O                         LocalMux                   330    6989               RISE  1       
+I__883/I                         IoInMux                    0      6989               RISE  1       
+I__883/O                         IoInMux                    259    7249               RISE  1       
+HSync_obuf_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      7249               RISE  1       
+HSync_obuf_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2237   9486               FALL  1       
+HSync_obuf_iopad/DIN             IO_PAD                     0      9486               FALL  1       
+HSync_obuf_iopad/PACKAGEPIN:out  IO_PAD                     2088   11574              FALL  1       
+HSync                            SimpleVGA                  0      11574              FALL  1       
+
+6.2.2::Path details for port: Pixel     
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : Pixel
+Clock Port         : Clock12MHz
+Clock Reference    : SimpleVGA|ClockVGA_derived_clock:R
+Clock to Out Delay : 11237
+
+
+Launch Clock Path Delay        5229
++ Clock To Q Delay              540
++ Data Path Delay              5468
+---------------------------- ------
+Clock To Out Delay            11237
+
+Launch Clock Path
+pin name                                                 model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+Clock12MHz                                               SimpleVGA                  0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                     0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                     510    510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                0      510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                1408   1918               RISE  1       
+I__317/I                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__317/O                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__318/I                                                 GlobalMux                  0      1918               RISE  1       
+I__318/O                                                 GlobalMux                  154    2073               RISE  1       
+I__319/I                                                 ClkMux                     0      2073               RISE  1       
+I__319/O                                                 ClkMux                     309    2381               RISE  1       
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010  0      2381               RISE  1       
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010  540    2921               RISE  2       
+I__322/I                                                 Odrv4                      0      2921               RISE  1       
+I__322/O                                                 Odrv4                      351    3272               RISE  1       
+I__324/I                                                 IoSpan4Mux                 0      3272               RISE  1       
+I__324/O                                                 IoSpan4Mux                 288    3560               RISE  1       
+I__325/I                                                 LocalMux                   0      3560               RISE  1       
+I__325/O                                                 LocalMux                   330    3889               RISE  1       
+I__326/I                                                 IoInMux                    0      3889               RISE  1       
+I__326/O                                                 IoInMux                    259    4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                     0      4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                     617    4766               RISE  23      
+I__932/I                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__932/O                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__933/I                                                 GlobalMux                  0      4766               RISE  1       
+I__933/O                                                 GlobalMux                  154    4920               RISE  1       
+I__942/I                                                 ClkMux                     0      4920               RISE  1       
+I__942/O                                                 ClkMux                     309    5229               RISE  1       
+PixelZ0_LC_6_1_7/clk                                     LogicCell40_SEQ_MODE_1000  0      5229               RISE  1       
+
+Data Path
+pin name                         model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------  -------------------------  -----  -----------------  ----  ------  
+PixelZ0_LC_6_1_7/lcout           LogicCell40_SEQ_MODE_1000  540    5769               RISE  1       
+I__749/I                         Odrv4                      0      5769               RISE  1       
+I__749/O                         Odrv4                      351    6120               RISE  1       
+I__750/I                         Span4Mux_s0_v              0      6120               RISE  1       
+I__750/O                         Span4Mux_s0_v              203    6323               RISE  1       
+I__751/I                         LocalMux                   0      6323               RISE  1       
+I__751/O                         LocalMux                   330    6653               RISE  1       
+I__752/I                         IoInMux                    0      6653               RISE  1       
+I__752/O                         IoInMux                    259    6912               RISE  1       
+Pixel_obuf_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6912               RISE  1       
+Pixel_obuf_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2237   9149               FALL  1       
+Pixel_obuf_iopad/DIN             IO_PAD                     0      9149               FALL  1       
+Pixel_obuf_iopad/PACKAGEPIN:out  IO_PAD                     2088   11237              FALL  1       
+Pixel                            SimpleVGA                  0      11237              FALL  1       
+
+6.2.3::Path details for port: VSync     
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : VSync
+Clock Port         : Clock12MHz
+Clock Reference    : SimpleVGA|ClockVGA_derived_clock:R
+Clock to Out Delay : 11174
+
+
+Launch Clock Path Delay        5229
++ Clock To Q Delay              540
++ Data Path Delay              5405
+---------------------------- ------
+Clock To Out Delay            11174
+
+Launch Clock Path
+pin name                                                 model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+Clock12MHz                                               SimpleVGA                  0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                     0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                     510    510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                0      510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                1408   1918               RISE  1       
+I__317/I                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__317/O                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__318/I                                                 GlobalMux                  0      1918               RISE  1       
+I__318/O                                                 GlobalMux                  154    2073               RISE  1       
+I__319/I                                                 ClkMux                     0      2073               RISE  1       
+I__319/O                                                 ClkMux                     309    2381               RISE  1       
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010  0      2381               RISE  1       
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010  540    2921               RISE  2       
+I__322/I                                                 Odrv4                      0      2921               RISE  1       
+I__322/O                                                 Odrv4                      351    3272               RISE  1       
+I__324/I                                                 IoSpan4Mux                 0      3272               RISE  1       
+I__324/O                                                 IoSpan4Mux                 288    3560               RISE  1       
+I__325/I                                                 LocalMux                   0      3560               RISE  1       
+I__325/O                                                 LocalMux                   330    3889               RISE  1       
+I__326/I                                                 IoInMux                    0      3889               RISE  1       
+I__326/O                                                 IoInMux                    259    4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                     0      4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                     617    4766               RISE  23      
+I__932/I                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__932/O                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__933/I                                                 GlobalMux                  0      4766               RISE  1       
+I__933/O                                                 GlobalMux                  154    4920               RISE  1       
+I__941/I                                                 ClkMux                     0      4920               RISE  1       
+I__941/O                                                 ClkMux                     309    5229               RISE  1       
+VSyncZ0_LC_8_4_3/clk                                     LogicCell40_SEQ_MODE_1000  0      5229               RISE  1       
+
+Data Path
+pin name                         model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------  -------------------------  -----  -----------------  ----  ------  
+VSyncZ0_LC_8_4_3/lcout           LogicCell40_SEQ_MODE_1000  540    5769               RISE  1       
+I__943/I                         Odrv12                     0      5769               RISE  1       
+I__943/O                         Odrv12                     491    6260               RISE  1       
+I__944/I                         LocalMux                   0      6260               RISE  1       
+I__944/O                         LocalMux                   330    6589               RISE  1       
+I__945/I                         IoInMux                    0      6589               RISE  1       
+I__945/O                         IoInMux                    259    6849               RISE  1       
+VSync_obuf_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6849               RISE  1       
+VSync_obuf_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2237   9086               FALL  1       
+VSync_obuf_iopad/DIN             IO_PAD                     0      9086               FALL  1       
+VSync_obuf_iopad/PACKAGEPIN:out  IO_PAD                     2088   11174              FALL  1       
+VSync                            SimpleVGA                  0      11174              FALL  1       
+
+6.5::Min Clock to Out Path Details      
+--------------------------------------------------
+
+6.5.1::Path details for port: HSync     
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : HSync
+Clock Port         : Clock12MHz
+Clock Reference    : SimpleVGA|ClockVGA_derived_clock:R
+Clock to Out Delay : 11162
+
+
+Launch Clock Path Delay        5229
++ Clock To Q Delay              540
++ Data Path Delay              5393
+---------------------------- ------
+Clock To Out Delay            11162
+
+Launch Clock Path
+pin name                                                 model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+Clock12MHz                                               SimpleVGA                  0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                     0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                     510    510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                0      510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                1408   1918               RISE  1       
+I__317/I                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__317/O                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__318/I                                                 GlobalMux                  0      1918               RISE  1       
+I__318/O                                                 GlobalMux                  154    2073               RISE  1       
+I__319/I                                                 ClkMux                     0      2073               RISE  1       
+I__319/O                                                 ClkMux                     309    2381               RISE  1       
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010  0      2381               RISE  1       
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010  540    2921               RISE  2       
+I__322/I                                                 Odrv4                      0      2921               RISE  1       
+I__322/O                                                 Odrv4                      351    3272               RISE  1       
+I__324/I                                                 IoSpan4Mux                 0      3272               RISE  1       
+I__324/O                                                 IoSpan4Mux                 288    3560               RISE  1       
+I__325/I                                                 LocalMux                   0      3560               RISE  1       
+I__325/O                                                 LocalMux                   330    3889               RISE  1       
+I__326/I                                                 IoInMux                    0      3889               RISE  1       
+I__326/O                                                 IoInMux                    259    4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                     0      4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                     617    4766               RISE  23      
+I__932/I                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__932/O                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__933/I                                                 GlobalMux                  0      4766               RISE  1       
+I__933/O                                                 GlobalMux                  154    4920               RISE  1       
+I__940/I                                                 ClkMux                     0      4920               RISE  1       
+I__940/O                                                 ClkMux                     309    5229               RISE  1       
+HSyncZ0_LC_6_4_4/clk                                     LogicCell40_SEQ_MODE_1000  0      5229               RISE  1       
+
+Data Path
+pin name                         model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------  -------------------------  -----  -----------------  ----  ------  
+HSyncZ0_LC_6_4_4/lcout           LogicCell40_SEQ_MODE_1000  540    5769               FALL  1       
+I__879/I                         Odrv4                      0      5769               FALL  1       
+I__879/O                         Odrv4                      372    6141               FALL  1       
+I__880/I                         Span4Mux_s2_v              0      6141               FALL  1       
+I__880/O                         Span4Mux_s2_v              252    6393               FALL  1       
+I__881/I                         IoSpan4Mux                 0      6393               FALL  1       
+I__881/O                         IoSpan4Mux                 323    6716               FALL  1       
+I__882/I                         LocalMux                   0      6716               FALL  1       
+I__882/O                         LocalMux                   309    7024               FALL  1       
+I__883/I                         IoInMux                    0      7024               FALL  1       
+I__883/O                         IoInMux                    217    7242               FALL  1       
+HSync_obuf_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      7242               FALL  1       
+HSync_obuf_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2006   9248               RISE  1       
+HSync_obuf_iopad/DIN             IO_PAD                     0      9248               RISE  1       
+HSync_obuf_iopad/PACKAGEPIN:out  IO_PAD                     1914   11162              RISE  1       
+HSync                            SimpleVGA                  0      11162              RISE  1       
+
+6.5.2::Path details for port: Pixel     
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : Pixel
+Clock Port         : Clock12MHz
+Clock Reference    : SimpleVGA|ClockVGA_derived_clock:R
+Clock to Out Delay : 10776
+
+
+Launch Clock Path Delay        5229
++ Clock To Q Delay              540
++ Data Path Delay              5007
+---------------------------- ------
+Clock To Out Delay            10776
+
+Launch Clock Path
+pin name                                                 model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+Clock12MHz                                               SimpleVGA                  0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                     0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                     510    510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                0      510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                1408   1918               RISE  1       
+I__317/I                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__317/O                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__318/I                                                 GlobalMux                  0      1918               RISE  1       
+I__318/O                                                 GlobalMux                  154    2073               RISE  1       
+I__319/I                                                 ClkMux                     0      2073               RISE  1       
+I__319/O                                                 ClkMux                     309    2381               RISE  1       
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010  0      2381               RISE  1       
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010  540    2921               RISE  2       
+I__322/I                                                 Odrv4                      0      2921               RISE  1       
+I__322/O                                                 Odrv4                      351    3272               RISE  1       
+I__324/I                                                 IoSpan4Mux                 0      3272               RISE  1       
+I__324/O                                                 IoSpan4Mux                 288    3560               RISE  1       
+I__325/I                                                 LocalMux                   0      3560               RISE  1       
+I__325/O                                                 LocalMux                   330    3889               RISE  1       
+I__326/I                                                 IoInMux                    0      3889               RISE  1       
+I__326/O                                                 IoInMux                    259    4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                     0      4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                     617    4766               RISE  23      
+I__932/I                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__932/O                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__933/I                                                 GlobalMux                  0      4766               RISE  1       
+I__933/O                                                 GlobalMux                  154    4920               RISE  1       
+I__942/I                                                 ClkMux                     0      4920               RISE  1       
+I__942/O                                                 ClkMux                     309    5229               RISE  1       
+PixelZ0_LC_6_1_7/clk                                     LogicCell40_SEQ_MODE_1000  0      5229               RISE  1       
+
+Data Path
+pin name                         model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------  -------------------------  -----  -----------------  ----  ------  
+PixelZ0_LC_6_1_7/lcout           LogicCell40_SEQ_MODE_1000  540    5769               FALL  1       
+I__749/I                         Odrv4                      0      5769               FALL  1       
+I__749/O                         Odrv4                      372    6141               FALL  1       
+I__750/I                         Span4Mux_s0_v              0      6141               FALL  1       
+I__750/O                         Span4Mux_s0_v              189    6330               FALL  1       
+I__751/I                         LocalMux                   0      6330               FALL  1       
+I__751/O                         LocalMux                   309    6638               FALL  1       
+I__752/I                         IoInMux                    0      6638               FALL  1       
+I__752/O                         IoInMux                    217    6856               FALL  1       
+Pixel_obuf_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6856               FALL  1       
+Pixel_obuf_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2006   8862               RISE  1       
+Pixel_obuf_iopad/DIN             IO_PAD                     0      8862               RISE  1       
+Pixel_obuf_iopad/PACKAGEPIN:out  IO_PAD                     1914   10776              RISE  1       
+Pixel                            SimpleVGA                  0      10776              RISE  1       
+
+6.5.3::Path details for port: VSync     
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : VSync
+Clock Port         : Clock12MHz
+Clock Reference    : SimpleVGA|ClockVGA_derived_clock:R
+Clock to Out Delay : 10755
+
+
+Launch Clock Path Delay        5229
++ Clock To Q Delay              540
++ Data Path Delay              4986
+---------------------------- ------
+Clock To Out Delay            10755
+
+Launch Clock Path
+pin name                                                 model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+Clock12MHz                                               SimpleVGA                  0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/PACKAGEPIN:in                IO_PAD                     0      0                  RISE  1       
+Clock12MHz_ibuf_gb_io_iopad/DOUT                         IO_PAD                     510    510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/PADSIGNALTOGLOBALBUFFER  PRE_IO_GBUF                0      510                RISE  1       
+Clock12MHz_ibuf_gb_io_preiogbuf/GLOBALBUFFEROUTPUT       PRE_IO_GBUF                1408   1918               RISE  1       
+I__317/I                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__317/O                                                 gio2CtrlBuf                0      1918               RISE  1       
+I__318/I                                                 GlobalMux                  0      1918               RISE  1       
+I__318/O                                                 GlobalMux                  154    2073               RISE  1       
+I__319/I                                                 ClkMux                     0      2073               RISE  1       
+I__319/O                                                 ClkMux                     309    2381               RISE  1       
+ClockVGA_LC_1_7_6/clk                                    LogicCell40_SEQ_MODE_1010  0      2381               RISE  1       
+ClockVGA_LC_1_7_6/lcout                                  LogicCell40_SEQ_MODE_1010  540    2921               RISE  2       
+I__322/I                                                 Odrv4                      0      2921               RISE  1       
+I__322/O                                                 Odrv4                      351    3272               RISE  1       
+I__324/I                                                 IoSpan4Mux                 0      3272               RISE  1       
+I__324/O                                                 IoSpan4Mux                 288    3560               RISE  1       
+I__325/I                                                 LocalMux                   0      3560               RISE  1       
+I__325/O                                                 LocalMux                   330    3889               RISE  1       
+I__326/I                                                 IoInMux                    0      3889               RISE  1       
+I__326/O                                                 IoInMux                    259    4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/USERSIGNALTOGLOBALBUFFER  ICE_GB                     0      4149               RISE  1       
+ClockVGA_derived_clock_RNIND52/GLOBALBUFFEROUTPUT        ICE_GB                     617    4766               RISE  23      
+I__932/I                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__932/O                                                 gio2CtrlBuf                0      4766               RISE  1       
+I__933/I                                                 GlobalMux                  0      4766               RISE  1       
+I__933/O                                                 GlobalMux                  154    4920               RISE  1       
+I__941/I                                                 ClkMux                     0      4920               RISE  1       
+I__941/O                                                 ClkMux                     309    5229               RISE  1       
+VSyncZ0_LC_8_4_3/clk                                     LogicCell40_SEQ_MODE_1000  0      5229               RISE  1       
+
+Data Path
+pin name                         model name                 delay  cummulative delay  edge  Fanout  
+-------------------------------  -------------------------  -----  -----------------  ----  ------  
+VSyncZ0_LC_8_4_3/lcout           LogicCell40_SEQ_MODE_1000  540    5769               FALL  1       
+I__943/I                         Odrv12                     0      5769               FALL  1       
+I__943/O                         Odrv12                     540    6309               FALL  1       
+I__944/I                         LocalMux                   0      6309               FALL  1       
+I__944/O                         LocalMux                   309    6617               FALL  1       
+I__945/I                         IoInMux                    0      6617               FALL  1       
+I__945/O                         IoInMux                    217    6835               FALL  1       
+VSync_obuf_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6835               FALL  1       
+VSync_obuf_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2006   8841               RISE  1       
+VSync_obuf_iopad/DIN             IO_PAD                     0      8841               RISE  1       
+VSync_obuf_iopad/PACKAGEPIN:out  IO_PAD                     1914   10755              RISE  1       
+VSync                            SimpleVGA                  0      10755              RISE  1       
+
+
+ =====================================================================
+                    End of Path Details for Datasheet
+ #####################################################################
+

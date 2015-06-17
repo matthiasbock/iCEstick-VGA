@@ -1,0 +1,24 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\bin\\c_vhdl.exe":1427739800
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\location.map":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\std.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\std1164.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\numeric.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\arith.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\unsigned.vhd":1427739839
+#CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\hyperents.vhd":1427739839
+#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1434550725
+0 "U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+
+# Dependency Lists (Users Of)
+0 -1
+
+# Design Unit to File Association
+arch work simplevga vga 0
+module work simplevga 0

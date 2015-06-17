@@ -1,0 +1,131 @@
+18:21:06
+"C:\Programme\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+Error of dumping file SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr, 'stdout.log' is instead. 
+
+==contents of stdout.log
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl"
+
+Running in Lattice mode
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl"
+
+At line 0 while processing "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+couldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\progui.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\startup.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\auto.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\msgcat.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\tm.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\history.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\parray.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\package.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\init.tcl": no such file or directorycouldn't read file "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl": no such file or directory
+
+Error while loading: "C:\Programme\iCEcube2.2014.12\synpbase\lib\tcl\clock.tcl"
+
+
+Starting:    C:\Programme\iCEcube2.2014.12\synpbase\bin\mbin\synbatch.exe
+Install:     C:\Programme\iCEcube2.2014.12\synpbase
+Hostname:    MPNT925109O
+Date:        Wed May 27 18:21:33 2015
+Version:     J-2014.09L
+
+Arguments:   -product synplify_pro  -batch SimpleVGA_iCEstick_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+exit status=7
+
+exit status=7
+
+
+
+Synthesis exit by 7.
+Synthesis failed.
+Synthesis batch mode runtime 1 seconds18:21:39

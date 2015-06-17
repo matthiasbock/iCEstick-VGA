@@ -1,0 +1,2 @@
+CKID0001:@|S:ClockVGA@|E:Pixel@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:Clock12MHz_ibuf_gb_io@|E:ClockVGA@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 

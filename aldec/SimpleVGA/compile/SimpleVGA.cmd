@@ -1,0 +1,1 @@
+-w -s "U:\SimpleVGA_iCEstick\aldec\SimpleVGA\library.cfg"  -j "U:\SimpleVGA_iCEstick\aldec\SimpleVGA\projlib.cfg"  -d "U:\SimpleVGA_iCEstick\aldec\SimpleVGA\compile"   -work SimpleVGA  -O3 -e 100 -2002 "U:\SimpleVGA_iCEstick\SimpleVGA.vhdl"
