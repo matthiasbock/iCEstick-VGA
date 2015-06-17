@@ -1,28 +1,28 @@
-@P:  Worst Slack : -5.047
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Frequency : 29.7 MHz
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Frequency : 35.0 MHz
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Period : 33.648
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Period : 28.601
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Slack : -5.047
+@P:  Worst Slack : -5.169
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Frequency : 29.0 MHz
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Frequency : 34.1 MHz
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Period : 34.463
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Period : 29.294
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Slack : -5.169
 @P:  SimpleVGA|Clock12MHz - Estimated Frequency : NA
-@P:  SimpleVGA|Clock12MHz - Requested Frequency : 35.0 MHz
+@P:  SimpleVGA|Clock12MHz - Requested Frequency : 34.1 MHz
 @P:  SimpleVGA|Clock12MHz - Estimated Period : NA
-@P:  SimpleVGA|Clock12MHz - Requested Period : 28.601
+@P:  SimpleVGA|Clock12MHz - Requested Period : 29.294
 @P:  SimpleVGA|Clock12MHz - Slack : NA
 @P:  Worst Slack(min analysis) : 2.523
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Frequency(min analysis) : 29.7 MHz
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Frequency(min analysis) : 35.0 MHz
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Period(min analysis) : 33.648
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Period(min analysis) : 28.601
-@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Slack(min analysis) : -5.047
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Frequency(min analysis) : 29.0 MHz
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Frequency(min analysis) : 34.1 MHz
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Estimated Period(min analysis) : 34.463
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Requested Period(min analysis) : 29.294
+@P:  PixelClock_PLL|PLLOUTCORE_derived_clock - Slack(min analysis) : -5.169
 @P:  SimpleVGA|Clock12MHz - Estimated Frequency(min analysis) : NA
-@P:  SimpleVGA|Clock12MHz - Requested Frequency(min analysis) : 35.0 MHz
+@P:  SimpleVGA|Clock12MHz - Requested Frequency(min analysis) : 34.1 MHz
 @P:  SimpleVGA|Clock12MHz - Estimated Period(min analysis) : NA
-@P:  SimpleVGA|Clock12MHz - Requested Period(min analysis) : 28.601
+@P:  SimpleVGA|Clock12MHz - Requested Period(min analysis) : 29.294
 @P:  SimpleVGA|Clock12MHz - Slack(min analysis) : NA
 @P: SimpleVGA Part : ice40hx1ktq144
-@P: SimpleVGA I/O primitives : 4
+@P: SimpleVGA I/O primitives : 7
 @P: SimpleVGA I/O Register bits : 0
 @P: SimpleVGA Register bits (Non I/O) : 23 (1%)
-@P: SimpleVGA Total Luts : 119 (9%)
+@P: SimpleVGA Total Luts : 131 (10%)
 @P:  CPU Time : 0h:00m:04s

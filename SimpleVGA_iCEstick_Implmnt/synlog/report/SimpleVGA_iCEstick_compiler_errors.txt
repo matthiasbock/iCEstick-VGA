@@ -1,3 +1,5 @@
-@E: CD717 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":11:11:11:20|entity: end identifier pixelclock does not match
+@E: CD541 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":26:8:26:17|Expecting ;
+@E: CD126 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":27:4:27:4|Expecting identifier
+@E: CD557 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":28:10:28:10|Expecting entity name
 @E|Parse errors encountered - exiting
 

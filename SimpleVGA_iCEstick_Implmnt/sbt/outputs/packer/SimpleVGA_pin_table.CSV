@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 17 2015 16:41:30
+* File Generated:     Jun 17 2015 17:10:27
 
 * Purpose:            Detailed IO and package pin info
 
@@ -117,9 +117,9 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 108, VPP_PUMP, not used, , , , , , UnknownBank
 109, VPP_DIRECT, not used, , , , , , UnknownBank
 111, VCC, not used, , , , , , UnknownBank
-112, PIO, not used, , , , , , topBank
-113, PIO, not used, , , , , , topBank
-114, PIO, not used, , , , , , topBank
+112, PIO, PixelDebug, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+113, PIO, HSyncDebug, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+114, PIO, VSyncDebug, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
 115, PIO, not used, , , , , , topBank
 116, PIO, not used, , , , , , topBank
 117, PIO, not used, , , , , , topBank
@@ -144,4 +144,4 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 142, PIO, not used, , , , , , topBank
 143, PIO, not used, , , , , , topBank
 144, PIO, not used, , , , , , topBank
-Total Number of Used Pins, 4
+Total Number of Used Pins, 7

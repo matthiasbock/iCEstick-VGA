@@ -8,7 +8,7 @@ entity SimpleVGA is
         
         HSync: out std_logic;
         VSync: out std_logic;
-        Pixel: out std_logic
+        Pixel: out std_logic;
 
         -- HX8K board:
         -- Clock: J3: PIO3_26
@@ -18,16 +18,24 @@ entity SimpleVGA is
 
         -- iCEstick:
         -- Clock: FPGA pin 21
-        -- Pixel: FPGA pin 62, J3 pin 3
-        -- HSync: FPGA pin 61, J3 pin 4
-        -- VSync: FPGA pin 60, J3 pin 5
+        -- Pixel: FPGA pin 62, J3 pin 3 = PIO2_17
+        -- HSync: FPGA pin 61, J3 pin 4 = PIO2_16
+        -- VSync: FPGA pin 60, J3 pin 5 = PIO2_15
+
+        -- additional mirror pins for debugging
+        HSyncDebug, VSyncDebug, PixelDebug : out std_logic
+        -- iCEstick:
+        -- Pixel: FPGA pin 112, J1 pin 3 = PIO0_02
+        -- HSync: FPGA pin 113, J1 pin 4 = PIO0_03
+        -- VSync: FPGA pin 114, J1 pin 5 = PIO0_04
+
     );
 end entity;
 
 architecture vga of SimpleVGA
 is
-    constant maxX : integer := 799;
-    constant maxY : integer := 524;
+    constant resolutionX : integer := 799;
+    constant resolutionY : integer := 599;
 
     constant HSyncDuration  : integer := 96;
     constant leftPorch      : integer := 48;
@@ -48,6 +56,12 @@ is
             RESET             : in  std_logic               -- Driven by core logic
         );
     end component;
+
+    constant beamMaxX : integer := HSyncDuration + leftPorch + resolutionX + rightPorch;
+    constant beamMaxY : integer := VSyncDuration + topPorch + resolutionY + bottomPorch;
+    
+    signal beamX: integer range 0 to beamMaxX := 0;
+    signal beamY: integer range 0 to beamMaxY := 0;
     
 begin
 
@@ -66,6 +80,8 @@ begin
             if (Reset = 'Z')
             then
                 Reset <= '0';
+                beamX <= 0;
+                beamY <= 0;
             else
                 Reset <= '1';
             end if;
@@ -73,17 +89,20 @@ begin
     end process;
 
     process(PixelClock)
-        variable x: integer range 0 to maxX := 0;
-        variable y: integer range 0 to maxY := 0;
+        variable visibleX: integer range 0 to resolutionX := 0;
+        variable visibleY: integer range 0 to resolutionY := 0;
     begin
         if (PixelClock'event and PixelClock='1')
         then
+            visibleX := beamX - HSyncDuration - leftPorch;
+            visibleY := beamY - VSyncDuration - topPorch;
+            
             -- default pixel value
             Pixel <= '0';
 
             -- HSync pulse before left porch
             -- HSync is active low
-            if (x < HSyncDuration)
+            if (beamX < HSyncDuration)
             then
                 HSync <= '0'; -- Sync pulse
             else
@@ -92,13 +111,15 @@ begin
             
             -- VSync pulse before top porch
             -- VSync is active low
-            if (y < VSyncDuration) then
+            if (beamY < VSyncDuration) then
                 VSync <= '0';
             else
                 VSync <= '1';
 
-                if (x >= HSyncDuration+leftPorch and x < maxX-rightPorch) then
-                    if ( ((x mod 80) > 39) xor ((y mod 60) > 29) ) then
+                -- if beam is within visible rectangle
+                -- draw a test pattern to screen
+                if (beamX >= HSyncDuration+leftPorch and beamX < beamMaxX-rightPorch) then
+                    if ( ((visibleX mod 80) > 39) xor ((visibleY mod 60) > 29) ) then
                         Pixel <= '1';
                     else
                         -- Pixel value is zero while not in visible area
@@ -108,18 +129,22 @@ begin
 
             end if;
 
-            -- move the cursor
-            if (x = maxX) then
-                x := 0;
-                if (y = maxY) then
-                    y := 0;
+            -- move the (virtual) beam
+            if (beamX = beamMaxX) then
+                beamX <= 0;
+                if (beamY = beamMaxY) then
+                    beamY <= 0;
                 else
-                    y := y + 1;
+                    beamY <= beamY + 1;
                 end if;
             else
-                x := x + 1;
+                beamX <= beamX + 1;
             end if;
         end if;
     end process;
+    
+    HSyncDebug <= HSync;
+    VSyncDebug <= VSync;
+    PixelDebug <= Pixel;
     
 end vga;

@@ -1,9 +1,9 @@
 @N: MF249 |Running in 32-bit mode.
 @N: MF666 |Clock conversion enabled 
 @N: MT206 |Auto Constrain mode is enabled
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":101:27:101:34|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":101:49:101:56|Generating a type rem remainder 
-@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":54:4:54:11|SB_GB inserted on the net PixelClock.
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":120:27:120:41|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":120:56:120:70|Generating a type rem remainder 
+@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":68:4:68:11|SB_GB inserted on the net PixelClock.
 @N: BW103 |Synopsys Constraint File time units using default value of 1ns 
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

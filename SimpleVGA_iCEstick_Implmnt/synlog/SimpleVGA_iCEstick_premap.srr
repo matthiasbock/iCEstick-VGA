@@ -35,8 +35,8 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start                                       Requested     Requested     Clock                                   Clock                
 Clock                                       Frequency     Period        Type                                    Group                
 -------------------------------------------------------------------------------------------------------------------------------------
-PixelClock_PLL|PLLOUTCORE_derived_clock     212.9 MHz     4.697         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz                        45.4 MHz      22.020        inferred                                Autoconstr_clkgroup_0
+PixelClock_PLL|PLLOUTCORE_derived_clock     187.5 MHz     5.333         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz                        40.0 MHz      25.001        inferred                                Autoconstr_clkgroup_0
 System                                      1.0 MHz       1000.000      system                                  system_clkgroup      
 =====================================================================================================================================
 
@@ -48,6 +48,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 16:40:13 2015
+# Wed Jun 17 17:09:09 2015
 
 ###########################################################]

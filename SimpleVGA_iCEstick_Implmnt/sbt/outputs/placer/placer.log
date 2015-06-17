@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:08:49
 
-* File Generated:     Jun 17 2015 16:41:09
+* File Generated:     Jun 17 2015 17:09:36
 
 * Purpose:            
 
@@ -35,12 +35,12 @@ I2053: Starting placement of the design
 =============================================================
 
 Input Design Statistics
-    Number of LUTs      	:	119
+    Number of LUTs      	:	131
     Number of DFFs      	:	23
-    Number of Carrys    	:	72
+    Number of Carrys    	:	83
     Number of RAMs      	:	0
     Number of ROMs      	:	0
-    Number of IOs       	:	4
+    Number of IOs       	:	7
     Number of GBIOs     	:	0
     Number of GBs       	:	1
     Number of WarmBoot  	:	0
@@ -54,13 +54,13 @@ Design Legalization Statistics
     Number of feedthru LUTs inserted to legalize input of DFFs     	:	0
     Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
     Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
-    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	5
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	4
     Number of feedthru LUTs inserted to legalize global signals    	:	0
     Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
-    Total LUTs inserted                                            	:	5
+    Total LUTs inserted                                            	:	4
     Total CARRYs inserted                                          	:	0
 
 
@@ -76,22 +76,22 @@ Info-1404: Inferred PLL generated clock at VGAClock.PixelClock_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at VGAClock.PixelClock_inst/PLLOUTGLOBAL
 
 Design Statistics after Packing
-    Number of LUTs      	:	125
+    Number of LUTs      	:	136
     Number of DFFs      	:	23
-    Number of Carrys    	:	72
+    Number of Carrys    	:	83
 
 Device Utilization Summary after Packing
     Sequential LogicCells
-        LUT and DFF      	:	11
-        LUT, DFF and CARRY	:	12
+        LUT and DFF      	:	9
+        LUT, DFF and CARRY	:	14
     Combinational LogicCells
-        Only LUT         	:	55
-        CARRY Only       	:	13
-        LUT with CARRY   	:	47
-    LogicCells                  :	138/1280
-    PLBs                        :	23/160
+        Only LUT         	:	60
+        CARRY Only       	:	16
+        LUT with CARRY   	:	53
+    LogicCells                  :	152/1280
+    PLBs                        :	24/160
     BRAMs                       :	0/16
-    IOs and GBIOs               :	4/96
+    IOs and GBIOs               :	7/96
     PLLs                        :	1/1
 
 
@@ -101,28 +101,28 @@ Phase 4
 I2088: Phase 4, elapsed time : 0.2 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.3 (sec)
+I2088: Phase 5, elapsed time : 0.2 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 15.4 (sec)
+I2088: Phase 6, elapsed time : 18.5 (sec)
 
 Final Design Statistics
-    Number of LUTs      	:	125
+    Number of LUTs      	:	136
     Number of DFFs      	:	23
-    Number of Carrys    	:	72
+    Number of Carrys    	:	83
     Number of RAMs      	:	0
     Number of ROMs      	:	0
-    Number of IOs       	:	4
+    Number of IOs       	:	7
     Number of GBIOs     	:	0
     Number of GBs       	:	1
     Number of WarmBoot  	:	0
     Number of PLLs      	:	1
 
 Device Utilization Summary
-    LogicCells                  :	138/1280
-    PLBs                        :	23/160
+    LogicCells                  :	152/1280
+    PLBs                        :	28/160
     BRAMs                       :	0/16
-    IOs and GBIOs               :	4/96
+    IOs and GBIOs               :	7/96
     PLLs                        :	1/1
 
 
@@ -139,9 +139,9 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 3
-Clock: SimpleVGA|Clock12MHz | Frequency: N/A | Target: 34.97 MHz
-Clock: VGAClock.PixelClock_inst/PLLOUTCORE | Frequency: 43.32 MHz | Target: 163.90 MHz
-Clock: VGAClock.PixelClock_inst/PLLOUTGLOBAL | Frequency: N/A | Target: 163.90 MHz
+Clock: SimpleVGA|Clock12MHz | Frequency: N/A | Target: 34.14 MHz
+Clock: VGAClock.PixelClock_inst/PLLOUTCORE | Frequency: 40.60 MHz | Target: 160.04 MHz
+Clock: VGAClock.PixelClock_inst/PLLOUTGLOBAL | Frequency: N/A | Target: 160.04 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -149,5 +149,5 @@ Clock: VGAClock.PixelClock_inst/PLLOUTGLOBAL | Frequency: N/A | Target: 163.90 M
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 17.2 sec.
+I2076: Placer run-time: 20.2 sec.
 

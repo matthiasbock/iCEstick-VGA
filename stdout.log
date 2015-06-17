@@ -4,7 +4,7 @@ Running in Lattice mode
 Starting:    C:\Program Files\iCEcube2.2014.12\synpbase\bin\mbin\synbatch.exe
 Install:     C:\Program Files\iCEcube2.2014.12\synpbase
 Hostname:    MPNT925109O
-Date:        Wed Jun 17 16:40:10 2015
+Date:        Wed Jun 17 17:09:06 2015
 Version:     J-2014.09L
 
 Arguments:   -product synplify_pro  -batch SimpleVGA_iCEstick_syn.prj
@@ -27,7 +27,7 @@ Copied U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEsti
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:01s
+Run Time:0h:00m:02s
 
 Running: Multi-srs Generator on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
 Copied U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_comp.srs to U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_s.srs
@@ -44,7 +44,7 @@ Copied U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.fse t
 
 premap Completed
 Return Code: 0
-Run Time:0h:00m:00s
+Run Time:0h:00m:01s
 Complete: Compile on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
 
 Running: Map on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
@@ -54,7 +54,7 @@ Copied U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEsti
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:06s
+Run Time:0h:00m:05s
 Complete: Map on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
 Complete: Logic Synthesis on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
 

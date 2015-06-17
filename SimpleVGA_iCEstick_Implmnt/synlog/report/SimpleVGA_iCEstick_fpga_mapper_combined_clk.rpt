@@ -9,7 +9,7 @@
 ================================ Non-Gated/Non-Generated Clocks ================================
 Clock Tree ID     Driving Element              Drive Element Type     Fanout     Sample Instance
 ------------------------------------------------------------------------------------------------
-@K:CKID0001       VGAClock.PixelClock_inst     SB_PLL40_CORE          23         Pixel          
+@K:CKID0001       VGAClock.PixelClock_inst     SB_PLL40_CORE          23         beamY[0]       
 ================================================================================================
 
 

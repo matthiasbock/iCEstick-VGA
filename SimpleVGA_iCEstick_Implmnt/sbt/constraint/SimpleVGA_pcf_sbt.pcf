@@ -4,7 +4,7 @@
 
 # Version:            2014.12.27052
 
-# File Generated:     Jun 17 2015 16:19:54
+# File Generated:     Jun 17 2015 16:51:08
 
 # Family & Device:    iCE40HX1K
 
@@ -12,9 +12,12 @@
 
 # ##############################################################################
 
-###IOSet List 4
-set_io Clock12MHz 21 -io_std SB_LVCMOS
+###IOSet List 7
 set_io HSync 61 -io_std SB_LVCMOS
 set_io Pixel 62 -io_std SB_LVCMOS
 set_io VSync 60 -io_std SB_LVCMOS
+set_io Clock12MHz 21 -io_std SB_LVCMOS
+set_io HSyncDebug 113 -io_std SB_LVCMOS
+set_io PixelDebug 112 -io_std SB_LVCMOS
+set_io VSyncDebug 114 -io_std SB_LVCMOS
 

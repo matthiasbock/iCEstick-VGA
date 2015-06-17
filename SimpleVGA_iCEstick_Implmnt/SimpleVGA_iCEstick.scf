@@ -1,8 +1,8 @@
-# Written by Synplify Pro version maplat, Build 1061R. Synopsys Run ID: sid1434552014 
+# Written by Synplify Pro version maplat, Build 1061R. Synopsys Run ID: sid1434553749 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 28.601 -waveform {0.000 14.300} -name {SimpleVGA|Clock12MHz} [get_ports {Clock12MHz}] 
+create_clock -period 29.294 -waveform {0.000 14.647} -name {SimpleVGA|Clock12MHz} [get_ports {Clock12MHz}] 
 
 # Virtual Clocks 
 

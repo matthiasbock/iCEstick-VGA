@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:05:28
 
-* File Generated:     Jun 17 2015 16:41:31
+* File Generated:     Jun 17 2015 17:10:28
 
 * Purpose:            Router runtime info
 
@@ -20,25 +20,25 @@ I1202: Reading Architecture of device iCE40HX1K
 Info-1404: Inferred PLL generated clock at VGAClock.PixelClock_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at VGAClock.PixelClock_inst/PLLOUTGLOBAL
 I1209: Started routing
-I1223: Total Nets : 209 
-I1212: Iteration  1 :    37 unrouted : 0 seconds
-I1212: Iteration  2 :    20 unrouted : 0 seconds
-I1212: Iteration  3 :    12 unrouted : 0 seconds
-I1212: Iteration  4 :    10 unrouted : 0 seconds
-I1212: Iteration  5 :    10 unrouted : 0 seconds
-I1212: Iteration  6 :    10 unrouted : 0 seconds
-I1212: Iteration  7 :    10 unrouted : 0 seconds
-I1212: Iteration  8 :    10 unrouted : 0 seconds
-I1212: Iteration  9 :    10 unrouted : 0 seconds
-I1212: Iteration 10 :    10 unrouted : 0 seconds
-I1212: Iteration 11 :    10 unrouted : 0 seconds
-I1212: Iteration 12 :    10 unrouted : 0 seconds
-I1212: Iteration 13 :    10 unrouted : 0 seconds
-I1212: Iteration 14 :    10 unrouted : 0 seconds
-I1212: Iteration 15 :    10 unrouted : 0 seconds
-I1212: Iteration 16 :    10 unrouted : 0 seconds
-I1212: Iteration 17 :    10 unrouted : 1 seconds
-I1212: Iteration 18 :     8 unrouted : 0 seconds
+I1223: Total Nets : 231 
+I1212: Iteration  1 :    26 unrouted : 0 seconds
+I1212: Iteration  2 :     9 unrouted : 0 seconds
+I1212: Iteration  3 :     2 unrouted : 0 seconds
+I1212: Iteration  4 :     2 unrouted : 0 seconds
+I1212: Iteration  5 :     2 unrouted : 0 seconds
+I1212: Iteration  6 :     2 unrouted : 0 seconds
+I1212: Iteration  7 :     2 unrouted : 0 seconds
+I1212: Iteration  8 :     2 unrouted : 0 seconds
+I1212: Iteration  9 :     2 unrouted : 0 seconds
+I1212: Iteration 10 :     2 unrouted : 0 seconds
+I1212: Iteration 11 :     2 unrouted : 0 seconds
+I1212: Iteration 12 :     2 unrouted : 0 seconds
+I1212: Iteration 13 :     2 unrouted : 0 seconds
+I1212: Iteration 14 :     2 unrouted : 0 seconds
+I1212: Iteration 15 :     2 unrouted : 0 seconds
+I1212: Iteration 16 :     2 unrouted : 0 seconds
+I1212: Iteration 17 :     2 unrouted : 0 seconds
+I1212: Iteration 18 :     2 unrouted : 0 seconds
 I1212: Iteration 19 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing

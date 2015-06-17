@@ -8,8 +8,13 @@ Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated document
 
 @N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
 @N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
-Options changed - recompiling
+File U:\SimpleVGA_iCEstick\PixelClock.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":144:18:144:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":145:18:145:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":146:18:146:22|pixel is not readable.  This may cause a simulation mismatch.
 VHDL syntax check successful!
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
 @N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
 @N: CD630 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":4:7:4:20|Synthesizing work.pixelclock_pll.behavior 
 @W: CD280 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
@@ -29,12 +34,12 @@ Post processing for work.pixelclock_pll.behavior
 @W: CL167 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Input sdi of instance PixelClock_inst is floating
 @W: CL167 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Input sclk of instance PixelClock_inst is floating
 Post processing for work.simplevga.vga
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":64:8:64:9|Register bit Reset is always 1, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":78:8:78:9|Register bit Reset is always 1, optimizing ...
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 16:40:11 2015
+# Wed Jun 17 17:09:06 2015
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
@@ -45,7 +50,7 @@ Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 16:40:11 2015
+# Wed Jun 17 17:09:06 2015
 
 ###########################################################]
 @END
@@ -53,6 +58,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 16:40:11 2015
+# Wed Jun 17 17:09:06 2015
 
 ###########################################################]

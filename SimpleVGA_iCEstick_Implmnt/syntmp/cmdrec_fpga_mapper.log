@@ -1,14 +1,14 @@
 C:\Program Files\iCEcube2.2014.12\synpbase\bin\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt   -part iCE40HX1K  -package TQ144    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\report\SimpleVGA_iCEstick_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.edf   -autoconstraint  -freq 1.000   U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd  -sap  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap  -otap  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.tap  -omap  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.map  -devicelib  "C:\Program Files\iCEcube2.2014.12\synpbase\lib\generic\sb_ice40.v"  -sap  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap  -ologparam  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\syntmp\SimpleVGA_iCEstick.plg  -osyn  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.srm  -prjdir  U:\SimpleVGA_iCEstick\  -prjname  SimpleVGA_iCEstick_syn  -log  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_fpga_mapper.srr 
 rc:1 success:1
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.edf|o|1434552018|135445
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd|i|1434552013|6920
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap|o|1434552013|1777
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.edf|o|1434553753|155339
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd|i|1434553748|7231
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap|o|1434553748|1809
 U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.tap|o|0|0
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.map|o|1434552019|28
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.map|o|1434553754|28
 C:\Program Files\iCEcube2.2014.12\synpbase\lib\generic\sb_ice40.v|i|1427739828|222921
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap|o|1434552013|1777
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\syntmp\SimpleVGA_iCEstick.plg|o|1434552019|1687
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.srm|o|1434552018|30088
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_fpga_mapper.srr|o|1434552019|69370
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap|o|1434553748|1809
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\syntmp\SimpleVGA_iCEstick.plg|o|1434553754|1688
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.srm|o|1434553753|33010
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_fpga_mapper.srr|o|1434553754|89065
 C:\Program Files\iCEcube2.2014.12\synpbase\bin64\m_generic.exe|i|1427739821|26408960
 C:\Program Files\iCEcube2.2014.12\synpbase\bin\m_generic.exe|i|1427739803|16431616
