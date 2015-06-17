@@ -4,6 +4,7 @@
 
 add_file -vhdl -lib work "SimpleVGA.vhdl" 
 add_file -vhdl -lib work "PLL.vhd" 
+add_file -vhdl -lib work "LEDBoardFont.vhdl" 
 #implementation: "SimpleVGA_iCEstick_Implmnt"
 impl -add SimpleVGA_iCEstick_Implmnt -type fpga
 

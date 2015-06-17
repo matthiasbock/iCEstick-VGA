@@ -1,9 +1,15 @@
 @N: MF249 |Running in 32-bit mode.
 @N: MF666 |Clock conversion enabled 
 @N: MT206 |Auto Constrain mode is enabled
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":123:27:123:41|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":123:56:123:70|Generating a type rem remainder 
-@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":68:4:68:13|SB_GB inserted on the net PixelClock.
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":137:30:137:44|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":137:59:137:73|Generating a type rem remainder 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[6]" with 9 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[3]" with 10 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[4]" with 8 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[2]" with 14 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[5]" with 11 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[7]" with 9 loads replicated 1 times to improve timing 
+@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":77:4:77:13|SB_GB inserted on the net PixelClock.
 @N: BW103 |Synopsys Constraint File time units using default value of 1ns 
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

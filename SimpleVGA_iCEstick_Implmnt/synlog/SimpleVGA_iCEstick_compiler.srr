@@ -7,15 +7,17 @@ Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
 Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
 @N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
-@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Top entity is set to SimpleVGA.
 File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
 File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":147:18:147:22|hsync is not readable.  This may cause a simulation mismatch.
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":148:18:148:22|vsync is not readable.  This may cause a simulation mismatch.
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":149:18:149:22|pixel is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":161:18:161:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":162:18:162:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":163:18:163:22|pixel is not readable.  This may cause a simulation mismatch.
 VHDL syntax check successful!
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
 File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
-@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Synthesizing work.simplevga.vga 
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":4:7:4:9|Synthesizing work.pll.behavior 
 @W: CD280 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Synthesizing work.sb_pll40_core.syn_black_box 
@@ -34,23 +36,23 @@ Post processing for work.pll.behavior
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sdi of instance PLL_inst is floating
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sclk of instance PLL_inst is floating
 Post processing for work.simplevga.vga
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":78:8:78:9|Register bit Reset is always 1, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":87:8:87:9|Register bit Reset is always 1, optimizing ...
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 18:19:49 2015
+# Wed Jun 17 19:41:05 2015
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
 @N|Running in 32-bit mode
-@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
-@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Selected library: work cell: SimpleVGA view vga as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Selected library: work cell: SimpleVGA view vga as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 18:19:49 2015
+# Wed Jun 17 19:41:06 2015
 
 ###########################################################]
 @END
@@ -58,6 +60,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 18:19:49 2015
+# Wed Jun 17 19:41:06 2015
 
 ###########################################################]

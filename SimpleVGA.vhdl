@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 
+use LEDBoardFont.all;
+
 entity SimpleVGA is
     port(
         Clock12MHz: in std_logic;
@@ -63,6 +65,13 @@ is
     signal beamX: integer range 0 to beamMaxX := 0;
     signal beamY: integer range 0 to beamMaxY := 0;
     
+    -- Text output
+    constant Columns    : integer := 80;
+    constant Rows       : integer := 50;
+
+    --constant PixelsPerColumn : integer := resolutionX / Columns; -- 800 / 80 = 10
+    --constant PixelsPerRow    : integer := resolutionY / Rows;    -- 600 / 50 = 12
+    
 begin
 
     Clock50MHz: PLL
@@ -87,7 +96,7 @@ begin
             end if;
         end if;
     end process;
-
+    
     process(PixelClock)
         variable visibleX: integer range 0 to resolutionX := 0;
         variable visibleY: integer range 0 to resolutionY := 0;
@@ -120,7 +129,12 @@ begin
                 -- draw a test pattern to screen
                 if (beamY >= VSyncDuration+topPorch and beamY < beamMaxY-bottomPorch
                 and beamX >= HSyncDuration+leftPorch and beamX < beamMaxX-rightPorch) then
-                    if ( ((visibleX mod 80) > 39) xor ((visibleY mod 60) > 29) ) then
+                    -- first column, first row
+                    if (visibleX < 10 and visibleY < 12)
+                    then
+                        Pixel <= Font('L', visibleX, visibleY, 10, 12);
+                    -- Test pattern
+                    elsif ( ((visibleX mod 80) > 39) xor ((visibleY mod 60) > 29) ) then
                         Pixel <= '1';
                     else
                         -- Pixel value is zero while not in visible area

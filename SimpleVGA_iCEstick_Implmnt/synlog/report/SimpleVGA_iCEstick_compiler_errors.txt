@@ -1,5 +1,4 @@
-@E: CD541 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":26:8:26:17|Expecting ;
-@E: CD126 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":27:4:27:4|Expecting identifier
-@E: CD557 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":28:10:28:10|Expecting entity name
+@E: CD157 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":9:25:9:33|Expecting return type name
+@E: CD157 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":19:25:19:33|Expecting return type name
 @E|Parse errors encountered - exiting
 

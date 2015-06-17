@@ -5,6 +5,7 @@
 #project files
 add_file -vhdl -lib work "U:/SimpleVGA_iCEstick/SimpleVGA.vhdl"
 add_file -vhdl -lib work "U:/SimpleVGA_iCEstick/PLL.vhd"
+add_file -vhdl -lib work "U:/SimpleVGA_iCEstick/LEDBoardFont.vhdl"
 
 
 

@@ -1,4 +1,4 @@
-@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Synthesizing work.simplevga.vga 
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":4:7:4:9|Synthesizing work.pll.behavior 
 @W: CD280 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Synthesizing work.sb_pll40_core.syn_black_box 
@@ -17,4 +17,4 @@ Post processing for work.pll.behavior
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sdi of instance PLL_inst is floating
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sclk of instance PLL_inst is floating
 Post processing for work.simplevga.vga
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":78:8:78:9|Register bit Reset is always 1, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":87:8:87:9|Register bit Reset is always 1, optimizing ...

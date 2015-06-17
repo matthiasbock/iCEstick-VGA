@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>14</data>
+<data>20</data>
 <report_link name="more">
 <data>U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\report\SimpleVGA_iCEstick_fpga_mapper_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:05s</data>
 </info>
 <info name="Peak Memory">
-<data>80MB</data>
+<data>82MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1434557997</data>
+<data type="timestamp">1434562874</data>
 </info>
 </job_info>
 </job_run_status>

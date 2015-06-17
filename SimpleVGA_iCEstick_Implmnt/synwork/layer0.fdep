@@ -1,5 +1,5 @@
 #defaultlanguage:vhdl
-#OPTIONS:"|-layerid|0|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\bin\\c_vhdl.exe":1427739800
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\location.map":1427739839
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\std.vhd":1427739839
@@ -11,17 +11,21 @@
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\unsigned.vhd":1427739839
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\hyperents.vhd":1427739839
 #CUR:"U:\\SimpleVGA_iCEstick\\PLL.vhd":1434555967
-#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1434557982
+#CUR:"U:\\SimpleVGA_iCEstick\\LEDBoardFont.vhdl":1434562773
+#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1434562858
 0 "U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" vhdl
 1 "U:\SimpleVGA_iCEstick\PLL.vhd" vhdl
+2 "U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl" vhdl
 
 # Dependency Lists (Uses list)
-0 1 
+0 1 2 
 1 -1
+2 -1
 
 # Dependency Lists (Users Of)
 0 -1
 1 0 
+2 0 
 
 # Design Unit to File Association
 arch work simplevga vga 0
