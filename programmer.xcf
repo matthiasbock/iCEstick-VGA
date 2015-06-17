@@ -17,11 +17,12 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>U:/FPGAs/Lattice iCEstick/official example files/LED rotation/LED_Rotation_bitmap.bin</File>
-			<FileTime>07/29/13 14:16:24</FileTime>
+			<File>U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/sbt/outputs/bitmap/SimpleVGA_bitmap.bin</File>
+			<FileTime>06/17/15 16:22:23</FileTime>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<AccessMode>SPI Flash Programming</AccessMode>
 			</Option>
 			<FPGALoader>
@@ -45,6 +46,7 @@
 						<SVFVendor>JTAG STANDARD</SVFVendor>
 						<IOState>HighZ</IOState>
 						<IOVectorData>(6|~2 6H¥</IOVectorData>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 						<AccessMode>JTAG</AccessMode>
 					</Option>
 				</Device>
@@ -58,11 +60,11 @@
 					<IDCode>0x16</IDCode>
 					<Package>8-pin VDFPN8</Package>
 					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>U:/FPGAs/Lattice iCEstick/official example files/LED rotation/LED_Rotation_bitmap.bin</File>
+					<File>U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/sbt/outputs/bitmap/SimpleVGA_bitmap.bin</File>
 					<AddressBase>0x00000000</AddressBase>
 					<EndAddress>0x00010000</EndAddress>
 					<DeviceSize>32</DeviceSize>
-					<DataSize>32216</DataSize>
+					<DataSize>32300</DataSize>
 					<NumberOfDevices>1</NumberOfDevices>
 					<ReInitialize value="FALSE"/>
 				</Device>
@@ -79,6 +81,7 @@
 					</LocalChainList>
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 					</Option>
 				</Device>
 			</FPGADevice>
@@ -97,5 +100,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>Lattice FTUSB Interface Cable A Location 0000 Serial A</USBID>
 	</CableOptions>
 </ispXCF>

@@ -15,15 +15,15 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>SimpleVGA|Clock12MHz</data>
-<data>1.0 MHz</data>
-<data>90.5 MHz</data>
-<data>988.948</data>
+<data>PixelClock_PLL|PLLOUTCORE_derived_clock</data>
+<data>35.0 MHz</data>
+<data>29.7 MHz</data>
+<data>-5.047</data>
 </row>
 <row>
-<data>SimpleVGA|ClockVGA_derived_clock</data>
-<data>1.0 MHz</data>
-<data>51.5 MHz</data>
-<data>1961.176</data>
+<data>SimpleVGA|Clock12MHz</data>
+<data>35.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
 </row>
 </report_table>

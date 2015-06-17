@@ -29,48 +29,54 @@ is
     constant maxX : integer := 799;
     constant maxY : integer := 524;
 
-    constant HSyncDuration : integer := 96;
-    constant leftPorch     : integer := 48;
-    constant rightPorch    : integer := 16;
+    constant HSyncDuration  : integer := 96;
+    constant leftPorch      : integer := 48;
+    constant rightPorch     : integer := 16;
 
-    constant VSyncDuration : integer := 2;
-    constant topPorch      : integer := 33;
-    constant bottomPorch   : integer := 10;
+    constant VSyncDuration  : integer := 2;
+    constant topPorch       : integer := 33;
+    constant bottomPorch    : integer := 10;
 
-    signal Counter : integer range 0 to 11999 := 0;
-    signal ClockVGA : std_logic := '0';
+    signal PixelClock       : std_logic := 'Z';
+    signal Reset            : std_logic := 'Z';
+
+    component PixelClock_PLL
+        port(
+            REFERENCECLK      : in  std_logic;              -- Driven by core logic
+            PLLOUTCORE        : out std_logic;              -- PLL output to core logic
+            PLLOUTGLOBAL      : out std_logic;              -- PLL output to global network
+            RESET             : in  std_logic               -- Driven by core logic
+        );
+    end component;
     
-    signal Reset : std_logic := '1';
 begin
+
+    VGAClock: PixelClock_PLL
+    port map(
+              REFERENCECLK  => Clock12MHz,
+              PLLOUTCORE    => PixelClock,
+              PLLOUTGLOBAL  => open,
+              RESET         => Reset
+            );
 
     process(Clock12MHz, Reset)
     begin
-        if (Reset='1')
+        if (Clock12MHz'event and Clock12MHz='1')
         then
-            Counter <= 0;
-            ClockVGA <= '0';
-            Reset <= '0';
-        elsif (Clock12MHz'event and Clock12MHz='1')
-        then
-            if (Counter < 11999) then
-                Counter <= Counter + 1;
+            if (Reset = 'Z')
+            then
+                Reset <= '0';
             else
-                Counter <= 0;
-                if (ClockVGA = '0')
-                then
-                    ClockVGA <= '1';
-                else
-                    ClockVGA <= '0';
-                end if;
+                Reset <= '1';
             end if;
         end if;
     end process;
 
-    process(ClockVGA)
+    process(PixelClock)
         variable x: integer range 0 to maxX := 0;
         variable y: integer range 0 to maxY := 0;
     begin
-        if (ClockVGA'event and ClockVGA='1')
+        if (PixelClock'event and PixelClock='1')
         then
             -- default pixel value
             Pixel <= '0';

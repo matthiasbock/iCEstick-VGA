@@ -1,12 +1,12 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 17 16:18:58 2015
+# Timing Report written on Wed Jun 17 16:40:18 2015
 #
 
 
 Top view:               SimpleVGA
-Requested Frequency:    1.0 MHz
+Requested Frequency:    35.0 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -20,27 +20,27 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1997.478
+Worst slack in design: 2.523
 
-                                     Requested     Estimated     Requested     Estimated                  Clock                                   Clock                
-Starting Clock                       Frequency     Frequency     Period        Period        Slack        Type                                    Group                
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-SimpleVGA|Clock12MHz                 1.0 MHz       90.5 MHz      1000.000      11.052        988.948      inferred                                Autoconstr_clkgroup_0
-SimpleVGA|ClockVGA_derived_clock     1.0 MHz       51.5 MHz      1000.000      19.412        1961.176     derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-=======================================================================================================================================================================
+                                            Requested     Estimated     Requested     Estimated                 Clock                                   Clock                
+Starting Clock                              Frequency     Frequency     Period        Period        Slack       Type                                    Group                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PixelClock_PLL|PLLOUTCORE_derived_clock     35.0 MHz      29.7 MHz      28.601        33.648        -5.047      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz                        35.0 MHz      NA            28.601        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
+=============================================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 
 
 Clock Relationships
 *******************
 
-Clocks                                                              |    rise  to  rise       |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                          Ending                            |  constraint  slack      |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-SimpleVGA|Clock12MHz              SimpleVGA|Clock12MHz              |  0.000       2.614      |  No paths    -      |  No paths    -      |  No paths    -    
-SimpleVGA|ClockVGA_derived_clock  SimpleVGA|ClockVGA_derived_clock  |  0.000       -1997.478  |  No paths    -      |  No paths    -      |  No paths    -    
-==============================================================================================================================================================
+Clocks                                                                            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                 Ending                                   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PixelClock_PLL|PLLOUTCORE_derived_clock  PixelClock_PLL|PLLOUTCORE_derived_clock  |  0.000       2.523  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -54,7 +54,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: SimpleVGA|Clock12MHz
+Detailed Report for Clock: PixelClock_PLL|PLLOUTCORE_derived_clock
 ====================================
 
 
@@ -62,123 +62,41 @@ Detailed Report for Clock: SimpleVGA|Clock12MHz
 Starting Points with Worst Slack
 ********************************
 
-               Starting                                                    Arrival          
-Instance       Reference                Type        Pin     Net            Time        Slack
-               Clock                                                                        
---------------------------------------------------------------------------------------------
-Counter[0]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[0]     0.378       2.614
-Counter[1]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[1]     0.378       2.614
-Counter[2]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[2]     0.378       2.614
-Counter[3]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[3]     0.378       2.614
-Counter[4]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[4]     0.378       2.614
-Counter[5]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[5]     0.378       2.614
-Counter[6]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[6]     0.378       2.614
-Counter[7]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[7]     0.378       2.614
-Counter[8]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[8]     0.378       2.614
-Counter[9]     SimpleVGA|Clock12MHz     SB_DFFR     Q       Counter[9]     0.378       2.614
-============================================================================================
+             Starting                                                                Arrival          
+Instance     Reference                                   Type       Pin     Net      Time        Slack
+             Clock                                                                                    
+------------------------------------------------------------------------------------------------------
+x[0]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[0]     0.378       2.523
+y[0]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       y[0]     0.378       2.581
+x[1]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[1]     0.378       2.614
+x[2]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[2]     0.378       2.614
+x[3]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[3]     0.378       2.614
+x[4]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[4]     0.378       2.614
+x[5]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[5]     0.378       2.614
+x[6]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[6]     0.378       2.614
+x[7]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[7]     0.378       2.614
+x[8]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       x[8]     0.378       2.614
+======================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                Starting                                                        Required          
-Instance        Reference                Type        Pin     Net                Time         Slack
-                Clock                                                                             
---------------------------------------------------------------------------------------------------
-Counter[1]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[1]      0.074        2.614
-Counter[2]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[2]      0.074        2.614
-Counter[3]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[3]      0.074        2.614
-Counter[4]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[4]      0.074        2.614
-Counter[5]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[5]      0.074        2.614
-Counter[6]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[6]      0.074        2.614
-Counter[7]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[7]      0.074        2.614
-Counter[8]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[8]      0.074        2.614
-Counter[9]      SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[9]      0.074        2.614
-Counter[10]     SimpleVGA|Clock12MHz     SB_DFFR     D       Counter_lm[10]     0.074        2.614
-==================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-    Propagation time:                        2.688
-    + Clock delay at starting point:         0.000 (ideal)
-    - Requested Period:                      0.000
-    - Hold time:                             0.074
-    - Clock delay at ending point:           0.000 (ideal)
-    = Slack (non-critical) :                 2.614
-
-    Number of logic level(s):                2
-    Starting point:                          Counter[0] / Q
-    Ending point:                            Counter[1] / D
-    The start point is clocked by            SimpleVGA|Clock12MHz [rising] on pin C
-    The end   point is clocked by            SimpleVGA|Clock12MHz [rising] on pin C
-
-Instance / Net                    Pin      Pin               Arrival     No. of    
-Name                 Type         Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------
-Counter[0]           SB_DFFR      Q        Out     0.378     0.378       -         
-Counter[0]           Net          -        -       0.584     -           3         
-Counter_cry_c[0]     SB_CARRY     I0       In      -         0.962       -         
-Counter_cry_c[0]     SB_CARRY     CO       Out     0.180     1.142       -         
-Counter_cry[0]       Net          -        -       0.270     -           2         
-Counter_RNO[1]       SB_LUT4      I3       In      -         1.412       -         
-Counter_RNO[1]       SB_LUT4      O        Out     0.221     1.633       -         
-Counter_lm[1]        Net          -        -       1.055     -           1         
-Counter[1]           SB_DFFR      D        In      -         2.688       -         
-===================================================================================
-
-
-
-
-====================================
-Detailed Report for Clock: SimpleVGA|ClockVGA_derived_clock
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-             Starting                                                         Arrival              
-Instance     Reference                            Type       Pin     Net      Time        Slack    
-             Clock                                                                                 
----------------------------------------------------------------------------------------------------
-x[0]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[0]     0.378       -1997.478
-y[0]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       y[0]     0.378       -1997.419
-x[1]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[1]     0.378       -1997.386
-x[2]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[2]     0.378       -1997.386
-x[3]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       N_89     0.378       -1997.386
-x[4]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[4]     0.378       -1997.386
-x[5]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[5]     0.378       -1997.386
-x[6]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[6]     0.378       -1997.386
-x[7]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[7]     0.378       -1997.386
-x[8]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     Q       x[8]     0.378       -1997.386
-===================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-             Starting                                                             Required              
-Instance     Reference                            Type       Pin     Net          Time         Slack    
-             Clock                                                                                      
---------------------------------------------------------------------------------------------------------
-x[2]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_RNO[2]     2000.074     -1997.478
-y[2]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       y_11         2000.074     -1997.419
-x[3]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_RNO[3]     2000.074     -1997.386
-x[4]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_RNO[4]     2000.074     -1997.386
-x[5]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_0          2000.074     -1997.386
-x[6]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_RNO[6]     2000.074     -1997.386
-x[7]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_RNO[7]     2000.074     -1997.386
-x[8]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x_1          2000.074     -1997.386
-x[9]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       x            2000.074     -1997.386
-y[4]         SimpleVGA|ClockVGA_derived_clock     SB_DFF     D       y_4          2000.074     -1997.386
-========================================================================================================
+             Starting                                                                    Required          
+Instance     Reference                                   Type       Pin     Net          Time         Slack
+             Clock                                                                                         
+-----------------------------------------------------------------------------------------------------------
+x[2]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_RNO[2]     0.074        2.523
+y[2]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       y_11         0.074        2.581
+x[3]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_RNO[3]     0.074        2.614
+x[4]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_RNO[4]     0.074        2.614
+x[5]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_0          0.074        2.614
+x[6]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_RNO[6]     0.074        2.614
+x[7]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_RNO[7]     0.074        2.614
+x[8]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x_1          0.074        2.614
+x[9]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       x            0.074        2.614
+y[4]         PixelClock_PLL|PLLOUTCORE_derived_clock     SB_DFF     D       y_3          0.074        2.614
+===========================================================================================================
 
 
 
@@ -189,18 +107,16 @@ Worst Path Information
 Path information for path number 1: 
     Propagation time:                        2.596
     + Clock delay at starting point:         0.000 (ideal)
-    - Requested Period:                      2000.000
+    - Requested Period:                      0.000
     - Hold time:                             0.074
     - Clock delay at ending point:           0.000 (ideal)
-    = Slack (critical) :                     -1997.478
+    = Slack (critical) :                     2.523
 
     Number of logic level(s):                2
     Starting point:                          x[0] / Q
     Ending point:                            x[2] / D
-    The start point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    The end   point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    -Timing constraint applied as multi cycle path with factor 2 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-    -Timing constraint applied as hold multi cycle path with factor 1 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
+    The start point is clocked by            PixelClock_PLL|PLLOUTCORE_derived_clock [rising] on pin C
+    The end   point is clocked by            PixelClock_PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
 Instance / Net                  Pin      Pin               Arrival     No. of    
 Name               Type         Name     Dir     Delay     Time        Fan Out(s)
@@ -214,130 +130,6 @@ x_RNO[2]           SB_LUT4      I3       In      -         1.320       -
 x_RNO[2]           SB_LUT4      O        Out     0.221     1.541       -         
 x_RNO[2]           Net          -        -       1.055     -           1         
 x[2]               SB_DFF       D        In      -         2.596       -         
-=================================================================================
-
-
-Path information for path number 2: 
-    Propagation time:                        2.655
-    + Clock delay at starting point:         0.000 (ideal)
-    - Requested Period:                      2000.000
-    - Hold time:                             0.074
-    - Clock delay at ending point:           0.000 (ideal)
-    = Slack (non-critical) :                 -1997.419
-
-    Number of logic level(s):                2
-    Starting point:                          y[0] / Q
-    Ending point:                            y[2] / D
-    The start point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    The end   point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    -Timing constraint applied as multi cycle path with factor 2 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-    -Timing constraint applied as hold multi cycle path with factor 1 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-
-Instance / Net                  Pin      Pin               Arrival     No. of    
-Name               Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------
-y[0]               SB_DFF       Q        Out     0.378     0.378       -         
-y[0]               Net          -        -       0.584     -           4         
-un3_y_cry_1_c      SB_CARRY     CI       In      -         0.962       -         
-un3_y_cry_1_c      SB_CARRY     CO       Out     0.088     1.050       -         
-un3_y_cry_1        Net          -        -       0.270     -           2         
-y_RNO[2]           SB_LUT4      I1       In      -         1.320       -         
-y_RNO[2]           SB_LUT4      O        Out     0.280     1.600       -         
-y_11               Net          -        -       1.055     -           1         
-y[2]               SB_DFF       D        In      -         2.655       -         
-=================================================================================
-
-
-Path information for path number 3: 
-    Propagation time:                        2.688
-    + Clock delay at starting point:         0.000 (ideal)
-    - Requested Period:                      2000.000
-    - Hold time:                             0.074
-    - Clock delay at ending point:           0.000 (ideal)
-    = Slack (non-critical) :                 -1997.386
-
-    Number of logic level(s):                2
-    Starting point:                          x[1] / Q
-    Ending point:                            x[2] / D
-    The start point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    The end   point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    -Timing constraint applied as multi cycle path with factor 2 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-    -Timing constraint applied as hold multi cycle path with factor 1 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-
-Instance / Net                  Pin      Pin               Arrival     No. of    
-Name               Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------
-x[1]               SB_DFF       Q        Out     0.378     0.378       -         
-x[1]               Net          -        -       0.584     -           3         
-un16_x_cry_1_c     SB_CARRY     I0       In      -         0.962       -         
-un16_x_cry_1_c     SB_CARRY     CO       Out     0.180     1.142       -         
-un16_x_cry_1       Net          -        -       0.270     -           2         
-x_RNO[2]           SB_LUT4      I3       In      -         1.412       -         
-x_RNO[2]           SB_LUT4      O        Out     0.221     1.633       -         
-x_RNO[2]           Net          -        -       1.055     -           1         
-x[2]               SB_DFF       D        In      -         2.688       -         
-=================================================================================
-
-
-Path information for path number 4: 
-    Propagation time:                        2.688
-    + Clock delay at starting point:         0.000 (ideal)
-    - Requested Period:                      2000.000
-    - Hold time:                             0.074
-    - Clock delay at ending point:           0.000 (ideal)
-    = Slack (non-critical) :                 -1997.386
-
-    Number of logic level(s):                2
-    Starting point:                          x[2] / Q
-    Ending point:                            x[3] / D
-    The start point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    The end   point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    -Timing constraint applied as multi cycle path with factor 2 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-    -Timing constraint applied as hold multi cycle path with factor 1 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-
-Instance / Net                  Pin      Pin               Arrival     No. of    
-Name               Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------
-x[2]               SB_DFF       Q        Out     0.378     0.378       -         
-x[2]               Net          -        -       0.584     -           3         
-un16_x_cry_2_c     SB_CARRY     I0       In      -         0.962       -         
-un16_x_cry_2_c     SB_CARRY     CO       Out     0.180     1.142       -         
-un16_x_cry_2       Net          -        -       0.270     -           2         
-x_RNO[3]           SB_LUT4      I3       In      -         1.412       -         
-x_RNO[3]           SB_LUT4      O        Out     0.221     1.633       -         
-x_RNO[3]           Net          -        -       1.055     -           1         
-x[3]               SB_DFF       D        In      -         2.688       -         
-=================================================================================
-
-
-Path information for path number 5: 
-    Propagation time:                        2.688
-    + Clock delay at starting point:         0.000 (ideal)
-    - Requested Period:                      2000.000
-    - Hold time:                             0.074
-    - Clock delay at ending point:           0.000 (ideal)
-    = Slack (non-critical) :                 -1997.386
-
-    Number of logic level(s):                2
-    Starting point:                          x[3] / Q
-    Ending point:                            x[4] / D
-    The start point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    The end   point is clocked by            SimpleVGA|ClockVGA_derived_clock [rising] on pin C
-    -Timing constraint applied as multi cycle path with factor 2 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-    -Timing constraint applied as hold multi cycle path with factor 1 (from c:SimpleVGA|ClockVGA_derived_clock to c:SimpleVGA|ClockVGA_derived_clock)
-
-Instance / Net                  Pin      Pin               Arrival     No. of    
-Name               Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------
-x[3]               SB_DFF       Q        Out     0.378     0.378       -         
-N_89               Net          -        -       0.584     -           4         
-un16_x_cry_3_c     SB_CARRY     I0       In      -         0.962       -         
-un16_x_cry_3_c     SB_CARRY     CO       Out     0.180     1.142       -         
-un16_x_cry_3       Net          -        -       0.270     -           2         
-x_RNO[4]           SB_LUT4      I3       In      -         1.412       -         
-x_RNO[4]           SB_LUT4      O        Out     0.221     1.633       -         
-x_RNO[4]           Net          -        -       1.055     -           1         
-x[4]               SB_DFF       D        In      -         2.688       -         
 =================================================================================
 
 

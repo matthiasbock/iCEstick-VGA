@@ -1,11 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version J-2014.09L
 #--  Project file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\run_options.txt
-#--  Written on Wed Jun 17 16:18:48 2015
+#--  Written on Wed Jun 17 16:40:10 2015
 
 
 #project files
 add_file -vhdl -lib work "SimpleVGA.vhdl"
+add_file -vhdl -lib work "PixelClock.vhd"
 
 
 

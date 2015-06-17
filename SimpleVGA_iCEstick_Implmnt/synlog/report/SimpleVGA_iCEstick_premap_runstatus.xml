@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>1</data>
+<data>0</data>
 <report_link name="more">
 <data>U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\report\SimpleVGA_iCEstick_premap_warnings.txt</data>
 </report_link>
@@ -34,13 +34,13 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:00s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:01s</data>
+<data>0h:00m:00s</data>
 </info>
 <info name="Peak Memory">
 <data>78MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1434550732</data>
+<data type="timestamp">1434552013</data>
 </info>
 </job_info>
 </job_run_status>

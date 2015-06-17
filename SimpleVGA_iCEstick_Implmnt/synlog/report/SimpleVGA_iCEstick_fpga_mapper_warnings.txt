@@ -1,3 +1,1 @@
-@W: BN137 :|Found combinational loop during mapping at net Reset
-@W: BN137 :|Found combinational loop during mapping at net G_167
-@W: MT420 |Found inferred clock SimpleVGA|Clock12MHz with period 1000.00ns. Please declare a user-defined clock on object "p:Clock12MHz"
+@W: MT420 |Found inferred clock SimpleVGA|Clock12MHz with period 28.60ns. Please declare a user-defined clock on object "p:Clock12MHz"

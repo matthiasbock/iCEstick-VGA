@@ -9,16 +9,16 @@ Printing clock  summary report in "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Impl
 @N: MF249 |Running in 32-bit mode.
 @N: MF666 |Clock conversion enabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 58MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 60MB)
 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
@@ -32,23 +32,22 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @S |Clock Summary
 ****************
 
-Start                                Requested     Requested     Clock                                   Clock                
-Clock                                Frequency     Period        Type                                    Group                
-------------------------------------------------------------------------------------------------------------------------------
-SimpleVGA|Clock12MHz                 1.0 MHz       1000.000      inferred                                Autoconstr_clkgroup_0
-SimpleVGA|ClockVGA_derived_clock     1.0 MHz       1000.000      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-System                               1.0 MHz       1000.000      system                                  system_clkgroup      
-==============================================================================================================================
+Start                                       Requested     Requested     Clock                                   Clock                
+Clock                                       Frequency     Period        Type                                    Group                
+-------------------------------------------------------------------------------------------------------------------------------------
+PixelClock_PLL|PLLOUTCORE_derived_clock     212.9 MHz     4.697         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz                        45.4 MHz      22.020        inferred                                Autoconstr_clkgroup_0
+System                                      1.0 MHz       1000.000      system                                  system_clkgroup      
+=====================================================================================================================================
 
-@W: MT529 :"u:\simplevga_icestick\simplevga.vhdl":48:8:48:9|Found inferred clock SimpleVGA|Clock12MHz which controls 15 sequential elements including Counter[13:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 16:18:52 2015
+# Wed Jun 17 16:40:13 2015
 
 ###########################################################]

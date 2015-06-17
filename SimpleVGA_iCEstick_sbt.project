@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2014.12.27052 - Bui
 ProjectName=SimpleVGA_iCEstick
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=SimpleVGA.vhdl=work
+ProjectVFiles=SimpleVGA.vhdl=work,PixelClock.vhd
 ProjectCFiles=
 CurImplementation=SimpleVGA_iCEstick_Implmnt
 Implementations=SimpleVGA_iCEstick_Implmnt
@@ -79,8 +79,8 @@ BitmapOscillatorFR=low
 BitmapEnableWarmBoot=yes
 BitmapDisableHeader=no
 BitmapSetSecurity=no
-BitmapSetNoUsedIONoPullup=no
+BitmapSetNoUsedIONoPullup=yes
 FloorPlannerShowFanInNets=yes
 FloorPlannerShowFanOutNets=yes
-HookTo3rdPartyTextEditor=
+HookTo3rdPartyTextEditor=no
 

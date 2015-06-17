@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:05:28
 
-* File Generated:     Jun 17 2015 16:21:46
+* File Generated:     Jun 17 2015 16:41:31
 
 * Purpose:            Router runtime info
 
@@ -17,14 +17,29 @@
 Executing : C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\outputs\packer\SimpleVGA_pk.sdc --outdir U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\outputs\router --sdf_file U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\simulation_netlist\SimpleVGA_sbt.sdf --pin_permutation 
 I1203: Reading Design SimpleVGA
 I1202: Reading Architecture of device iCE40HX1K
-SDC-Info-1101: Duty cycle not specified for clock. Assuming 50 percent dutycycle.
-Warning-1035: Removing timing arc from pin "Reset_latch_LC_1_8_0/in3" to pin "Reset_latch_LC_1_8_0/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "Reset_latch_LC_1_8_0/in1" to pin "Reset_latch_LC_1_8_0/lcout" to break the combinatorial loop
+Info-1404: Inferred PLL generated clock at VGAClock.PixelClock_inst/PLLOUTCORE
+Info-1404: Inferred PLL generated clock at VGAClock.PixelClock_inst/PLLOUTGLOBAL
 I1209: Started routing
-I1223: Total Nets : 261 
-I1212: Iteration  1 :    50 unrouted : 0 seconds
-I1212: Iteration  2 :     4 unrouted : 0 seconds
-I1212: Iteration  3 :     0 unrouted : 0 seconds
+I1223: Total Nets : 209 
+I1212: Iteration  1 :    37 unrouted : 0 seconds
+I1212: Iteration  2 :    20 unrouted : 0 seconds
+I1212: Iteration  3 :    12 unrouted : 0 seconds
+I1212: Iteration  4 :    10 unrouted : 0 seconds
+I1212: Iteration  5 :    10 unrouted : 0 seconds
+I1212: Iteration  6 :    10 unrouted : 0 seconds
+I1212: Iteration  7 :    10 unrouted : 0 seconds
+I1212: Iteration  8 :    10 unrouted : 0 seconds
+I1212: Iteration  9 :    10 unrouted : 0 seconds
+I1212: Iteration 10 :    10 unrouted : 0 seconds
+I1212: Iteration 11 :    10 unrouted : 0 seconds
+I1212: Iteration 12 :    10 unrouted : 0 seconds
+I1212: Iteration 13 :    10 unrouted : 0 seconds
+I1212: Iteration 14 :    10 unrouted : 0 seconds
+I1212: Iteration 15 :    10 unrouted : 0 seconds
+I1212: Iteration 16 :    10 unrouted : 0 seconds
+I1212: Iteration 17 :    10 unrouted : 1 seconds
+I1212: Iteration 18 :     8 unrouted : 0 seconds
+I1212: Iteration 19 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design SimpleVGA

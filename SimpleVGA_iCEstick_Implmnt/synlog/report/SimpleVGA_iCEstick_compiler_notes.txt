@@ -3,6 +3,8 @@
 @N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
 @N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
 @N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@N: CD630 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":4:7:4:20|Synthesizing work.pixelclock_pll.behavior 
+@N: CD630 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":14:10:14:22|Synthesizing work.sb_pll40_core.syn_black_box 
 @N|Running in 32-bit mode
 @N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
 @N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level

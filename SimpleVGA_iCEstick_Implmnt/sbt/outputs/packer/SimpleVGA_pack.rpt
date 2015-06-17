@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 17 2015 16:21:46
+* File Generated:     Jun 17 2015 16:41:31
 
 * Purpose:            General info of design implementation
 
@@ -27,22 +27,22 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  38
-    LUTs:                 154
+    FFs:                  23
+    LUTs:                 125
     RAMs:                 0
     IOBs:                 4
-    GBs:                  2
-    PLLs:                 0
+    GBs:                  1
+    PLLs:                 1
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 170/1280
-        Combinational Logic Cells: 132      out of   1280      10.3125%
-        Sequential Logic Cells:    38       out of   1280      2.96875%
-        Logic Tiles:               29       out of   160       18.125%
+    Total Logic Cells: 138/1280
+        Combinational Logic Cells: 115      out of   1280      8.98438%
+        Sequential Logic Cells:    23       out of   1280      1.79688%
+        Logic Tiles:               23       out of   160       14.375%
     Registers: 
-        Logic Registers:           38       out of   1280      2.96875%
+        Logic Registers:           23       out of   1280      1.79688%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
@@ -50,8 +50,8 @@ Logic Resource Utilization:
         Input Pins:                1        out of   96        1.04167%
         Output Pins:               3        out of   96        3.125%
         InOut Pins:                0        out of   96        0%
-    Global Buffers:                2        out of   8         25%
-    PLLs:                          0        out of   1         0%
+    Global Buffers:                1        out of   8         12.5%
+    PLLs:                          1        out of   1         100%
 
 IO Bank Utilization:
 --------------------
@@ -76,7 +76,6 @@ Detailed I/O Info:
 
 Detailed Global Buffer Info:
 ----------------------------
-    Buffer Number  IO Bank  Driven By  Fanout  Signal Name     
-    -------------  -------  ---------  ------  -----------     
-    1              3        IO         15      Clock12MHz_c_g  
-    3              3                   23      ClockVGA_g      
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name   
+    -------------  -------  ---------  ------  -----------   
+    3              3                   23      PixelClock_g  

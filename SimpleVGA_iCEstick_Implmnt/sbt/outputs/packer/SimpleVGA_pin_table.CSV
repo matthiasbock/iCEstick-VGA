@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 17 2015 16:21:45
+* File Generated:     Jun 17 2015 16:41:30
 
 * Purpose:            Detailed IO and package pin info
 
@@ -35,7 +35,7 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 14, GND, not used, , , , , , UnknownBank
 19, PIO, not used, , , , , , leftBank
 20, PIO_GBIN, not used, , , , , , leftBank
-21, PIO_GBIN, Clock12MHz, Input, glb Buff, SB_LVCMOS, No Pull Up, Simple Input, leftBank
+21, PIO_GBIN, Clock12MHz, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
 22, PIO, not used, , , , , , leftBank
 23, PIO, not used, , , , , , leftBank
 24, PIO, not used, , , , , , leftBank
