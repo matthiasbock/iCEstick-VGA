@@ -32,13 +32,13 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @S |Clock Summary
 ****************
 
-Start                                       Requested     Requested     Clock                                   Clock                
-Clock                                       Frequency     Period        Type                                    Group                
--------------------------------------------------------------------------------------------------------------------------------------
-PixelClock_PLL|PLLOUTCORE_derived_clock     187.5 MHz     5.333         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz                        40.0 MHz      25.001        inferred                                Autoconstr_clkgroup_0
-System                                      1.0 MHz       1000.000      system                                  system_clkgroup      
-=====================================================================================================================================
+Start                            Requested     Requested     Clock                                   Clock                
+Clock                            Frequency     Period        Type                                    Group                
+--------------------------------------------------------------------------------------------------------------------------
+PLL|PLLOUTCORE_derived_clock     185.0 MHz     5.405         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             44.2 MHz      22.633        inferred                                Autoconstr_clkgroup_0
+System                           1.0 MHz       1000.000      system                                  system_clkgroup      
+==========================================================================================================================
 
 
 Finished Pre Mapping Phase.
@@ -48,6 +48,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 17 17:09:09 2015
+# Wed Jun 17 17:50:39 2015
 
 ###########################################################]

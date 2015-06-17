@@ -2,15 +2,15 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 23 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 24 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-================================ Non-Gated/Non-Generated Clocks ================================
-Clock Tree ID     Driving Element              Drive Element Type     Fanout     Sample Instance
-------------------------------------------------------------------------------------------------
-@K:CKID0001       VGAClock.PixelClock_inst     SB_PLL40_CORE          23         beamY[0]       
-================================================================================================
+============================= Non-Gated/Non-Generated Clocks ==============================
+Clock Tree ID     Driving Element         Drive Element Type     Fanout     Sample Instance
+-------------------------------------------------------------------------------------------
+@K:CKID0001       Clock50MHz.PLL_inst     SB_PLL40_CORE          24         beamY[0]       
+===========================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

@@ -1,4 +1,4 @@
-PixelClock_inst: PixelClock
+PLL_inst: PLL
 port map(
           REFERENCECLK => ,
           PLLOUTCORE => ,

@@ -1,18 +1,18 @@
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":144:18:144:22|hsync is not readable.  This may cause a simulation mismatch.
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":145:18:145:22|vsync is not readable.  This may cause a simulation mismatch.
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":146:18:146:22|pixel is not readable.  This may cause a simulation mismatch.
-@W: CD280 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
-@W: CL167 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Input extfeedback of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 0 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 1 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 2 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 3 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 4 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 5 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 6 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL245 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Bit 7 of input dynamicdelay of instance PixelClock_inst is floating
-@W: CL167 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Input latchinputvalue of instance PixelClock_inst is floating
-@W: CL167 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Input sdi of instance PixelClock_inst is floating
-@W: CL167 :"U:\SimpleVGA_iCEstick\PixelClock.vhd":55:0:55:14|Input sclk of instance PixelClock_inst is floating
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":147:18:147:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":148:18:148:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":149:18:149:22|pixel is not readable.  This may cause a simulation mismatch.
+@W: CD280 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input extfeedback of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 0 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 1 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 2 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 3 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 4 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 5 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 6 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 7 of input dynamicdelay of instance PLL_inst is floating
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input latchinputvalue of instance PLL_inst is floating
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sdi of instance PLL_inst is floating
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sclk of instance PLL_inst is floating
 @W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":78:8:78:9|Register bit Reset is always 1, optimizing ...
 

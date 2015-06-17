@@ -9,18 +9,18 @@ Part:			ICE40HX1KTQ144 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     23                 100 %                
+FLOPS     24                 100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block SimpleVGA:	23 (9.16 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SimpleVGA:	24 (8.89 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       131                100 %                
-CARRYS     83                 100 %                
+LUTS       142                100 %                
+CARRYS     90                 100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block SimpleVGA:	214 (85.26 % Utilization)
+Total COMBINATIONAL LOGIC in the block SimpleVGA:	232 (85.93 % Utilization)
 
 
 IO PADS
@@ -28,19 +28,19 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 PADS     8                  100 %                
 =================================================
-Total IO PADS in the block SimpleVGA:	8 (3.19 % Utilization)
+Total IO PADS in the block SimpleVGA:	8 (2.96 % Utilization)
 
---------------------------------------------------------------------
-########   Utilization report for  cell:   PixelClock_PLL   ########
-Instance path:   SimpleVGA.PixelClock_PLL                           
-====================================================================
+---------------------------------------------------------
+########   Utilization report for  cell:   PLL   ########
+Instance path:   SimpleVGA.PLL                           
+=========================================================
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
 PADS     1                  12.5 %               
 =================================================
-Total IO PADS in the block SimpleVGA.PixelClock_PLL:	1 (0.40 % Utilization)
+Total IO PADS in the block SimpleVGA.PLL:	1 (0.37 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

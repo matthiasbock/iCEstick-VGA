@@ -3,7 +3,7 @@
 #project files
 
 add_file -vhdl -lib work "SimpleVGA.vhdl" 
-add_file -vhdl -lib work "PixelClock.vhd" 
+add_file -vhdl -lib work "PLL.vhd" 
 #implementation: "SimpleVGA_iCEstick_Implmnt"
 impl -add SimpleVGA_iCEstick_Implmnt -type fpga
 

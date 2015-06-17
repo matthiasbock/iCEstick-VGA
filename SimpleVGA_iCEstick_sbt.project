@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2014.12.27052 - Bui
 ProjectName=SimpleVGA_iCEstick
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=SimpleVGA.vhdl=work,PixelClock.vhd
+ProjectVFiles=SimpleVGA.vhdl=work,PLL.vhd
 ProjectCFiles=
 CurImplementation=SimpleVGA_iCEstick_Implmnt
 Implementations=SimpleVGA_iCEstick_Implmnt

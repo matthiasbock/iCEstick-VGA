@@ -34,21 +34,21 @@ end entity;
 
 architecture vga of SimpleVGA
 is
-    constant resolutionX : integer := 799;
-    constant resolutionY : integer := 599;
+    constant resolutionX    : integer := 800;
+    constant resolutionY    : integer := 600;
 
-    constant HSyncDuration  : integer := 96;
-    constant leftPorch      : integer := 48;
-    constant rightPorch     : integer := 16;
+    constant HSyncDuration  : integer := 120;
+    constant leftPorch      : integer := 56;
+    constant rightPorch     : integer := 64;
 
-    constant VSyncDuration  : integer := 2;
-    constant topPorch       : integer := 33;
-    constant bottomPorch    : integer := 10;
+    constant VSyncDuration  : integer := 6;
+    constant topPorch       : integer := 37;
+    constant bottomPorch    : integer := 23;
 
     signal PixelClock       : std_logic := 'Z';
     signal Reset            : std_logic := 'Z';
 
-    component PixelClock_PLL
+    component PLL
         port(
             REFERENCECLK      : in  std_logic;              -- Driven by core logic
             PLLOUTCORE        : out std_logic;              -- PLL output to core logic
@@ -65,7 +65,7 @@ is
     
 begin
 
-    VGAClock: PixelClock_PLL
+    Clock50MHz: PLL
     port map(
               REFERENCECLK  => Clock12MHz,
               PLLOUTCORE    => PixelClock,
@@ -109,7 +109,7 @@ begin
                 HSync <= '1'; -- Sync pulse off
             end if;
             
-            -- VSync pulse before top porch
+            -- VSync pulse lines before top porch lines
             -- VSync is active low
             if (beamY < VSyncDuration) then
                 VSync <= '0';
@@ -118,7 +118,8 @@ begin
 
                 -- if beam is within visible rectangle
                 -- draw a test pattern to screen
-                if (beamX >= HSyncDuration+leftPorch and beamX < beamMaxX-rightPorch) then
+                if (beamY >= VSyncDuration+topPorch and beamY < beamMaxY-bottomPorch
+                and beamX >= HSyncDuration+leftPorch and beamX < beamMaxX-rightPorch) then
                     if ( ((visibleX mod 80) > 39) xor ((visibleY mod 60) > 29) ) then
                         Pixel <= '1';
                     else

@@ -1,1 +1,1 @@
-@W: MT420 |Found inferred clock SimpleVGA|Clock12MHz with period 29.29ns. Please declare a user-defined clock on object "p:Clock12MHz"
+@W: MT420 |Found inferred clock SimpleVGA|Clock12MHz with period 31.16ns. Please declare a user-defined clock on object "p:Clock12MHz"

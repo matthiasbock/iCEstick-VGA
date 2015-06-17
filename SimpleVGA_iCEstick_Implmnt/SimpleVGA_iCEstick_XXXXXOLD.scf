@@ -1,18 +1,16 @@
-# Written by Synplify Pro version maplat, Build 1061R. Synopsys Run ID: sid1434550733 
+# Written by Synplify Pro version maplat, Build 1061R. Synopsys Run ID: sid1434555521 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 1000.000 -waveform {0.000 500.000} -name {SimpleVGA|Clock12MHz} [get_ports {Clock12MHz}] 
+create_clock -period 29.335 -waveform {0.000 14.668} -name {SimpleVGA|Clock12MHz} [get_ports {Clock12MHz}] 
 
 # Virtual Clocks 
 
 # Generated Clocks 
-create_generated_clock -name {SimpleVGA|ClockVGA_derived_clock} -add -divide_by 1 -master_clock [get_clocks {SimpleVGA|Clock12MHz}] -source [get_pins {ClockVGA/C}] [get_pins {ClockVGA/Q}] 
 
 # Paths Between Clocks 
 
 # Multicycle Constraints 
-set_multicycle_path 2 -setup -from [get_clocks {SimpleVGA|ClockVGA_derived_clock}] -to [get_clocks {SimpleVGA|ClockVGA_derived_clock}] 
 
 # Point-to-point Delay Constraints 
 

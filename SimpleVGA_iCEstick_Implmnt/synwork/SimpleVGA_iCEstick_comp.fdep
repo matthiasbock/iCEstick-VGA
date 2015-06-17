@@ -9,10 +9,10 @@
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\arith.vhd":1427739839
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\unsigned.vhd":1427739839
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\hyperents.vhd":1427739839
-#CUR:"U:\\SimpleVGA_iCEstick\\PixelClock.vhd":1434552007
-#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1434553740
+#CUR:"U:\\SimpleVGA_iCEstick\\PLL.vhd":1434555967
+#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1434556198
 0			"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" vhdl
-1			"U:\SimpleVGA_iCEstick\PixelClock.vhd" vhdl
+1			"U:\SimpleVGA_iCEstick\PLL.vhd" vhdl
 #Dependency Lists(Uses List)
 0 1
 1 -1
@@ -20,7 +20,7 @@
 0 -1
 1 0
 #Design Unit to File Association
-module work pixelclock_pll 1
-arch work pixelclock_pll behavior 1
+module work pll 1
+arch work pll behavior 1
 module work simplevga 0
 arch work simplevga vga 0

@@ -1,2 +1,2 @@
 
-: 0 work.SimpleVGA "U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" 5 7 work.PixelClock_PLL 
+: 0 work.SimpleVGA "U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" 5 7 work.PLL 

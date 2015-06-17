@@ -1,16 +1,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity PixelClock_PLL is
+entity PLL is
 port(
       REFERENCECLK: in std_logic;
       RESET: in std_logic;
       PLLOUTCORE: out std_logic;
       PLLOUTGLOBAL: out std_logic
     );
-end entity PixelClock_PLL;
+end entity PLL;
 
-architecture BEHAVIOR of PixelClock_PLL is
+architecture BEHAVIOR of PLL is
 component SB_PLL40_CORE
   generic (
        		--- Feedback
@@ -52,11 +52,11 @@ component SB_PLL40_CORE
        );
 end component;
 begin
-PixelClock_inst: SB_PLL40_CORE
--- Fin=12, Fout=56.25
+PLL_inst: SB_PLL40_CORE
+-- Fin=12, Fout=50
 generic map(
              DIVR => "0000",
-             DIVF => "1001010",
+             DIVF => "1000010",
              DIVQ => "100",
              FILTER_RANGE => "001",
              FEEDBACK_PATH => "SIMPLE",
@@ -87,10 +87,10 @@ end BEHAVIOR;
 
 --uiPll40ModuleData
 --PllType: SB_PLL40_CORE
---PllModuleName: PixelClock
---PllInstanceName: PixelClock_inst
+--PllModuleName: PLL
+--PllInstanceName: PLL_inst
 --DIVR: 0000
---DIVF: 1001010
+--DIVF: 1000010
 --DIVQ: 100
 --FILTER_RANGE: 001
 --FEEDBACK_PATH: SIMPLE
@@ -112,4 +112,4 @@ end BEHAVIOR;
 --LATCHINPUTVALUE: false
 --LOCK: false
 --InputFrequency: 12
---OutputFrequency: 56.25
+--OutputFrequency: 50

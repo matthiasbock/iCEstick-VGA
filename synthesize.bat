@@ -1,0 +1,22 @@
+
+# Synthesize
+"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+
+# Import P&R Input Files
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\edifparser.exe" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.edf " "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist" "-pTQ144" "-yU:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/sbt/constraint/SimpleVGA_pcf_sbt.pcf " -c --devicename iCE40HX1K
+
+# Place
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer" --device-file "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" --package TQ144 --deviceMarketName iCE40HX1K --sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc"
+
+# implicit: Packer
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\packer.exe" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --package TQ144 --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\packer" --DRC_only  --translator "C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc" --dst_sdc_file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\packer\SimpleVGA_pk.sdc" --devicename iCE40HX1K
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\packer.exe" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --package TQ144 --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\packer" --translator "C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\placer\SimpleVGA_pl.sdc" --dst_sdc_file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\packer\SimpleVGA_pk.sdc" --devicename iCE40HX1K
+
+# Route
+"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\sbrouter.exe" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib" "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\outputs\packer\SimpleVGA_pk.sdc" --outdir "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\outputs\router" --sdf_file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\simulation_netlist\SimpleVGA_sbt.sdf" --pin_permutation
+
+# implicit: Timing Analysis
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --lib-file "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ice40HX1K.lib" --sdc-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\netlister\SimpleVGA_sbt.sdc" --sdf-file "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\simulation_netlist\SimpleVGA_sbt.sdf" --report-file "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\sbt\outputs\timer\SimpleVGA_timing.rpt" --device-file "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" --timing-summary
+
+# Generate Bitmap
+"C:/Program Files/iCEcube2.2014.12/sbt_backend/bin/win32/opt\bitmap.exe" "C:\Program Files\iCEcube2.2014.12\sbt_backend\devices\ICE40P01.dev" --design "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\netlist\oadb-SimpleVGA" --device_name iCE40HX1K --package TQ144 --outdir "U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on --set_unused_io_nopullup
