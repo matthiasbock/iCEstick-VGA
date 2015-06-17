@@ -38,12 +38,12 @@ is
     constant resolutionY    : integer := 600;
 
     constant HSyncDuration  : integer := 120;
-    constant leftPorch      : integer := 56;
-    constant rightPorch     : integer := 64;
+    constant leftPorch      : integer := 63;
+    constant rightPorch     : integer := 57;
 
     constant VSyncDuration  : integer := 6;
-    constant topPorch       : integer := 37;
-    constant bottomPorch    : integer := 23;
+    constant topPorch       : integer := 22;
+    constant bottomPorch    : integer := 38;
 
     signal PixelClock       : std_logic := 'Z';
     signal Reset            : std_logic := 'Z';

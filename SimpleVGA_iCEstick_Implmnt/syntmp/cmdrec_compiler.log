@@ -1,8 +1,8 @@
 C:\Program Files\iCEcube2.2014.12\synpbase\bin\c_hdl.exe  -osyn  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_comp.srs  -hdllog  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_compiler.srr  -encrypt  -mp  1  -vhdl  -prodtype  synplify_pro  -primux -fixsmult -infer_seqShift -ice -sdff_counter -nram -divnmod -nostructver  -encrypt  -pro  -dmgen  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work U:\SimpleVGA_iCEstick\SimpleVGA.vhdl -lib work U:\SimpleVGA_iCEstick\PLL.vhd 
 rc:0 success:1
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_comp.srs|o|1434556237|6669
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_compiler.srr|o|1434556237|4857
-U:\SimpleVGA_iCEstick\SimpleVGA.vhdl|i|1434556198|4785
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_comp.srs|o|1434557989|6723
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_compiler.srr|o|1434557989|4785
+U:\SimpleVGA_iCEstick\SimpleVGA.vhdl|i|1434557982|4797
 U:\SimpleVGA_iCEstick\PLL.vhd|i|1434555967|3824
 C:\Program Files\iCEcube2.2014.12\synpbase\bin64\c_hdl.exe|i|1427739811|4251648
 C:\Program Files\iCEcube2.2014.12\synpbase\bin\c_hdl.exe|i|1427739800|1018368

@@ -1,12 +1,12 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 17 17:50:45 2015
+# Timing Report written on Wed Jun 17 18:19:57 2015
 #
 
 
 Top view:               SimpleVGA
-Requested Frequency:    32.1 MHz
+Requested Frequency:    34.4 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -25,8 +25,8 @@ Worst slack in design: 2.523
                                  Requested     Estimated     Requested     Estimated                 Clock                                   Clock                
 Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type                                    Group                
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock     32.1 MHz      27.3 MHz      31.165        36.664        -5.500      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz             32.1 MHz      NA            31.165        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
+PLL|PLLOUTCORE_derived_clock     34.4 MHz      29.2 MHz      29.097        34.232        -5.135      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             34.4 MHz      NA            29.097        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -70,7 +70,7 @@ beamX[0]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[0]     0
 beamY[0]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY[0]     0.378       2.523
 beamX[1]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[1]     0.378       2.614
 beamX[2]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[2]     0.378       2.614
-beamX[3]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       N_97         0.378       2.614
+beamX[3]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[3]     0.378       2.614
 beamX[4]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[4]     0.378       2.614
 beamX[5]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[5]     0.378       2.614
 beamX[6]     PLL|PLLOUTCORE_derived_clock     SB_DFF      Q       beamX[6]     0.378       2.614
@@ -122,7 +122,7 @@ Instance / Net                     Pin      Pin               Arrival     No. of
 Name                  Type         Name     Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------
 beamX[0]              SB_DFF       Q        Out     0.378     0.378       -         
-beamX[0]              Net          -        -       0.584     -           4         
+beamX[0]              Net          -        -       0.584     -           6         
 un8_beamx_cry_1_c     SB_CARRY     CI       In      -         0.962       -         
 un8_beamx_cry_1_c     SB_CARRY     CO       Out     0.088     1.050       -         
 un8_beamx_cry_1       Net          -        -       0.270     -           2         
