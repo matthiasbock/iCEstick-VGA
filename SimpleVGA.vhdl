@@ -69,8 +69,8 @@ is
     constant Columns    : integer := 80;
     constant Rows       : integer := 50;
 
-    --constant PixelsPerColumn : integer := resolutionX / Columns; -- 800 / 80 = 10
-    --constant PixelsPerRow    : integer := resolutionY / Rows;    -- 600 / 50 = 12
+    constant PixelsPerColumn : integer := resolutionX / Columns; -- 800 / 80 = 10
+    constant PixelsPerRow    : integer := resolutionY / Rows;    -- 600 / 50 = 12
     
 begin
 
@@ -103,41 +103,64 @@ begin
     begin
         if (PixelClock'event and PixelClock='1')
         then
-            visibleX := beamX - HSyncDuration - leftPorch;
-            visibleY := beamY - VSyncDuration - topPorch;
-            
-            -- default pixel value
-            Pixel <= '0';
-
             -- HSync pulse before left porch
             -- HSync is active low
             if (beamX < HSyncDuration)
             then
-                HSync <= '0'; -- Sync pulse
+                HSync <= '0'; -- HSync pulse
+                Pixel <= '0';
             else
-                HSync <= '1'; -- Sync pulse off
+                HSync <= '1'; -- HSync pulse off
             end if;
             
             -- VSync pulse lines before top porch lines
             -- VSync is active low
             if (beamY < VSyncDuration) then
-                VSync <= '0';
+                VSync <= '0'; -- VSync pulse
+                Pixel <= '0';
             else
-                VSync <= '1';
+                VSync <= '1'; -- VSync pulse off
 
                 -- if beam is within visible rectangle
-                -- draw a test pattern to screen
                 if (beamY >= VSyncDuration+topPorch and beamY < beamMaxY-bottomPorch
                 and beamX >= HSyncDuration+leftPorch and beamX < beamMaxX-rightPorch) then
-                    -- first column, first row
-                    if (visibleX < 10 and visibleY < 12)
+
+                    visibleX := beamX - HSyncDuration - leftPorch;
+                    visibleY := beamY - VSyncDuration - topPorch;
+
+                    -- text line 1
+                    if (visibleY < PixelsPerRow)
                     then
-                        Pixel <= Font('L', visibleX, visibleY, 10, 12);
+
+                        -- text column 1
+                        if (visibleX < PixelsPerColumn)
+                        then
+                            Pixel <= Font('L', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
+
+                        -- text column 2
+                        elsif (visibleX < 2*PixelsPerColumn)
+                        then
+                            Pixel <= Font('0', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
+
+                        -- text column 3
+                        elsif (visibleX < 3*PixelsPerColumn)
+                        then
+                            Pixel <= Font('1', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
+
+                        -- text column 4
+                        elsif (visibleX < 4*PixelsPerColumn)
+                        then
+                            Pixel <= Font('2', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
+                        
+                        else
+                            Pixel <= '0';
+                        end if;
+                        
                     -- Test pattern
                     elsif ( ((visibleX mod 80) > 39) xor ((visibleY mod 60) > 29) ) then
                         Pixel <= '1';
                     else
-                        -- Pixel value is zero while not in visible area
+                        -- Pixel value must be zero while not in visible area (porch)
                         Pixel <= '0';
                     end if;
                 end if;

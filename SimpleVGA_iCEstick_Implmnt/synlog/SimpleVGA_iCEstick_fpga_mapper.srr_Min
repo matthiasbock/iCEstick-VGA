@@ -1,12 +1,12 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 17 19:41:14 2015
+# Timing Report written on Fri Jun 19 15:41:05 2015
 #
 
 
 Top view:               SimpleVGA
-Requested Frequency:    34.9 MHz
+Requested Frequency:    24.2 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -25,8 +25,8 @@ Worst slack in design: 2.523
                                  Requested     Estimated     Requested     Estimated                 Clock                                   Clock                
 Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type                                    Group                
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock     34.9 MHz      29.6 MHz      28.676        33.736        -5.060      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz             34.9 MHz      NA            28.676        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
+PLL|PLLOUTCORE_derived_clock     24.2 MHz      20.5 MHz      41.377        48.679        -7.302      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             24.2 MHz      NA            41.377        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -86,9 +86,9 @@ Ending Points with Worst Slack
 Instance          Reference                        Type        Pin     Net                            Time         Slack
                   Clock                                                                                                 
 ------------------------------------------------------------------------------------------------------------------------
-beamX[2]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       un8_beamx_cry_1_c_RNITP5A      0.074        2.523
-beamY[2]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       un20_beamy_cry_1_c_RNI97C4     0.074        2.523
-beamY_fast[2]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       un20_beamy_cry_1_c_RNI97C4     0.074        2.523
+beamX[2]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[2]                   0.074        2.523
+beamY[2]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       un21_beamy_cry_1_c_RNIAL73     0.074        2.523
+beamY_fast[2]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       un21_beamy_cry_1_c_RNIAL73     0.074        2.523
 beamX[3]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[3]                   0.074        2.614
 beamX[4]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_3[4]                     0.074        2.614
 beamX[5]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[5]                   0.074        2.614
@@ -118,19 +118,19 @@ Path information for path number 1:
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-beamX[0]                      SB_DFF       Q        Out     0.378     0.378       -         
-beamX[0]                      Net          -        -       0.584     -           8         
-un8_beamx_cry_1_c             SB_CARRY     CI       In      -         0.962       -         
-un8_beamx_cry_1_c             SB_CARRY     CO       Out     0.088     1.050       -         
-un8_beamx_cry_1               Net          -        -       0.270     -           2         
-un8_beamx_cry_1_c_RNITP5A     SB_LUT4      I3       In      -         1.320       -         
-un8_beamx_cry_1_c_RNITP5A     SB_LUT4      O        Out     0.221     1.541       -         
-un8_beamx_cry_1_c_RNITP5A     Net          -        -       1.055     -           2         
-beamX[2]                      SB_DFF       D        In      -         2.596       -         
-============================================================================================
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                  Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+beamX[0]              SB_DFF       Q        Out     0.378     0.378       -         
+beamX[0]              Net          -        -       0.584     -           13        
+un8_beamx_cry_1_c     SB_CARRY     CI       In      -         0.962       -         
+un8_beamx_cry_1_c     SB_CARRY     CO       Out     0.088     1.050       -         
+un8_beamx_cry_1       Net          -        -       0.270     -           2         
+beamX_RNO[2]          SB_LUT4      I3       In      -         1.320       -         
+beamX_RNO[2]          SB_LUT4      O        Out     0.221     1.541       -         
+beamX_RNO[2]          Net          -        -       1.055     -           1         
+beamX[2]              SB_DFF       D        In      -         2.596       -         
+====================================================================================
 
 
 

@@ -1,1 +1,1 @@
-create_clock -period 28.68 -name {SimpleVGA|Clock12MHz} -waveform [list 0.00 14.34] [get_ports Clock12MHz]
+create_clock -period 41.38 -name {SimpleVGA|Clock12MHz} -waveform [list 0.00 20.69] [get_ports Clock12MHz]

@@ -4,7 +4,7 @@ Running in Lattice mode
 Starting:    C:\Program Files\iCEcube2.2014.12\synpbase\bin\mbin\synbatch.exe
 Install:     C:\Program Files\iCEcube2.2014.12\synpbase
 Hostname:    MPNT925109O
-Date:        Wed Jun 17 19:41:05 2015
+Date:        Fri Jun 19 15:40:50 2015
 Version:     J-2014.09L
 
 Arguments:   -product synplify_pro  -batch SimpleVGA_iCEstick_syn.prj
@@ -54,7 +54,7 @@ Copied U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEsti
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:06s
+Run Time:0h:00m:13s
 Complete: Map on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
 Complete: Logic Synthesis on SimpleVGA_iCEstick_syn|SimpleVGA_iCEstick_Implmnt
 

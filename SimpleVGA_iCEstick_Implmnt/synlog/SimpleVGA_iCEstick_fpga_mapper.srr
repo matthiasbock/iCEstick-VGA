@@ -28,88 +28,94 @@ Available hyper_sources - for debug and ip models
 
 @N: MT206 |Auto Constrain mode is enabled
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":137:30:137:44|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":137:59:137:73|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":71:32:71:50|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":160:30:160:44|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":72:32:72:51|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":160:59:160:73|Generating a type rem remainder 
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 76MB peak: 78MB)
-
-
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 79MB peak: 80MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 78MB peak: 80MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 78MB peak: 78MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 81MB peak: 81MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 81MB peak: 82MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 77MB peak: 78MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 89MB peak: 89MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 79MB peak: 80MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 88MB peak: 89MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 88MB peak: 89MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 86MB peak: 93MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -5.52ns		 161 /        24
-   2		0h:00m:02s		    -4.52ns		 161 /        24
+   1		0h:00m:07s		    -7.51ns		 274 /        24
+   2		0h:00m:07s		    -7.51ns		 274 /        24
+   3		0h:00m:07s		    -6.11ns		 275 /        24
 ------------------------------------------------------------
 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[6]" with 9 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[3]" with 10 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[4]" with 8 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[2]" with 14 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[4]" with 15 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[5]" with 12 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[6]" with 10 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[7]" with 10 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[8]" with 9 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[2]" with 15 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[3]" with 14 loads replicated 1 times to improve timing 
 Timing driven replication report
-Added 4 Registers via timing driven replication
-Added 2 LUTs via timing driven replication
+Added 7 Registers via timing driven replication
+Added 3 LUTs via timing driven replication
 
 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[5]" with 11 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":102:62:102:62|Instance "beamY[7]" with 9 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Instance "beamY[9]" with 9 loads replicated 1 times to improve timing 
 Timing driven replication report
-Added 2 Registers via timing driven replication
+Added 1 Registers via timing driven replication
 Added 1 LUTs via timing driven replication
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -3.23ns		 166 /        30
+   1		0h:00m:09s		    -3.31ns		 318 /        32
 ------------------------------------------------------------
 
 
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -3.23ns		 166 /        30
+   1		0h:00m:09s		    -3.31ns		 318 /        32
 ------------------------------------------------------------
 
+@A: BN291 :"u:\simplevga_icestick\simplevga.vhdl":104:8:104:9|Boundary register Pixel_1 packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":77:4:77:13|SB_GB inserted on the net PixelClock.
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 80MB peak: 81MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 86MB peak: 93MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 80MB peak: 81MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 86MB peak: 93MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 30 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 32 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================= Non-Gated/Non-Generated Clocks ==============================
 Clock Tree ID     Driving Element         Drive Element Type     Fanout     Sample Instance
 -------------------------------------------------------------------------------------------
-@K:CKID0001       Clock50MHz.PLL_inst     SB_PLL40_CORE          30         beamY[2]       
+@K:CKID0001       Clock50MHz.PLL_inst     SB_PLL40_CORE          32         Pixel_1_esr    
 ===========================================================================================
 
 
@@ -117,34 +123,34 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 
 Writing Analyst data base U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 80MB peak: 81MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 85MB peak: 93MB)
 
 Writing Analyst data base U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 80MB peak: 81MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 85MB peak: 93MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |Synopsys Constraint File time units using default value of 1ns 
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 J-2014.09L
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 81MB peak: 82MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 85MB peak: 93MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 81MB peak: 82MB)
+Start final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 86MB peak: 93MB)
 
-@W: MT420 |Found inferred clock SimpleVGA|Clock12MHz with period 28.68ns. Please declare a user-defined clock on object "p:Clock12MHz"
+@W: MT420 |Found inferred clock SimpleVGA|Clock12MHz with period 41.38ns. Please declare a user-defined clock on object "p:Clock12MHz"
 
-Found clock PLL|PLLOUTCORE_derived_clock with period 28.68ns 
+Found clock PLL|PLLOUTCORE_derived_clock with period 41.38ns 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 17 19:41:14 2015
+# Timing Report written on Fri Jun 19 15:41:05 2015
 #
 
 
 Top view:               SimpleVGA
-Requested Frequency:    34.9 MHz
+Requested Frequency:    24.2 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -158,13 +164,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -5.060
+Worst slack in design: -7.302
 
                                  Requested     Estimated     Requested     Estimated                 Clock                                   Clock                
 Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type                                    Group                
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock     34.9 MHz      29.6 MHz      28.676        33.736        -5.060      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz             34.9 MHz      NA            28.676        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
+PLL|PLLOUTCORE_derived_clock     24.2 MHz      20.5 MHz      41.377        48.679        -7.302      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             24.2 MHz      NA            41.377        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -179,7 +185,7 @@ Clocks                                                      |    rise  to  rise 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                      Ending                        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock  PLL|PLLOUTCORE_derived_clock  |  28.676      -5.060  |  No paths    -      |  No paths    -      |  No paths    -    
+PLL|PLLOUTCORE_derived_clock  PLL|PLLOUTCORE_derived_clock  |  41.377      -7.302  |  No paths    -      |  No paths    -      |  No paths    -    
 ===================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -202,41 +208,41 @@ Detailed Report for Clock: PLL|PLLOUTCORE_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                  Starting                                                               Arrival           
-Instance          Reference                        Type        Pin     Net               Time        Slack 
-                  Clock                                                                                    
------------------------------------------------------------------------------------------------------------
-beamY_fast[3]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY_fast[3]     0.540       -5.060
-beamY_fast[4]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY_fast[4]     0.540       -5.011
-beamY_fast[5]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY_fast[5]     0.540       -4.927
-beamY[8]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY[8]          0.540       -4.920
-beamY_fast[6]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY_fast[6]     0.540       -4.878
-beamY_fast[7]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY_fast[7]     0.540       -4.857
-beamY_fast[2]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY_fast[2]     0.540       -4.850
-beamY[9]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY[9]          0.540       -3.051
-beamY[6]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY[6]          0.540       -1.597
-beamY[7]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     Q       beamY[7]          0.540       -1.548
-===========================================================================================================
+             Starting                                                         Arrival           
+Instance     Reference                        Type       Pin     Net          Time        Slack 
+             Clock                                                                              
+------------------------------------------------------------------------------------------------
+beamX[0]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[0]     0.540       -7.302
+beamX[1]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[1]     0.540       -7.162
+beamX[2]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[2]     0.540       -7.021
+beamX[3]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[3]     0.540       -6.881
+beamX[4]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[4]     0.540       -6.741
+beamX[5]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[5]     0.540       -6.601
+beamX[6]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[6]     0.540       -6.461
+beamX[9]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[9]     0.540       -6.435
+beamX[7]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[7]     0.540       -6.320
+beamX[8]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[8]     0.540       -6.180
+================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                  Starting                                                                 Required           
-Instance          Reference                        Type        Pin     Net                 Time         Slack 
-                  Clock                                                                                       
---------------------------------------------------------------------------------------------------------------
-Pixel_1           PLL|PLLOUTCORE_derived_clock     SB_DFF      D       Pixel_5             28.571       -5.060
-beamY[3]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3[3]          28.571       19.290
-beamY[4]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3[4]          28.571       19.290
-beamY[7]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3[7]          28.571       19.290
-beamY_fast[3]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3_fast[3]     28.571       19.290
-beamY_fast[4]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3_fast[4]     28.571       19.290
-beamY_fast[7]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3_fast[7]     28.571       19.290
-beamY[0]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamY_2             28.571       19.318
-beamY[9]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       beamY_3[9]          28.571       19.318
-beamX[4]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_3[4]          28.571       19.346
-==============================================================================================================
+                Starting                                                                      Required           
+Instance        Reference                        Type          Pin     Net                    Time         Slack 
+                Clock                                                                                            
+-----------------------------------------------------------------------------------------------------------------
+Pixel_1_esr     PLL|PLLOUTCORE_derived_clock     SB_DFFESR     D       Pixel_9                41.272       -7.302
+Pixel_1_esr     PLL|PLLOUTCORE_derived_clock     SB_DFFESR     E       Pixel_1_sqmuxa_i_0     41.377       28.737
+beamY[0]        PLL|PLLOUTCORE_derived_clock     SB_DFF        D       beamY_2                41.272       32.033
+beamX[4]        PLL|PLLOUTCORE_derived_clock     SB_DFF        D       beamX_3[4]             41.272       32.047
+beamX[0]        PLL|PLLOUTCORE_derived_clock     SB_DFF        D       beamX_3[0]             41.272       32.054
+beamY[1]        PLL|PLLOUTCORE_derived_clock     SB_DFF        D       beamY_1                41.272       32.054
+beamX[10]       PLL|PLLOUTCORE_derived_clock     SB_DFF        D       beamX_3[10]            41.272       32.082
+HSync_1         PLL|PLLOUTCORE_derived_clock     SB_DFF        D       un1_beamx_i            41.272       33.670
+VSync_1         PLL|PLLOUTCORE_derived_clock     SB_DFF        D       un1_beamy_i            41.272       33.670
+beamY[3]        PLL|PLLOUTCORE_derived_clock     SB_DFFE       D       beamY_3[3]             41.272       33.677
+=================================================================================================================
 
 
 
@@ -245,503 +251,944 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      28.676
+      Requested Period:                      41.377
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         28.571
+    = Required time:                         41.272
 
-    - Propagation time:                      33.631
+    - Propagation time:                      48.573
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -5.060
+    = Slack (critical) :                     -7.302
 
-    Number of logic level(s):                25
-    Starting point:                          beamY_fast[3] / Q
-    Ending point:                            Pixel_1 / D
+    Number of logic level(s):                55
+    Starting point:                          beamX[0] / Q
+    Ending point:                            Pixel_1_esr / D
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                                                                 Pin      Pin               Arrival     No. of    
-Name                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------------
-beamY_fast[3]                                                     SB_DFFE      Q        Out     0.540     0.540       -         
-beamY_fast[3]                                                     Net          -        -       1.599     -           3         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      I0       In      -         2.139       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      O        Out     0.449     2.588       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      I0       In      -         3.959       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      O        Out     0.449     4.408       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            Net          -        -       0.905     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     I0       In      -         5.313       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     CO       Out     0.258     5.570       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CI       In      -         5.584       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CO       Out     0.126     5.710       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CI       In      -         5.724       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CO       Out     0.126     5.851       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_5                  Net          -        -       0.386     -           2         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      I0       In      -         6.237       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      O        Out     0.449     6.685       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_axb_6                  Net          -        -       0.905     -           3         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     I1       In      -         7.590       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     CO       Out     0.229     7.819       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      I1       In      -         8.205       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      O        Out     0.400     8.605       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      I1       In      -         9.976       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      O        Out     0.400     10.376      -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     I0       In      -         11.281      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     CO       Out     0.258     11.538      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      I3       In      -         11.924      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      O        Out     0.316     12.240      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      I0       In      -         13.611      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      O        Out     0.449     14.060      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     I0       In      -         14.964      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     CO       Out     0.258     15.222      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      I3       In      -         15.608      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      O        Out     0.316     15.924      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      I0       In      -         17.295      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      O        Out     0.449     17.743      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     I0       In      -         18.648      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     CO       Out     0.258     18.906      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      I3       In      -         19.292      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      O        Out     0.316     19.608      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      I0       In      -         20.979      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      O        Out     0.449     21.427      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     I0       In      -         22.332      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     CO       Out     0.258     22.590      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      I3       In      -         22.976      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      O        Out     0.316     23.291      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      I0       In      -         24.662      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      O        Out     0.449     25.111      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      I0       In      -         26.482      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      O        Out     0.449     26.931      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       Net          -        -       1.371     -           2         
-Pixel_1_RNO_8                                                     SB_LUT4      I3       In      -         28.302      -         
-Pixel_1_RNO_8                                                     SB_LUT4      O        Out     0.316     28.618      -         
-N_8                                                               Net          -        -       1.371     -           1         
-Pixel_1_RNO_3                                                     SB_LUT4      I0       In      -         29.989      -         
-Pixel_1_RNO_3                                                     SB_LUT4      O        Out     0.449     30.437      -         
-un20_0_1                                                          Net          -        -       1.371     -           1         
-Pixel_1_RNO                                                       SB_LUT4      I3       In      -         31.808      -         
-Pixel_1_RNO                                                       SB_LUT4      O        Out     0.316     32.124      -         
-Pixel_5                                                           Net          -        -       1.507     -           1         
-Pixel_1                                                           SB_DFF       D        In      -         33.631      -         
-================================================================================================================================
-Total path delay (propagation time + setup) of 33.736 is 9.146(27.1%) logic and 24.590(72.9%) route.
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                      Type          Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+beamX[0]                                                                  SB_DFF        Q        Out     0.540     0.540       -         
+beamX[0]                                                                  Net           -        -       0.834     -           13        
+un5_visiblex_cry_0_c                                                      SB_CARRY      I0       In      -         1.374       -         
+un5_visiblex_cry_0_c                                                      SB_CARRY      CO       Out     0.258     1.632       -         
+un5_visiblex_cry_0                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CI       In      -         1.646       -         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CO       Out     0.126     1.772       -         
+un5_visiblex_cry_1                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CI       In      -         1.786       -         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CO       Out     0.126     1.912       -         
+un5_visiblex_cry_2                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CI       In      -         1.926       -         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CO       Out     0.126     2.052       -         
+un5_visiblex_cry_3                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CI       In      -         2.066       -         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CO       Out     0.126     2.192       -         
+un5_visiblex_cry_4                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CI       In      -         2.206       -         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CO       Out     0.126     2.333       -         
+un5_visiblex_cry_5                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CI       In      -         2.346       -         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CO       Out     0.126     2.473       -         
+un5_visiblex_cry_6                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CI       In      -         2.487       -         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CO       Out     0.126     2.613       -         
+un5_visiblex_cry_7                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CI       In      -         2.627       -         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CO       Out     0.126     2.753       -         
+un5_visiblex_cry_8                                                        Net           -        -       0.386     -           1         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       I3       In      -         3.139       -         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       O        Out     0.316     3.455       -         
+un1_visiblex_if_generate_plus\.mult1_un47_sum_axb_6                       Net           -        -       1.371     -           15        
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       I0       In      -         4.826       -         
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       O        Out     0.449     5.274       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_s_2_sf                  Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      I0       In      -         6.180       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     6.437       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CI       In      -         6.451       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     6.577       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CI       In      -         6.591       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     6.717       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4                   Net           -        -       0.386     -           3         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       I3       In      -         7.103       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       O        Out     0.316     7.419       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       I1       In      -         8.790       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       O        Out     0.379     9.169       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      I0       In      -         10.074      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      CO       Out     0.258     10.331      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       I3       In      -         10.717      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       O        Out     0.316     11.033      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       I0       In      -         12.404      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       O        Out     0.449     12.853      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      I0       In      -         13.758      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     14.015      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CI       In      -         14.029      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     14.155      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CI       In      -         14.169      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     14.296      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       I3       In      -         14.682      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       O        Out     0.316     14.997      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       I0       In      -         16.368      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       O        Out     0.449     16.817      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      I0       In      -         17.722      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     17.979      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CI       In      -         17.993      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     18.120      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CI       In      -         18.134      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     18.260      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       I3       In      -         18.646      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       O        Out     0.316     18.961      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       I0       In      -         20.332      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       O        Out     0.449     20.781      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      I0       In      -         21.686      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     21.944      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CI       In      -         21.958      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     22.084      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CI       In      -         22.098      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     22.224      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       I3       In      -         22.610      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       O        Out     0.316     22.926      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       I0       In      -         24.297      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       O        Out     0.449     24.746      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      I0       In      -         25.651      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     25.908      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CI       In      -         25.922      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     26.048      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CI       In      -         26.062      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     26.188      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       I3       In      -         26.574      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       O        Out     0.316     26.890      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       I0       In      -         28.261      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       O        Out     0.449     28.710      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      I0       In      -         29.615      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     29.872      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CI       In      -         29.886      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     30.012      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CI       In      -         30.026      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     30.153      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       I3       In      -         30.539      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       O        Out     0.316     30.854      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       I0       In      -         32.225      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       O        Out     0.449     32.674      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      I0       In      -         33.579      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     33.837      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CI       In      -         33.851      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     33.977      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3                   Net           -        -       0.014     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CI       In      -         33.991      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     34.117      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       I3       In      -         34.503      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       O        Out     0.316     34.819      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       Net           -        -       1.371     -           15        
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       I2       In      -         36.190      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       O        Out     0.379     36.568      -         
+r_i1_mux                                                                  Net           -        -       1.371     -           1         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       I1       In      -         37.939      -         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       O        Out     0.400     38.339      -         
+Pixel_3_sqmuxa_1_1                                                        Net           -        -       1.371     -           3         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       I1       In      -         39.710      -         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       O        Out     0.400     40.110      -         
+g0_0_4                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       I1       In      -         41.481      -         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       O        Out     0.400     41.880      -         
+g0_0_5                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       I3       In      -         43.251      -         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       O        Out     0.316     43.567      -         
+G_25_i_2_0                                                                Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       I1       In      -         44.938      -         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       O        Out     0.379     45.317      -         
+Pixel_9_u_ns_rn_0                                                         Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO                                                           SB_LUT4       I1       In      -         46.688      -         
+Pixel_1_esr_RNO                                                           SB_LUT4       O        Out     0.379     47.066      -         
+Pixel_9                                                                   Net           -        -       1.507     -           1         
+Pixel_1_esr                                                               SB_DFFESR     D        In      -         48.573      -         
+=========================================================================================================================================
+Total path delay (propagation time + setup) of 48.679 is 14.751(30.3%) logic and 33.928(69.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      28.676
+      Requested Period:                      41.377
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         28.571
+    = Required time:                         41.272
 
-    - Propagation time:                      33.587
+    - Propagation time:                      48.433
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -5.016
+    = Slack (non-critical) :                 -7.162
 
-    Number of logic level(s):                24
-    Starting point:                          beamY_fast[3] / Q
-    Ending point:                            Pixel_1 / D
+    Number of logic level(s):                54
+    Starting point:                          beamX[1] / Q
+    Ending point:                            Pixel_1_esr / D
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                                                                 Pin      Pin               Arrival     No. of    
-Name                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------------
-beamY_fast[3]                                                     SB_DFFE      Q        Out     0.540     0.540       -         
-beamY_fast[3]                                                     Net          -        -       1.599     -           3         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      I0       In      -         2.139       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      O        Out     0.449     2.588       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      I0       In      -         3.959       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      O        Out     0.449     4.408       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            Net          -        -       0.905     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     I0       In      -         5.313       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     CO       Out     0.258     5.570       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CI       In      -         5.584       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CO       Out     0.126     5.710       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CI       In      -         5.724       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CO       Out     0.126     5.851       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_5                  Net          -        -       0.386     -           2         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      I0       In      -         6.237       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      O        Out     0.449     6.685       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_axb_6                  Net          -        -       0.905     -           3         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     I1       In      -         7.590       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     CO       Out     0.229     7.819       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      I1       In      -         8.205       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      O        Out     0.400     8.605       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      I1       In      -         9.976       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      O        Out     0.400     10.376      -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     I0       In      -         11.281      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     CO       Out     0.258     11.538      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      I3       In      -         11.924      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      O        Out     0.316     12.240      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_5_c_RNI37VA3       SB_LUT4      I0       In      -         13.611      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_5_c_RNI37VA3       SB_LUT4      O        Out     0.449     14.060      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      I0       In      -         15.431      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      O        Out     0.449     15.879      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      I0       In      -         17.250      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      O        Out     0.449     17.699      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     I0       In      -         18.604      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     CO       Out     0.258     18.862      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      I3       In      -         19.248      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      O        Out     0.316     19.563      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      I0       In      -         20.934      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      O        Out     0.449     21.383      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     I0       In      -         22.288      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     CO       Out     0.258     22.546      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      I3       In      -         22.932      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      O        Out     0.316     23.247      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      I0       In      -         24.618      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      O        Out     0.449     25.067      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      I0       In      -         26.438      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      O        Out     0.449     26.887      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       Net          -        -       1.371     -           2         
-Pixel_1_RNO_8                                                     SB_LUT4      I3       In      -         28.258      -         
-Pixel_1_RNO_8                                                     SB_LUT4      O        Out     0.316     28.573      -         
-N_8                                                               Net          -        -       1.371     -           1         
-Pixel_1_RNO_3                                                     SB_LUT4      I0       In      -         29.944      -         
-Pixel_1_RNO_3                                                     SB_LUT4      O        Out     0.449     30.393      -         
-un20_0_1                                                          Net          -        -       1.371     -           1         
-Pixel_1_RNO                                                       SB_LUT4      I3       In      -         31.764      -         
-Pixel_1_RNO                                                       SB_LUT4      O        Out     0.316     32.080      -         
-Pixel_5                                                           Net          -        -       1.507     -           1         
-Pixel_1                                                           SB_DFF       D        In      -         33.587      -         
-================================================================================================================================
-Total path delay (propagation time + setup) of 33.692 is 9.022(26.8%) logic and 24.670(73.2%) route.
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                      Type          Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+beamX[1]                                                                  SB_DFF        Q        Out     0.540     0.540       -         
+beamX[1]                                                                  Net           -        -       0.834     -           6         
+un5_visiblex_cry_1_c                                                      SB_CARRY      I0       In      -         1.374       -         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CO       Out     0.258     1.632       -         
+un5_visiblex_cry_1                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CI       In      -         1.646       -         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CO       Out     0.126     1.772       -         
+un5_visiblex_cry_2                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CI       In      -         1.786       -         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CO       Out     0.126     1.912       -         
+un5_visiblex_cry_3                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CI       In      -         1.926       -         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CO       Out     0.126     2.052       -         
+un5_visiblex_cry_4                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CI       In      -         2.066       -         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CO       Out     0.126     2.192       -         
+un5_visiblex_cry_5                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CI       In      -         2.206       -         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CO       Out     0.126     2.333       -         
+un5_visiblex_cry_6                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CI       In      -         2.346       -         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CO       Out     0.126     2.473       -         
+un5_visiblex_cry_7                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CI       In      -         2.487       -         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CO       Out     0.126     2.613       -         
+un5_visiblex_cry_8                                                        Net           -        -       0.386     -           1         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       I3       In      -         2.999       -         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       O        Out     0.316     3.314       -         
+un1_visiblex_if_generate_plus\.mult1_un47_sum_axb_6                       Net           -        -       1.371     -           15        
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       I0       In      -         4.686       -         
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       O        Out     0.449     5.134       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_s_2_sf                  Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      I0       In      -         6.039       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     6.297       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CI       In      -         6.311       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     6.437       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CI       In      -         6.451       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     6.577       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4                   Net           -        -       0.386     -           3         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       I3       In      -         6.963       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       O        Out     0.316     7.279       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       I1       In      -         8.650       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       O        Out     0.379     9.028       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      I0       In      -         9.934       -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      CO       Out     0.258     10.191      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       I3       In      -         10.577      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       O        Out     0.316     10.893      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       I0       In      -         12.264      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       O        Out     0.449     12.712      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      I0       In      -         13.617      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     13.875      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CI       In      -         13.889      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     14.015      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CI       In      -         14.029      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     14.155      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       I3       In      -         14.541      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       O        Out     0.316     14.857      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       I0       In      -         16.228      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       O        Out     0.449     16.677      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      I0       In      -         17.582      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     17.839      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CI       In      -         17.853      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     17.979      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CI       In      -         17.993      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     18.120      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       I3       In      -         18.506      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       O        Out     0.316     18.821      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       I0       In      -         20.192      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       O        Out     0.449     20.641      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      I0       In      -         21.546      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     21.804      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CI       In      -         21.817      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     21.944      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CI       In      -         21.958      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     22.084      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       I3       In      -         22.470      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       O        Out     0.316     22.785      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       I0       In      -         24.157      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       O        Out     0.449     24.605      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      I0       In      -         25.510      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     25.768      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CI       In      -         25.782      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     25.908      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CI       In      -         25.922      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     26.048      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       I3       In      -         26.434      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       O        Out     0.316     26.750      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       I0       In      -         28.121      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       O        Out     0.449     28.570      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      I0       In      -         29.475      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     29.732      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CI       In      -         29.746      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     29.872      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CI       In      -         29.886      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     30.012      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       I3       In      -         30.398      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       O        Out     0.316     30.714      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       I0       In      -         32.085      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       O        Out     0.449     32.534      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      I0       In      -         33.439      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     33.696      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CI       In      -         33.710      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     33.837      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3                   Net           -        -       0.014     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CI       In      -         33.851      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     33.977      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       I3       In      -         34.363      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       O        Out     0.316     34.678      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       Net           -        -       1.371     -           15        
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       I2       In      -         36.049      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       O        Out     0.379     36.428      -         
+r_i1_mux                                                                  Net           -        -       1.371     -           1         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       I1       In      -         37.799      -         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       O        Out     0.400     38.199      -         
+Pixel_3_sqmuxa_1_1                                                        Net           -        -       1.371     -           3         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       I1       In      -         39.570      -         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       O        Out     0.400     39.969      -         
+g0_0_4                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       I1       In      -         41.340      -         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       O        Out     0.400     41.740      -         
+g0_0_5                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       I3       In      -         43.111      -         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       O        Out     0.316     43.427      -         
+G_25_i_2_0                                                                Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       I1       In      -         44.798      -         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       O        Out     0.379     45.176      -         
+Pixel_9_u_ns_rn_0                                                         Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO                                                           SB_LUT4       I1       In      -         46.547      -         
+Pixel_1_esr_RNO                                                           SB_LUT4       O        Out     0.379     46.926      -         
+Pixel_9                                                                   Net           -        -       1.507     -           1         
+Pixel_1_esr                                                               SB_DFFESR     D        In      -         48.433      -         
+=========================================================================================================================================
+Total path delay (propagation time + setup) of 48.538 is 14.624(30.1%) logic and 33.914(69.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      28.676
+      Requested Period:                      41.377
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         28.571
+    = Required time:                         41.272
 
-    - Propagation time:                      33.587
+    - Propagation time:                      48.433
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -5.016
+    = Slack (non-critical) :                 -7.162
 
-    Number of logic level(s):                24
-    Starting point:                          beamY_fast[3] / Q
-    Ending point:                            Pixel_1 / D
+    Number of logic level(s):                54
+    Starting point:                          beamX[0] / Q
+    Ending point:                            Pixel_1_esr / D
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                                                                 Pin      Pin               Arrival     No. of    
-Name                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------------
-beamY_fast[3]                                                     SB_DFFE      Q        Out     0.540     0.540       -         
-beamY_fast[3]                                                     Net          -        -       1.599     -           3         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      I0       In      -         2.139       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      O        Out     0.449     2.588       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      I0       In      -         3.959       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      O        Out     0.449     4.408       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            Net          -        -       0.905     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     I0       In      -         5.313       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     CO       Out     0.258     5.570       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CI       In      -         5.584       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CO       Out     0.126     5.710       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CI       In      -         5.724       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CO       Out     0.126     5.851       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_5                  Net          -        -       0.386     -           2         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      I0       In      -         6.237       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      O        Out     0.449     6.685       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_axb_6                  Net          -        -       0.905     -           3         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     I1       In      -         7.590       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     CO       Out     0.229     7.819       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      I1       In      -         8.205       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      O        Out     0.400     8.605       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      I1       In      -         9.976       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      O        Out     0.400     10.376      -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     I0       In      -         11.281      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     CO       Out     0.258     11.538      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      I3       In      -         11.924      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      O        Out     0.316     12.240      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      I0       In      -         13.611      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      O        Out     0.449     14.060      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     I0       In      -         14.964      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     CO       Out     0.258     15.222      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      I3       In      -         15.608      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      O        Out     0.316     15.924      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_5_c_RNI5U736       SB_LUT4      I0       In      -         17.295      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_5_c_RNI5U736       SB_LUT4      O        Out     0.449     17.743      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      I0       In      -         19.114      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      O        Out     0.449     19.563      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      I0       In      -         20.934      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      O        Out     0.449     21.383      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     I0       In      -         22.288      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     CO       Out     0.258     22.546      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      I3       In      -         22.932      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      O        Out     0.316     23.247      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      I0       In      -         24.618      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      O        Out     0.449     25.067      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      I0       In      -         26.438      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      O        Out     0.449     26.887      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       Net          -        -       1.371     -           2         
-Pixel_1_RNO_8                                                     SB_LUT4      I3       In      -         28.258      -         
-Pixel_1_RNO_8                                                     SB_LUT4      O        Out     0.316     28.573      -         
-N_8                                                               Net          -        -       1.371     -           1         
-Pixel_1_RNO_3                                                     SB_LUT4      I0       In      -         29.944      -         
-Pixel_1_RNO_3                                                     SB_LUT4      O        Out     0.449     30.393      -         
-un20_0_1                                                          Net          -        -       1.371     -           1         
-Pixel_1_RNO                                                       SB_LUT4      I3       In      -         31.764      -         
-Pixel_1_RNO                                                       SB_LUT4      O        Out     0.316     32.080      -         
-Pixel_5                                                           Net          -        -       1.507     -           1         
-Pixel_1                                                           SB_DFF       D        In      -         33.587      -         
-================================================================================================================================
-Total path delay (propagation time + setup) of 33.692 is 9.022(26.8%) logic and 24.670(73.2%) route.
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                      Type          Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+beamX[0]                                                                  SB_DFF        Q        Out     0.540     0.540       -         
+beamX[0]                                                                  Net           -        -       0.834     -           13        
+un5_visiblex_cry_0_c                                                      SB_CARRY      I0       In      -         1.374       -         
+un5_visiblex_cry_0_c                                                      SB_CARRY      CO       Out     0.258     1.632       -         
+un5_visiblex_cry_0                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CI       In      -         1.646       -         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CO       Out     0.126     1.772       -         
+un5_visiblex_cry_1                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CI       In      -         1.786       -         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CO       Out     0.126     1.912       -         
+un5_visiblex_cry_2                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CI       In      -         1.926       -         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CO       Out     0.126     2.052       -         
+un5_visiblex_cry_3                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CI       In      -         2.066       -         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CO       Out     0.126     2.192       -         
+un5_visiblex_cry_4                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CI       In      -         2.206       -         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CO       Out     0.126     2.333       -         
+un5_visiblex_cry_5                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CI       In      -         2.346       -         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CO       Out     0.126     2.473       -         
+un5_visiblex_cry_6                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CI       In      -         2.487       -         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CO       Out     0.126     2.613       -         
+un5_visiblex_cry_7                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CI       In      -         2.627       -         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CO       Out     0.126     2.753       -         
+un5_visiblex_cry_8                                                        Net           -        -       0.386     -           1         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       I3       In      -         3.139       -         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       O        Out     0.316     3.455       -         
+un1_visiblex_if_generate_plus\.mult1_un47_sum_axb_6                       Net           -        -       1.371     -           15        
+un5_visiblex_cry_8_c_RNI1D62_0                                            SB_LUT4       I0       In      -         4.826       -         
+un5_visiblex_cry_8_c_RNI1D62_0                                            SB_LUT4       O        Out     0.449     5.274       -         
+un5_visiblex_cry_8_c_RNI1D62_0                                            Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      I0       In      -         6.180       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CO       Out     0.258     6.437       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CI       In      -         6.451       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     6.577       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4                   Net           -        -       0.386     -           3         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       I3       In      -         6.963       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       O        Out     0.316     7.279       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       I1       In      -         8.650       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       O        Out     0.379     9.028       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      I0       In      -         9.934       -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      CO       Out     0.258     10.191      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       I3       In      -         10.577      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       O        Out     0.316     10.893      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       I0       In      -         12.264      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       O        Out     0.449     12.712      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      I0       In      -         13.617      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     13.875      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CI       In      -         13.889      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     14.015      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CI       In      -         14.029      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     14.155      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       I3       In      -         14.541      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       O        Out     0.316     14.857      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       I0       In      -         16.228      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       O        Out     0.449     16.677      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      I0       In      -         17.582      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     17.839      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CI       In      -         17.853      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     17.979      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CI       In      -         17.993      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     18.120      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       I3       In      -         18.506      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       O        Out     0.316     18.821      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       I0       In      -         20.192      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       O        Out     0.449     20.641      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      I0       In      -         21.546      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     21.804      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CI       In      -         21.817      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     21.944      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CI       In      -         21.958      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     22.084      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       I3       In      -         22.470      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       O        Out     0.316     22.785      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       I0       In      -         24.157      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       O        Out     0.449     24.605      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      I0       In      -         25.510      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     25.768      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CI       In      -         25.782      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     25.908      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CI       In      -         25.922      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     26.048      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       I3       In      -         26.434      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       O        Out     0.316     26.750      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       I0       In      -         28.121      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       O        Out     0.449     28.570      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      I0       In      -         29.475      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     29.732      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CI       In      -         29.746      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     29.872      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CI       In      -         29.886      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     30.012      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       I3       In      -         30.398      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       O        Out     0.316     30.714      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       I0       In      -         32.085      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       O        Out     0.449     32.534      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      I0       In      -         33.439      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     33.696      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CI       In      -         33.710      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     33.837      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3                   Net           -        -       0.014     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CI       In      -         33.851      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     33.977      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       I3       In      -         34.363      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       O        Out     0.316     34.678      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       Net           -        -       1.371     -           15        
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       I2       In      -         36.049      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       O        Out     0.379     36.428      -         
+r_i1_mux                                                                  Net           -        -       1.371     -           1         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       I1       In      -         37.799      -         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       O        Out     0.400     38.199      -         
+Pixel_3_sqmuxa_1_1                                                        Net           -        -       1.371     -           3         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       I1       In      -         39.570      -         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       O        Out     0.400     39.969      -         
+g0_0_4                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       I1       In      -         41.340      -         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       O        Out     0.400     41.740      -         
+g0_0_5                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       I3       In      -         43.111      -         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       O        Out     0.316     43.427      -         
+G_25_i_2_0                                                                Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       I1       In      -         44.798      -         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       O        Out     0.379     45.176      -         
+Pixel_9_u_ns_rn_0                                                         Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO                                                           SB_LUT4       I1       In      -         46.547      -         
+Pixel_1_esr_RNO                                                           SB_LUT4       O        Out     0.379     46.926      -         
+Pixel_9                                                                   Net           -        -       1.507     -           1         
+Pixel_1_esr                                                               SB_DFFESR     D        In      -         48.433      -         
+=========================================================================================================================================
+Total path delay (propagation time + setup) of 48.538 is 14.624(30.1%) logic and 33.914(69.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      28.676
+      Requested Period:                      41.377
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         28.571
+    = Required time:                         41.272
 
-    - Propagation time:                      33.587
+    - Propagation time:                      48.293
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -5.016
+    = Slack (non-critical) :                 -7.021
 
-    Number of logic level(s):                24
-    Starting point:                          beamY_fast[3] / Q
-    Ending point:                            Pixel_1 / D
+    Number of logic level(s):                53
+    Starting point:                          beamX[2] / Q
+    Ending point:                            Pixel_1_esr / D
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                                                                 Pin      Pin               Arrival     No. of    
-Name                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------------
-beamY_fast[3]                                                     SB_DFFE      Q        Out     0.540     0.540       -         
-beamY_fast[3]                                                     Net          -        -       1.599     -           3         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      I0       In      -         2.139       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      O        Out     0.449     2.588       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      I0       In      -         3.959       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      O        Out     0.449     4.408       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            Net          -        -       0.905     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     I0       In      -         5.313       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     CO       Out     0.258     5.570       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CI       In      -         5.584       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CO       Out     0.126     5.710       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CI       In      -         5.724       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CO       Out     0.126     5.851       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_5                  Net          -        -       0.386     -           2         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      I0       In      -         6.237       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      O        Out     0.449     6.685       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_axb_6                  Net          -        -       0.905     -           3         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     I1       In      -         7.590       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     CO       Out     0.229     7.819       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      I1       In      -         8.205       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      O        Out     0.400     8.605       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      I1       In      -         9.976       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      O        Out     0.400     10.376      -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     I0       In      -         11.281      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     CO       Out     0.258     11.538      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      I3       In      -         11.924      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      O        Out     0.316     12.240      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      I0       In      -         13.611      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      O        Out     0.449     14.060      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     I0       In      -         14.964      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     CO       Out     0.258     15.222      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      I3       In      -         15.608      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      O        Out     0.316     15.924      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      I0       In      -         17.295      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      O        Out     0.449     17.743      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     I0       In      -         18.648      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     CO       Out     0.258     18.906      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      I3       In      -         19.292      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      O        Out     0.316     19.608      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_5_c_RNIA9BQC       SB_LUT4      I0       In      -         20.979      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_5_c_RNIA9BQC       SB_LUT4      O        Out     0.449     21.427      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      I0       In      -         22.798      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      O        Out     0.449     23.247      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      I0       In      -         24.618      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      O        Out     0.449     25.067      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      I0       In      -         26.438      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      O        Out     0.449     26.887      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       Net          -        -       1.371     -           2         
-Pixel_1_RNO_8                                                     SB_LUT4      I3       In      -         28.258      -         
-Pixel_1_RNO_8                                                     SB_LUT4      O        Out     0.316     28.573      -         
-N_8                                                               Net          -        -       1.371     -           1         
-Pixel_1_RNO_3                                                     SB_LUT4      I0       In      -         29.944      -         
-Pixel_1_RNO_3                                                     SB_LUT4      O        Out     0.449     30.393      -         
-un20_0_1                                                          Net          -        -       1.371     -           1         
-Pixel_1_RNO                                                       SB_LUT4      I3       In      -         31.764      -         
-Pixel_1_RNO                                                       SB_LUT4      O        Out     0.316     32.080      -         
-Pixel_5                                                           Net          -        -       1.507     -           1         
-Pixel_1                                                           SB_DFF       D        In      -         33.587      -         
-================================================================================================================================
-Total path delay (propagation time + setup) of 33.692 is 9.022(26.8%) logic and 24.670(73.2%) route.
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                      Type          Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+beamX[2]                                                                  SB_DFF        Q        Out     0.540     0.540       -         
+beamX[2]                                                                  Net           -        -       0.834     -           6         
+un5_visiblex_cry_2_c                                                      SB_CARRY      I0       In      -         1.374       -         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CO       Out     0.258     1.632       -         
+un5_visiblex_cry_2                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CI       In      -         1.646       -         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CO       Out     0.126     1.772       -         
+un5_visiblex_cry_3                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CI       In      -         1.786       -         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CO       Out     0.126     1.912       -         
+un5_visiblex_cry_4                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CI       In      -         1.926       -         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CO       Out     0.126     2.052       -         
+un5_visiblex_cry_5                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CI       In      -         2.066       -         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CO       Out     0.126     2.192       -         
+un5_visiblex_cry_6                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CI       In      -         2.206       -         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CO       Out     0.126     2.333       -         
+un5_visiblex_cry_7                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CI       In      -         2.346       -         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CO       Out     0.126     2.473       -         
+un5_visiblex_cry_8                                                        Net           -        -       0.386     -           1         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       I3       In      -         2.859       -         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       O        Out     0.316     3.174       -         
+un1_visiblex_if_generate_plus\.mult1_un47_sum_axb_6                       Net           -        -       1.371     -           15        
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       I0       In      -         4.545       -         
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       O        Out     0.449     4.994       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_s_2_sf                  Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      I0       In      -         5.899       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     6.157       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CI       In      -         6.171       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     6.297       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CI       In      -         6.311       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     6.437       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4                   Net           -        -       0.386     -           3         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       I3       In      -         6.823       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       O        Out     0.316     7.139       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       I1       In      -         8.510       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       O        Out     0.379     8.888       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      I0       In      -         9.793       -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      CO       Out     0.258     10.051      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       I3       In      -         10.437      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       O        Out     0.316     10.752      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       I0       In      -         12.123      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       O        Out     0.449     12.572      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      I0       In      -         13.477      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     13.735      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CI       In      -         13.749      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     13.875      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CI       In      -         13.889      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     14.015      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       I3       In      -         14.401      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       O        Out     0.316     14.717      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       I0       In      -         16.088      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       O        Out     0.449     16.537      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      I0       In      -         17.442      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     17.699      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CI       In      -         17.713      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     17.839      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CI       In      -         17.853      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     17.979      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       I3       In      -         18.365      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       O        Out     0.316     18.681      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       I0       In      -         20.052      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       O        Out     0.449     20.501      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      I0       In      -         21.406      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     21.663      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CI       In      -         21.677      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     21.804      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CI       In      -         21.817      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     21.944      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       I3       In      -         22.330      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       O        Out     0.316     22.645      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       I0       In      -         24.016      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       O        Out     0.449     24.465      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      I0       In      -         25.370      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     25.628      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CI       In      -         25.642      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     25.768      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CI       In      -         25.782      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     25.908      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       I3       In      -         26.294      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       O        Out     0.316     26.610      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       I0       In      -         27.981      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       O        Out     0.449     28.429      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      I0       In      -         29.334      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     29.592      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CI       In      -         29.606      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     29.732      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CI       In      -         29.746      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     29.872      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       I3       In      -         30.258      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       O        Out     0.316     30.574      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       I0       In      -         31.945      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       O        Out     0.449     32.394      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      I0       In      -         33.299      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     33.556      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CI       In      -         33.570      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     33.696      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3                   Net           -        -       0.014     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CI       In      -         33.710      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     33.837      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       I3       In      -         34.223      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       O        Out     0.316     34.538      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       Net           -        -       1.371     -           15        
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       I2       In      -         35.909      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       O        Out     0.379     36.288      -         
+r_i1_mux                                                                  Net           -        -       1.371     -           1         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       I1       In      -         37.659      -         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       O        Out     0.400     38.059      -         
+Pixel_3_sqmuxa_1_1                                                        Net           -        -       1.371     -           3         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       I1       In      -         39.430      -         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       O        Out     0.400     39.829      -         
+g0_0_4                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       I1       In      -         41.200      -         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       O        Out     0.400     41.600      -         
+g0_0_5                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       I3       In      -         42.971      -         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       O        Out     0.316     43.287      -         
+G_25_i_2_0                                                                Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       I1       In      -         44.658      -         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       O        Out     0.379     45.036      -         
+Pixel_9_u_ns_rn_0                                                         Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO                                                           SB_LUT4       I1       In      -         46.407      -         
+Pixel_1_esr_RNO                                                           SB_LUT4       O        Out     0.379     46.786      -         
+Pixel_9                                                                   Net           -        -       1.507     -           1         
+Pixel_1_esr                                                               SB_DFFESR     D        In      -         48.293      -         
+=========================================================================================================================================
+Total path delay (propagation time + setup) of 48.398 is 14.498(30.0%) logic and 33.900(70.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      28.676
+      Requested Period:                      41.377
     - Setup time:                            0.105
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         28.571
+    = Required time:                         41.272
 
-    - Propagation time:                      33.582
+    - Propagation time:                      48.293
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -5.011
+    = Slack (non-critical) :                 -7.021
 
-    Number of logic level(s):                25
-    Starting point:                          beamY_fast[4] / Q
-    Ending point:                            Pixel_1 / D
+    Number of logic level(s):                53
+    Starting point:                          beamX[0] / Q
+    Ending point:                            Pixel_1_esr / D
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                                                                 Pin      Pin               Arrival     No. of    
-Name                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------------
-beamY_fast[4]                                                     SB_DFFE      Q        Out     0.540     0.540       -         
-beamY_fast[4]                                                     Net          -        -       1.599     -           3         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      I1       In      -         2.139       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          SB_LUT4      O        Out     0.400     2.539       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO_0          Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      I0       In      -         3.910       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            SB_LUT4      O        Out     0.449     4.359       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c_RNO            Net          -        -       0.905     -           1         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     I0       In      -         5.263       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2_c                SB_CARRY     CO       Out     0.258     5.521       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_2                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CI       In      -         5.535       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3_c                SB_CARRY     CO       Out     0.126     5.661       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_3                  Net          -        -       0.014     -           2         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CI       In      -         5.675       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_4_c                SB_CARRY     CO       Out     0.126     5.801       -         
-un1_beamY_if_generate_plus\.mult1_un33_sum_cry_5                  Net          -        -       0.386     -           2         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      I0       In      -         6.187       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_inv            SB_LUT4      O        Out     0.449     6.636       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_axb_6                  Net          -        -       0.905     -           3         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     I1       In      -         7.541       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c                SB_CARRY     CO       Out     0.229     7.770       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      I1       In      -         8.156       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        SB_LUT4      O        Out     0.400     8.556       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_6_c_RNIMEJB        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      I1       In      -         9.927       -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       SB_LUT4      O        Out     0.400     10.326      -         
-un1_beamY_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIJCIH1       Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     I0       In      -         11.232      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c                SB_CARRY     CO       Out     0.258     11.489      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      I3       In      -         11.875      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        SB_LUT4      O        Out     0.316     12.191      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF        Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      I0       In      -         13.562      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_cry_6_c_RNIISVF_0      SB_LUT4      O        Out     0.449     14.010      -         
-un1_beamY_if_generate_plus\.mult1_un47_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     I0       In      -         14.915      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c                SB_CARRY     CO       Out     0.258     15.173      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      I3       In      -         15.559      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       SB_LUT4      O        Out     0.316     15.874      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      I0       In      -         17.246      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_cry_6_c_RNI3ILK3_0     SB_LUT4      O        Out     0.449     17.694      -         
-un1_beamY_if_generate_plus\.mult1_un54_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     I0       In      -         18.599      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c                SB_CARRY     CO       Out     0.258     18.857      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      I3       In      -         19.243      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       SB_LUT4      O        Out     0.316     19.558      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      I0       In      -         20.929      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_cry_6_c_RNI3I5J6_0     SB_LUT4      O        Out     0.449     21.378      -         
-un1_beamY_if_generate_plus\.mult1_un61_sum_i[7]                   Net          -        -       0.905     -           2         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     I0       In      -         22.283      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c                SB_CARRY     CO       Out     0.258     22.541      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6                  Net          -        -       0.386     -           1         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      I3       In      -         22.927      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       SB_LUT4      O        Out     0.316     23.242      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_6_c_RNIFHPSC       Net          -        -       1.371     -           8         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      I0       In      -         24.613      -         
-un1_beamY_if_generate_plus\.mult1_un68_sum_cry_5_c_RNI4ON1P       SB_LUT4      O        Out     0.449     25.062      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_axb_7                  Net          -        -       1.371     -           1         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      I0       In      -         26.433      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       SB_LUT4      O        Out     0.449     26.882      -         
-un1_beamY_if_generate_plus\.mult1_un75_sum_cry_6_c_RNI79DAP       Net          -        -       1.371     -           2         
-Pixel_1_RNO_8                                                     SB_LUT4      I3       In      -         28.253      -         
-Pixel_1_RNO_8                                                     SB_LUT4      O        Out     0.316     28.569      -         
-N_8                                                               Net          -        -       1.371     -           1         
-Pixel_1_RNO_3                                                     SB_LUT4      I0       In      -         29.939      -         
-Pixel_1_RNO_3                                                     SB_LUT4      O        Out     0.449     30.388      -         
-un20_0_1                                                          Net          -        -       1.371     -           1         
-Pixel_1_RNO                                                       SB_LUT4      I3       In      -         31.759      -         
-Pixel_1_RNO                                                       SB_LUT4      O        Out     0.316     32.075      -         
-Pixel_5                                                           Net          -        -       1.507     -           1         
-Pixel_1                                                           SB_DFF       D        In      -         33.582      -         
-================================================================================================================================
-Total path delay (propagation time + setup) of 33.687 is 9.097(27.0%) logic and 24.590(73.0%) route.
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                      Type          Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+beamX[0]                                                                  SB_DFF        Q        Out     0.540     0.540       -         
+beamX[0]                                                                  Net           -        -       0.834     -           13        
+un5_visiblex_cry_0_c                                                      SB_CARRY      I0       In      -         1.374       -         
+un5_visiblex_cry_0_c                                                      SB_CARRY      CO       Out     0.258     1.632       -         
+un5_visiblex_cry_0                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CI       In      -         1.646       -         
+un5_visiblex_cry_1_c                                                      SB_CARRY      CO       Out     0.126     1.772       -         
+un5_visiblex_cry_1                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CI       In      -         1.786       -         
+un5_visiblex_cry_2_c                                                      SB_CARRY      CO       Out     0.126     1.912       -         
+un5_visiblex_cry_2                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CI       In      -         1.926       -         
+un5_visiblex_cry_3_c                                                      SB_CARRY      CO       Out     0.126     2.052       -         
+un5_visiblex_cry_3                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CI       In      -         2.066       -         
+un5_visiblex_cry_4_c                                                      SB_CARRY      CO       Out     0.126     2.192       -         
+un5_visiblex_cry_4                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CI       In      -         2.206       -         
+un5_visiblex_cry_5_c                                                      SB_CARRY      CO       Out     0.126     2.333       -         
+un5_visiblex_cry_5                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CI       In      -         2.346       -         
+un5_visiblex_cry_6_c                                                      SB_CARRY      CO       Out     0.126     2.473       -         
+un5_visiblex_cry_6                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CI       In      -         2.487       -         
+un5_visiblex_cry_7_c                                                      SB_CARRY      CO       Out     0.126     2.613       -         
+un5_visiblex_cry_7                                                        Net           -        -       0.014     -           2         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CI       In      -         2.627       -         
+un5_visiblex_cry_8_c                                                      SB_CARRY      CO       Out     0.126     2.753       -         
+un5_visiblex_cry_8                                                        Net           -        -       0.386     -           1         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       I3       In      -         3.139       -         
+un5_visiblex_cry_8_c_RNI1D62                                              SB_LUT4       O        Out     0.316     3.455       -         
+un1_visiblex_if_generate_plus\.mult1_un47_sum_axb_6                       Net           -        -       1.371     -           15        
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       I0       In      -         4.826       -         
+un5_visiblex_cry_8_c_RNI1D62_3                                            SB_LUT4       O        Out     0.449     5.274       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_s_2_sf                  Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      I0       In      -         6.180       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     6.437       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CI       In      -         6.451       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     6.577       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CI       In      -         6.591       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     6.717       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4                   Net           -        -       0.386     -           3         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       I3       In      -         7.103       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         SB_LUT4       O        Out     0.316     7.419       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_4_c_RNIFHS3         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       I1       In      -         8.790       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         SB_LUT4       O        Out     0.379     9.169       -         
+font\.un19_pixel_if_generate_plus\.mult1_un26_sum_cry_2_c_RNITBT9         Net           -        -       0.905     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      I0       In      -         10.074      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c                 SB_CARRY      CO       Out     0.258     10.331      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       I3       In      -         10.717      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         SB_LUT4       O        Out     0.316     11.033      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K         Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       I0       In      -         12.404      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_cry_4_c_RNIB82K_0       SB_LUT4       O        Out     0.449     12.853      -         
+font\.un19_pixel_if_generate_plus\.mult1_un33_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      I0       In      -         13.758      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c                 SB_CARRY      CO       Out     0.258     14.015      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       I3       In      -         14.401      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        SB_LUT4       O        Out     0.316     14.717      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       I0       In      -         16.088      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_cry_4_c_RNIDAEE1_0      SB_LUT4       O        Out     0.449     16.537      -         
+font\.un19_pixel_if_generate_plus\.mult1_un40_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      I0       In      -         17.442      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     17.699      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CI       In      -         17.713      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     17.839      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CI       In      -         17.853      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     17.979      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       I3       In      -         18.365      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        SB_LUT4       O        Out     0.316     18.681      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       I0       In      -         20.052      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_cry_4_c_RNIRBKP2_0      SB_LUT4       O        Out     0.449     20.501      -         
+font\.un19_pixel_if_generate_plus\.mult1_un47_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      I0       In      -         21.406      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     21.663      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CI       In      -         21.677      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     21.804      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CI       In      -         21.817      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     21.944      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       I3       In      -         22.330      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        SB_LUT4       O        Out     0.316     22.645      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       I0       In      -         24.016      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_cry_4_c_RNIL3EO5_0      SB_LUT4       O        Out     0.449     24.465      -         
+font\.un19_pixel_if_generate_plus\.mult1_un54_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      I0       In      -         25.370      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     25.628      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CI       In      -         25.642      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     25.768      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CI       In      -         25.782      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     25.908      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       I3       In      -         26.294      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        SB_LUT4       O        Out     0.316     26.610      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       I0       In      -         27.981      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_cry_4_c_RNIQ15IB_0      SB_LUT4       O        Out     0.449     28.429      -         
+font\.un19_pixel_if_generate_plus\.mult1_un61_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      I0       In      -         29.334      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     29.592      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CI       In      -         29.606      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     29.732      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_3                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CI       In      -         29.746      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     29.872      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       I3       In      -         30.258      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        SB_LUT4       O        Out     0.316     30.574      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_cry_4_c_RNIHIMHM        Net           -        -       1.371     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       I0       In      -         31.945      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_inv             SB_LUT4       O        Out     0.449     32.394      -         
+font\.un19_pixel_if_generate_plus\.mult1_un68_sum_i[5]                    Net           -        -       0.905     -           4         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      I0       In      -         33.299      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2_c                 SB_CARRY      CO       Out     0.258     33.556      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_2                   Net           -        -       0.014     -           2         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CI       In      -         33.570      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3_c                 SB_CARRY      CO       Out     0.126     33.696      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_3                   Net           -        -       0.014     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CI       In      -         33.710      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c                 SB_CARRY      CO       Out     0.126     33.837      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4                   Net           -        -       0.386     -           1         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       I3       In      -         34.223      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       SB_LUT4       O        Out     0.316     34.538      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_4_c_RNIK64QB1       Net           -        -       1.371     -           15        
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       I2       In      -         35.909      -         
+font\.un19_pixel_if_generate_plus\.mult1_un75_sum_cry_1_c_RNI8JV5C1_0     SB_LUT4       O        Out     0.379     36.288      -         
+r_i1_mux                                                                  Net           -        -       1.371     -           1         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       I1       In      -         37.659      -         
+beamX_RNI6J1NH2[0]                                                        SB_LUT4       O        Out     0.400     38.059      -         
+Pixel_3_sqmuxa_1_1                                                        Net           -        -       1.371     -           3         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       I1       In      -         39.430      -         
+Pixel_1_esr_RNO_49                                                        SB_LUT4       O        Out     0.400     39.829      -         
+g0_0_4                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       I1       In      -         41.200      -         
+Pixel_1_esr_RNO_26                                                        SB_LUT4       O        Out     0.400     41.600      -         
+g0_0_5                                                                    Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       I3       In      -         42.971      -         
+Pixel_1_esr_RNO_10                                                        SB_LUT4       O        Out     0.316     43.287      -         
+G_25_i_2_0                                                                Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       I1       In      -         44.658      -         
+Pixel_1_esr_RNO_2                                                         SB_LUT4       O        Out     0.379     45.036      -         
+Pixel_9_u_ns_rn_0                                                         Net           -        -       1.371     -           1         
+Pixel_1_esr_RNO                                                           SB_LUT4       I1       In      -         46.407      -         
+Pixel_1_esr_RNO                                                           SB_LUT4       O        Out     0.379     46.786      -         
+Pixel_9                                                                   Net           -        -       1.507     -           1         
+Pixel_1_esr                                                               SB_DFFESR     D        In      -         48.293      -         
+=========================================================================================================================================
+Total path delay (propagation time + setup) of 48.398 is 14.498(30.0%) logic and 33.900(70.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -749,7 +1196,7 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 ##### END OF TIMING REPORT #####]
 
 
-Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 81MB peak: 82MB)
+Finished timing report (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 86MB peak: 93MB)
 
 ---------------------------------------
 Resource Usage Report for SimpleVGA 
@@ -757,34 +1204,35 @@ Resource Usage Report for SimpleVGA
 Mapping to part: ice40hx1ktq144
 Cell usage:
 GND             1 use
-SB_CARRY        79 uses
-SB_DFF          16 uses
-SB_DFFE         14 uses
+SB_CARRY        111 uses
+SB_DFF          15 uses
+SB_DFFE         16 uses
+SB_DFFESR       1 use
 SB_GB           1 use
 SB_PLL40_CORE   1 use
 VCC             1 use
-SB_LUT4         171 uses
+SB_LUT4         329 uses
 
 I/O ports: 7
 I/O primitives: 7
 SB_IO          7 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   30 (2%)
+Register bits not including I/Os:   32 (2%)
 Total load per clock:
    PLL|PLLOUTCORE_derived_clock: 1
 
 Mapping Summary:
-Total  LUTs: 171 (13%)
+Total  LUTs: 329 (25%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 171 = 171 
+Distribution of All Consumed Luts 329 = 329 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 38MB peak: 82MB)
+At Mapper Exit (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 39MB peak: 93MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:04s cputime
-# Wed Jun 17 19:41:14 2015
+Process took 0h:00m:12s realtime, 0h:00m:11s cputime
+# Fri Jun 19 15:41:05 2015
 
 ###########################################################]

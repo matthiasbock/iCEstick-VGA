@@ -1,4 +1,2 @@
-@E: CD157 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":9:25:9:33|Expecting return type name
-@E: CD157 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":19:25:19:33|Expecting return type name
-@E|Parse errors encountered - exiting
+@E: CD379 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":64:23:64:23|Specified wrong number of values in aggregate, expected 8
 

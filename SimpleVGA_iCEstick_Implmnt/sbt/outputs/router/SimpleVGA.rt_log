@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:05:28
 
-* File Generated:     Jun 17 2015 19:42:39
+* File Generated:     Jun 19 2015 15:42:11
 
 * Purpose:            Router runtime info
 
@@ -20,26 +20,14 @@ I1202: Reading Architecture of device iCE40HX1K
 Info-1404: Inferred PLL generated clock at Clock50MHz.PLL_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at Clock50MHz.PLL_inst/PLLOUTGLOBAL
 I1209: Started routing
-I1223: Total Nets : 285 
-I1212: Iteration  1 :    45 unrouted : 0 seconds
-I1212: Iteration  2 :    18 unrouted : 1 seconds
+I1223: Total Nets : 484 
+I1212: Iteration  1 :    69 unrouted : 1 seconds
+I1212: Iteration  2 :    20 unrouted : 1 seconds
 I1212: Iteration  3 :    10 unrouted : 0 seconds
-I1212: Iteration  4 :     6 unrouted : 0 seconds
-I1212: Iteration  5 :     4 unrouted : 0 seconds
+I1212: Iteration  4 :    10 unrouted : 0 seconds
+I1212: Iteration  5 :    10 unrouted : 0 seconds
 I1212: Iteration  6 :     4 unrouted : 0 seconds
-I1212: Iteration  7 :     4 unrouted : 0 seconds
-I1212: Iteration  8 :     4 unrouted : 0 seconds
-I1212: Iteration  9 :     4 unrouted : 0 seconds
-I1212: Iteration 10 :     4 unrouted : 0 seconds
-I1212: Iteration 11 :     4 unrouted : 0 seconds
-I1212: Iteration 12 :     4 unrouted : 0 seconds
-I1212: Iteration 13 :     4 unrouted : 0 seconds
-I1212: Iteration 14 :     4 unrouted : 0 seconds
-I1212: Iteration 15 :     4 unrouted : 0 seconds
-I1212: Iteration 16 :     4 unrouted : 0 seconds
-I1212: Iteration 17 :     4 unrouted : 0 seconds
-I1212: Iteration 18 :     4 unrouted : 0 seconds
-I1212: Iteration 19 :     0 unrouted : 0 seconds
+I1212: Iteration  7 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design SimpleVGA

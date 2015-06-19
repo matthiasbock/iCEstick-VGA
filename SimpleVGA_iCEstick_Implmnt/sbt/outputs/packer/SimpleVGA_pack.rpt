@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 17 2015 19:42:39
+* File Generated:     Jun 19 2015 15:42:10
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 2 seconds
 
 Device Info:
 ------------
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  30
-    LUTs:                 184
+    FFs:                  32
+    LUTs:                 344
     RAMs:                 0
     IOBs:                 7
     GBs:                  1
@@ -37,12 +37,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 198/1280
-        Combinational Logic Cells: 168      out of   1280      13.125%
-        Sequential Logic Cells:    30       out of   1280      2.34375%
-        Logic Tiles:               35       out of   160       21.875%
+    Total Logic Cells: 364/1280
+        Combinational Logic Cells: 332      out of   1280      25.9375%
+        Sequential Logic Cells:    32       out of   1280      2.5%
+        Logic Tiles:               59       out of   160       36.875%
     Registers: 
-        Logic Registers:           30       out of   1280      2.34375%
+        Logic Registers:           32       out of   1280      2.5%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
@@ -81,4 +81,4 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name   
     -------------  -------  ---------  ------  -----------   
-    3              3                   30      PixelClock_g  
+    3              3                   32      PixelClock_g  
