@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>U:/SimpleVGA_iCEstick/SimpleVGA_iCEstick_Implmnt/sbt/outputs/bitmap/SimpleVGA_bitmap.bin</File>
-			<FileTime>06/17/15 16:22:23</FileTime>
+			<FileTime>06/24/15 00:17:17</FileTime>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

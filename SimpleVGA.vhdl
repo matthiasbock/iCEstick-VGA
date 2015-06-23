@@ -25,11 +25,12 @@ entity SimpleVGA is
         -- VSync: FPGA pin 60, J3 pin 5 = PIO2_15
 
         -- additional mirror pins for debugging
-        HSyncDebug, VSyncDebug, PixelDebug : out std_logic
+        nCS1, nCS2, SCLK1, SCLK2 : out std_logic;
+        SDATA : in  std_logic
         -- iCEstick:
-        -- Pixel: FPGA pin 112, J1 pin 3 = PIO0_02
-        -- HSync: FPGA pin 113, J1 pin 4 = PIO0_03
-        -- VSync: FPGA pin 114, J1 pin 5 = PIO0_04
+        -- nCS  : FPGA pin 112, J1 pin 3 = PIO0_02
+        -- SCLK : FPGA pin 113, J1 pin 4 = PIO0_03
+        -- SDATA: FPGA pin 114, J1 pin 5 = PIO0_04
 
     );
 end entity;
@@ -78,7 +79,10 @@ architecture vga of SimpleVGA is
     
     type ScreenContent is array(0 to 9) of integer range 0 to 255;
     constant Content : ScreenContent := (48, 49, 50, 51, 52, 53, 54, 55, 56, 57);
-   
+
+    
+    -- SPI: Serial Peripheral Interface
+    
 begin
     -- Global clock
     Clock50MHz: PLL
@@ -181,9 +185,66 @@ begin
         end if;
     end process;
     
-    -- clone signals for oscilloscope probe, i.e. for debugging
-    HSyncDebug <= HSync;
-    VSyncDebug <= VSync;
-    PixelDebug <= Pixel;
+
+    -- SPI interface
+
+    process(Clock12MHz)
+        variable counter : integer := 0;
+        variable SlaveSelect : boolean := false;
+    begin
+        if (SlaveSelect)
+        then
+                -- query the slave with 12 MHz
+                if (counter > 0)
+                then
+                    SCLK1 <= Clock12MHz;
+                else
+                    SCLK1 <= 'Z';
+                end if;
+        else
+                -- tristate: high impedance
+                SCLK1 <= 'Z';
+        end if;
+
+        if (Clock12MHz'event and Clock12MHz='1')
+        then
+            if (SlaveSelect)
+            then
+                -- disable slave select
+                if (counter >= 17)
+                then
+                    SlaveSelect := false;
+                    nCS1 <= '1';
+                    counter := 0;
+                else
+                    counter := counter + 1;
+                end if;
+            else
+                -- recover from undefined states
+                nCS1 <= '1';
+                
+                -- enable slave select
+                if (counter >= 50)
+                then
+                    SlaveSelect := true;
+                    nCS1 <= '0';
+                    counter := 0;
+                else
+                    counter := counter + 1;
+                end if;
+            end if;
+        end if;
+    end process;
     
+    nCS2 <= nCS1;
+    SCLK2 <= SCLK1;
+    
+--    process(SCLK, SDATA)
+--    begin
+--        if (SCLK'event and SCLK='0')
+--        then
+            -- read SDATA
+--        end if;
+--    end process;
+
 end vga;

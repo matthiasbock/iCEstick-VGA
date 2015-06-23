@@ -1,7 +1,8 @@
-OUTPUT VSyncDebug 	 location (11, 17, 1) 	 114 	 SB_LVCMOS
-OUTPUT PixelDebug 	 location (12, 17, 1) 	 112 	 SB_LVCMOS
-OUTPUT HSyncDebug 	 location (12, 17, 0) 	 113 	 SB_LVCMOS
-INPUT  Clock12MHz 	 location (0, 8, 1) 	 21 	 SB_LVCMOS
 OUTPUT VSync 	 location (8, 0, 1) 	 60 	 SB_LVCMOS
+OUTPUT SCLK1 	 location (11, 17, 1) 	 114 	 SB_LVCMOS
 OUTPUT Pixel 	 location (9, 0, 1) 	 62 	 SB_LVCMOS
 OUTPUT HSync 	 location (9, 0, 0) 	 61 	 SB_LVCMOS
+OUTPUT nCS2 	 location (12, 17, 0) 	 113 	 SB_LVCMOS
+OUTPUT SCLK2 	 location (11, 17, 0) 	 115 	 SB_LVCMOS
+INPUT  Clock12MHz 	 location (0, 8, 1) 	 21 	 SB_LVCMOS
+OUTPUT nCS1 	 location (12, 17, 1) 	 112 	 SB_LVCMOS

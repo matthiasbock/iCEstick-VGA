@@ -4,24 +4,26 @@ Resource Usage Report for SimpleVGA
 Mapping to part: ice40hx1ktq144
 Cell usage:
 GND             1 use
-SB_CARRY        152 uses
-SB_DFF          16 uses
-SB_DFFE         15 uses
+SB_CARRY        155 uses
+SB_DFF          23 uses
+SB_DFFE         12 uses
+SB_DFFSS        1 use
 SB_GB           1 use
 SB_PLL40_CORE   1 use
 VCC             1 use
-SB_LUT4         485 uses
+SB_LUT4         488 uses
 
-I/O ports: 7
-I/O primitives: 7
+I/O ports: 9
+I/O primitives: 8
+SB_GB_IO       1 use
 SB_IO          7 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   31 (2%)
+Register bits not including I/Os:   36 (2%)
 
 Mapping Summary:
-Total  LUTs: 485 (37%)
+Total  LUTs: 488 (38%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 485 = 485 
+Distribution of All Consumed Luts 488 = 488 
 

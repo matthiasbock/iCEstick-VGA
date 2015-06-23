@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 23 2015 22:11:43
+* File Generated:     Jun 24 2015 00:15:33
 
 * Purpose:            General info of design implementation
 
@@ -23,9 +23,9 @@ Size: 12 X 16
 
 ***** Design Utilization Info *****
 Design: SimpleVGA
-Used Logic Cell: 535/1280
-Used Logic Tile: 89/160
-Used IO Cell:    7/112
+Used Logic Cell: 532/1280
+Used Logic Tile: 92/160
+Used IO Cell:    8/112
 Used Bram Cell For iCE40: 0/16
 Used PLL For iCE40: 0/1
 Ram Cascading Used: 0
@@ -36,8 +36,15 @@ Clock Domain: PixelClock_g
 Clock Source: Clock50MHz.PixelClock 
 Clock Driver: Clock50MHz.PLLOUTCORE_derived_clock_RNI49H9 (ICE_GB)
 Driver Position: (0, 9, 0)
-Fanout to FF: 31
-Fanout to Tile: 15
+Fanout to FF: 28
+Fanout to Tile: 13
+
+Clock Domain: Clock12MHz_c_g
+Clock Source: clock12mhz 
+Clock Driver: Clock12MHz_ibuf_gb_io (ICE_GB_IO)
+Driver Position: (0, 8, 1)
+Fanout to FF: 9
+Fanout to Tile: 5
 
 
 ***** Placement Info *****
@@ -46,25 +53,25 @@ Logic cell utilization per tile
    ----------------------------
 17|                             
 16|   0 0 0 0 0 0 0 0 0 0 0 0   
-15|   0 0 0 0 0 0 0 0 0 0 0 0   
-14|   0 0 0 0 0 0 7 8 0 0 0 0   
-13|   7 1 0 4 0 3 7 8 8 0 0 0   
-12|   8 8 0 5 8 0 8 8 8 0 0 0   
-11|   7 2 0 4 7 5 8 8 6 0 0 0   
-10|   8 5 0 1 5 1 6 8 8 0 0 0   
- 9|   8 8 0 5 6 4 4 7 6 0 5 0   
- 8|   8 6 0 6 6 8 6 4 0 0 5 0   
- 7|   8 4 0 6 4 5 6 0 8 0 6 0   
- 6|   8 4 0 8 8 5 4 1 5 0 7 0   
- 5|   8 3 0 4 7 8 8 8 7 0 8 0   
- 4|   8 8 0 0 6 8 7 8 5 0 0 0   
- 3|   1 7 0 0 0 0 7 7 2 0 0 0   
- 2|   0 5 0 0 0 0 1 0 0 0 0 0   
- 1|   0 0 0 0 0 0 0 0 0 0 0 0   
+15|   0 0 0 0 0 0 7 0 0 0 0 0   
+14|   0 0 0 6 1 0 6 6 0 0 0 0   
+13|   0 0 0 8 5 0 7 0 6 0 0 0   
+12|   8 0 0 0 0 1 8 8 7 0 8 0   
+11|   8 6 0 6 4 2 8 5 7 0 2 0   
+10|   7 8 0 7 5 8 8 7 1 0 0 0   
+ 9|   8 7 0 6 8 7 7 6 7 0 0 0   
+ 8|   8 7 0 6 6 6 6 7 5 0 1 0   
+ 7|   2 4 0 7 5 4 8 7 3 0 8 0   
+ 6|   8 6 0 6 8 5 8 8 8 0 8 0   
+ 5|   3 5 0 5 8 8 6 8 7 0 8 0   
+ 4|   1 1 0 0 8 8 7 8 6 0 3 0   
+ 3|   0 0 0 1 2 7 6 1 0 0 0 0   
+ 2|   0 0 0 0 1 0 0 0 0 0 0 0   
+ 1|   0 0 0 0 0 0 0 1 0 0 1 0   
  0|                             
 
 Maximum number of Logic cells per logic tile: 8
-Average number of Logic cells per logic tile: 6.01
+Average number of Logic cells per logic tile: 5.78
 
 ***** Input Pin Density Info *****
 Number of input nets per logic tile
@@ -72,50 +79,50 @@ Number of input nets per logic tile
    ------------------------------------------
 17|                                           
 16|     0  0  0  0  0  0  0  0  0  0  0  0    
-15|     0  0  0  0  0  0  0  0  0  0  0  0    
-14|     0  0  0  0  0  0 13 15  0  0  0  0    
-13|    19  3  0 13  0  7 10 14 11  0  0  0    
-12|    17 16  0 15 16  0 14 21 12  0  0  0    
-11|    14  2  0 11 14 15 16 20 13  0  0  0    
-10|    13  9  0  3 14  4 16 21 18  0  0  0    
- 9|    22 15  0 13 16 15  8 20 12  0  4  0    
- 8|    16  6  0 17 19 22 13  8  0  0 10  0    
- 7|    17  8  0 12 13 18 12  0 13  0 13  0    
- 6|    16  8  0 19 17 12  7  1 12  0 13  0    
- 5|    15  6  0  7 12 16 13 14 14  0 14  0    
- 4|    16 15  0  0 12 13 15 14  7  0  0  0    
- 3|     1 12  0  0  0  0 13 13  3  0  0  0    
- 2|     0  7  0  0  0  0  0  0  0  0  0  0    
- 1|     0  0  0  0  0  0  0  0  0  0  0  0    
+15|     0  0  0  0  0  0 12  0  0  0  0  0    
+14|     0  0  0 12  3  0 12 13  0  0  0  0    
+13|     0  0  0 15  8  0 12  0 13  0  0  0    
+12|    15  0  0  0  0  1 17 14 14  0 12  0    
+11|    15 13  0 12  5  5 15  6 13  0  2  0    
+10|    15 17  0 11 12 16 16 14  4  0  0  0    
+ 9|    16 15  0 15 17 12 13 21 13  0  0  0    
+ 8|    15 10  0 12 18 15 12 21 11  0  1  0    
+ 7|     4  7  0 13 15 13 15 22  5  0 15  0    
+ 6|    17 12  0 16 12 11 19 20 15  0 16  0    
+ 5|     5  9  0 10 17 16 15 18 15  0 13  0    
+ 4|     1  1  0  0 18 22 19 21  8  0  6  0    
+ 3|     0  0  0  3  8 18 13  4  0  0  0  0    
+ 2|     0  0  0  0  0  0  0  0  0  0  0  0    
+ 1|     0  0  0  0  0  0  0  1  0  0  1  0    
  0|                                           
 
 Maximum number of input nets per logic tile: 22
-Average number of input nets per logic tile: 12.70
+Average number of input nets per logic tile: 12.20
 
 Number of input pins per logic tile
      .  .  .  .  +  .  .  .  .  1  .  .  .  . 
    ------------------------------------------
 17|                                           
 16|     0  0  0  0  0  0  0  0  0  0  0  0    
-15|     0  0  0  0  0  0  0  0  0  0  0  0    
-14|     0  0  0  0  0  0 25 21  0  0  0  0    
-13|    25  3  0 15  0  7 26 22 27  0  0  0    
-12|    30 16  0 20 31  0 31 29 27  0  0  0    
-11|    27  2  0 14 24 19 28 28 22  0  0  0    
-10|    30 10  0  3 19  4 22 24 23  0  0  0    
- 9|    29 27  0 17 20 16  9 23 12  0 18  0    
- 8|    28 10  0 23 20 30 14 12  0  0 12  0    
- 7|    20 12  0 22 13 18 14  0 16  0 14  0    
- 6|    19 13  0 29 17 13  9  1 13  0 15  0    
- 5|    18  7  0 14 14 17 22 18 18  0 17  0    
- 4|    19 20  0  0 14 16 19 19  9  0  0  0    
- 3|     1 16  0  0  0  0 15 16  3  0  0  0    
- 2|     0  9  0  0  0  0  0  0  0  0  0  0    
- 1|     0  0  0  0  0  0  0  0  0  0  0  0    
+15|     0  0  0  0  0  0 15  0  0  0  0  0    
+14|     0  0  0 20  3  0 14 14  0  0  0  0    
+13|     0  0  0 21 19  0 15  0 15  0  0  0    
+12|    18  0  0  0  0  1 20 26 16  0 15  0    
+11|    19 16  0 14  5  5 19 13 15  0  2  0    
+10|    17 20  0 24 13 17 18 16  4  0  0  0    
+ 9|    19 22  0 20 17 17 16 24 16  0  0  0    
+ 8|    19 13  0 24 24 15 14 24 14  0  1  0    
+ 7|     5  7  0 25 17 15 19 25  8  0 20  0    
+ 6|    17 18  0 24 30 18 30 28 30  0 23  0    
+ 5|     9 12  0 16 30 29 23 26 25  0 30  0    
+ 4|     1  1  0  0 27 31 27 30 21  0 11  0    
+ 3|     0  0  0  3  8 25 20  4  0  0  0  0    
+ 2|     0  0  0  0  0  0  0  0  0  0  0  0    
+ 1|     0  0  0  0  0  0  0  1  0  0  1  0    
  0|                                           
 
 Maximum number of input pins per logic tile: 31
-Average number of input pins per logic tile: 17.65
+Average number of input pins per logic tile: 16.90
 
 ***** Run Time Info *****
-Run Time:  1
+Run Time:  4

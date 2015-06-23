@@ -1,27 +1,23 @@
 @N: MF249 |Running in 32-bit mode.
 @N: MF666 |Clock conversion enabled 
 @N: MT206 |Auto Constrain mode is enabled
-@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":155:30:155:52|Generating a type div divider 
-@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":152:30:152:55|Generating a type div divider 
+@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":159:30:159:52|Generating a type div divider 
+@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":156:30:156:55|Generating a type div divider 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":158:13:158:20|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":153:30:153:57|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":157:30:157:57|Generating a type rem remainder 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":131:47:131:65|Generating a type rem remainder 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":158:33:158:40|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":156:30:156:54|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":160:30:160:54|Generating a type rem remainder 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":132:47:132:66|Generating a type rem remainder 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[2]" with 26 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[3]" with 22 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[6]" with 12 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[4]" with 14 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[5]" with 11 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[7]" with 14 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":123:8:123:9|Instance "beamY[8]" with 14 loads replicated 1 times to improve timing 
-@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":84:4:84:13|SB_GB inserted on the net PixelClock.
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[5]" with 8 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[7]" with 11 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[3]" with 18 loads replicated 1 times to improve timing 
+@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[2]" with 20 loads replicated 1 times to improve timing 
+@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":88:4:88:13|SB_GB inserted on the net PixelClock.
+@N: FX1016 :"u:\simplevga_icestick\simplevga.vhdl":9:8:9:17|SB_GB_IO inserted on the port Clock12MHz.
 @N: BW103 |Synopsys Constraint File time units using default value of 1ns 
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
-@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
-@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

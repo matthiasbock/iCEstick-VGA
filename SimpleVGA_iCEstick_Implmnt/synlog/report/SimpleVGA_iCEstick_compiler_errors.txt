@@ -1,3 +1,36 @@
-@E: CD255 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":163:74:163:74|No identifier "charwidth" in scope
-@E|Parse errors encountered - exiting
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(0) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(1) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(2) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(3) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(4) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(5) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(6) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(7) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(8) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(9) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(10) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(11) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(12) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(13) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(14) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(15) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(16) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(17) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(18) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(19) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(20) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(21) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(22) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(23) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(24) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(25) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(26) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(27) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(28) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(29) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(30) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for counter(31) does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for slaveselect does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":195:8:195:9|Logic for nCS does not match a standard flip-flop -- ambiguous clock 
+@E: CL125 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":191:4:191:10|Logic for SCLK_e does not match a standard flip-flop -- ambiguous clock 
 

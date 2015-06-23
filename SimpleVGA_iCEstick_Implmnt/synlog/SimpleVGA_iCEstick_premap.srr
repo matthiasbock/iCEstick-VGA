@@ -25,7 +25,7 @@ Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=16  set on top level netlist SimpleVGA
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
 
 
 
@@ -40,14 +40,15 @@ SimpleVGA|Clock12MHz             31.0 MHz      32.238        inferred           
 System                           1.0 MHz       1000.000      system                                  system_clkgroup      
 ==========================================================================================================================
 
+@W: MT529 :"u:\simplevga_icestick\simplevga.vhdl":209:8:209:9|Found inferred clock SimpleVGA|Clock12MHz which controls 8 sequential elements including nCS1_1. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 79MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 44MB peak: 79MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jun 23 22:10:13 2015
+# Wed Jun 24 00:13:46 2015
 
 ###########################################################]

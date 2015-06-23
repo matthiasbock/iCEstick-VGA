@@ -1,1 +1,2 @@
-CKID0001:@|S:Clock50MHz.PLL_inst@|E:beamY[2]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:Clock12MHz_ibuf_gb_io@|E:nCS1_1@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:Clock50MHz.PLL_inst@|E:beamY[2]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

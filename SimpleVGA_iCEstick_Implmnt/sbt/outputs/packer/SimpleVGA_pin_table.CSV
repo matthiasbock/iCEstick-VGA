@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 23 2015 22:11:42
+* File Generated:     Jun 24 2015 00:15:30
 
 * Purpose:            Detailed IO and package pin info
 
@@ -35,7 +35,7 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 14, GND, not used, , , , , , UnknownBank
 19, PIO, not used, , , , , , leftBank
 20, PIO_GBIN, not used, , , , , , leftBank
-21, PIO_GBIN, Clock12MHz, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
+21, PIO_GBIN, Clock12MHz, Input, glb Buff, SB_LVCMOS, No Pull Up, Simple Input, leftBank
 22, PIO, not used, , , , , , leftBank
 23, PIO, not used, , , , , , leftBank
 24, PIO, not used, , , , , , leftBank
@@ -117,10 +117,10 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 108, VPP_PUMP, not used, , , , , , UnknownBank
 109, VPP_DIRECT, not used, , , , , , UnknownBank
 111, VCC, not used, , , , , , UnknownBank
-112, PIO, PixelDebug, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
-113, PIO, HSyncDebug, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
-114, PIO, VSyncDebug, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
-115, PIO, not used, , , , , , topBank
+112, PIO, nCS1, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+113, PIO, nCS2, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+114, PIO, SCLK1, Output, , SB_LVCMOS, No Pull Up, Output Tristatable by Enable, topBank
+115, PIO, SCLK2, Output, , SB_LVCMOS, No Pull Up, Output Tristatable by Enable, topBank
 116, PIO, not used, , , , , , topBank
 117, PIO, not used, , , , , , topBank
 118, PIO, not used, , , , , , topBank
@@ -144,4 +144,4 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 142, PIO, not used, , , , , , topBank
 143, PIO, not used, , , , , , topBank
 144, PIO, not used, , , , , , topBank
-Total Number of Used Pins, 7
+Total Number of Used Pins, 8

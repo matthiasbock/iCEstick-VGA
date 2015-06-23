@@ -1,0 +1,1 @@
+@W: MT529 :"u:\simplevga_icestick\simplevga.vhdl":209:8:209:9|Found inferred clock SimpleVGA|Clock12MHz which controls 8 sequential elements including nCS1_1. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
