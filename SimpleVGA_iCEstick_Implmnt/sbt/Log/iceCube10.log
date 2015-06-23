@@ -11255,3 +11255,876 @@ Bit Stream Generator succeeded
 
 Bitmap run-time: 8 (sec)
 bitmap succeed.
+"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD255 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":10:35:10:35|No identifier "std_logic" in scope
+@E: CD169 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":119:4:119:10|Illegal declaration
+2 errors parsing file U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl
+@E: CD218 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":80:11:80:15|Declaration hides port pixel
+@E: CD126 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":101:8:101:8|Expecting identifier
+4 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:27:21 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:27:21 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD126 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":14:8:14:8|Expecting identifier
+@E: CD169 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":122:4:122:10|Illegal declaration
+2 errors parsing file U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl
+@E: CD218 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":80:11:80:15|Declaration hides port pixel
+@E: CD126 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":101:8:101:8|Expecting identifier
+4 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:27:56 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:27:56 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD169 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":122:4:122:10|Illegal declaration
+1 error parsing file U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl
+@E: CD555 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:8:206:14|Unknown identifier ident:enabled
+@E: CD172 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:20:206:21|Expecting ,
+3 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:28:41 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:28:41 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD169 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":122:4:122:10|Illegal declaration
+1 error parsing file U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl
+@E: CD555 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:8:206:14|Unknown identifier ident:enabled
+@E: CD172 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:20:206:21|Expecting ,
+3 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:28:55 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:28:55 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD203 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":144:23:144:25|return statement must be used inside a procedure or function
+1 error parsing file U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl
+@E: CD555 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:8:206:14|Unknown identifier ident:enabled
+@E: CD172 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:20:206:21|Expecting ,
+3 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:29:39 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:29:39 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD555 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:8:206:14|Unknown identifier ident:enabled
+@E: CD172 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:20:206:21|Expecting ,
+2 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:30:47 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:30:47 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD555 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:8:206:14|Unknown identifier ident:enabled
+@E: CD172 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:20:206:21|Expecting ,
+2 errors parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:31:55 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:31:55 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 15 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD622 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":206:23:206:57|Actual expression must be static
+1 error parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:33:01 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:33:01 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD622 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":207:23:207:37|Actual expression must be static
+1 error parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:34:44 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:34:44 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD527 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":87:17:87:23|Unexpected type name, perhaps this statement should be a subtype declaration
+1 error parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:40:21 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:40:21 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 15 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":249:18:249:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":250:18:250:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":251:18:251:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@E: CD371 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:15:236:81|No matching overload for "and"
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@W: CD278 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":103:12:103:16|Port type mismatch between component and entity
+@E: CD648 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":223:23:223:27|Expression does not match type bit
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:41:02 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:41:02 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":249:18:249:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":250:18:250:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":251:18:251:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@E: CD371 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:15:236:66|No matching overload for "and"
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@W: CD278 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":103:12:103:16|Port type mismatch between component and entity
+@E: CD648 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":223:23:223:27|Expression does not match type bit
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:42:15 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:42:15 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 15 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":249:18:249:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":250:18:250:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":251:18:251:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@E: CD371 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:15:236:66|No matching overload for "and"
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@E: CD676 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:15:236:66|Can't implement expression (no function signature?)
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:44:27 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:44:27 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":249:18:249:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":250:18:250:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":251:18:251:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@E: CD371 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:15:236:81|No matching overload for "and"
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@E: CD676 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:15:236:81|Can't implement expression (no function signature?)
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:45:46 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:45:46 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":254:18:254:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":255:18:255:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":256:18:256:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@W: CG296 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":227:4:227:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":236:16:236:28|Referenced variable outputenabled is not in sensitivity list
+@N: CD630 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":5:7:5:18|Synthesizing work.ledboardfont.font 
+@E: CD648 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":152:29:152:52|Expression does not match type std_ulogic
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:47:27 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:47:27 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":255:18:255:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":256:18:256:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":257:18:257:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@N: CD630 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":5:7:5:18|Synthesizing work.ledboardfont.font 
+@E: CD648 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":152:29:152:52|Expression does not match type std_ulogic
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:47:40 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:47:40 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":255:18:255:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":256:18:256:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":257:18:257:22|pixel is not readable.  This may cause a simulation mismatch.
+VHDL syntax check successful!
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
+@W: CD609 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":189:39:189:48|Index value 0 to 79 could be out of prefix range 0 to 9 
+@N: CD630 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":5:7:5:18|Synthesizing work.ledboardfont.font 
+@W: CD609 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":152:40:152:60|Index value 0 to 11 could be out of prefix range 0 to 7 
+@W: CD609 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":152:40:152:63|Index value 0 to 9 could be out of prefix range 0 to 7 
+Post processing for work.ledboardfont.font
+@W: CL117 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":135:8:135:9|Latch generated from process for signal x(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":132:46:132:50|Latch generated from process for signal y(3 downto 0); possible missing assignment in an if or case statement.
+@N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":4:7:4:9|Synthesizing work.pll.behavior 
+@W: CD280 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
+@N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Synthesizing work.sb_pll40_core.syn_black_box 
+Post processing for work.sb_pll40_core.syn_black_box
+Post processing for work.pll.behavior
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input extfeedback of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 0 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 1 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 2 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 3 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 4 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 5 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 6 of input dynamicdelay of instance PLL_inst is floating
+@W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 7 of input dynamicdelay of instance PLL_inst is floating
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input latchinputvalue of instance PLL_inst is floating
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sdi of instance PLL_inst is floating
+@W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sclk of instance PLL_inst is floating
+Post processing for work.simplevga.vga
+@W: CL169 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Pruning register Row_4(31 downto 0)  
+@W: CL169 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Pruning register Column_4(31 downto 0)  
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":120:8:120:9|Register bit Reset is always 1, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(5) is always 1, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(6) is always 0, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(7) is always 0, optimizing ...
+@W: CL279 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Pruning register bits 7 to 5 of CurrentChar(7 downto 0)  
+@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":9:8:9:12|Input CharX is unused
+@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":10:8:10:12|Input CharY is unused
+@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":12:8:12:17|Input CharHeight is unused
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 39MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:48:35 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 37MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:48:35 2015
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:48:35 2015
+
+###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+File U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_comp.srs changed - recompiling
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+@N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Selected library: work cell: SimpleVGA view vga as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 37MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:48:36 2015
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1061R, Built Nov 12 2014 09:27:19
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@L: U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_scck.rpt 
+Printing clock  summary report in "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 59MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+@E: Net "Pixel" in work.SimpleVGA(vga) has mixed driver types, The conflicting connections are
+Connection 1: Direction is (Output Tristate) on instance CharacterDisplay (view:work.SimpleVGA(vga)) port Pixel
+Connection 2: Direction is (Output) on instance Pixel_1 (view:work.SimpleVGA(vga)) port Q[0]
+Connection 3: Direction is (Output Tristate) on instance Pixel_10 (view:work.SimpleVGA(vga)) port OUT[0]
+@E: BN129 :"u:\simplevga_icestick\simplevga.vhdl":5:7:5:15|Net "Pixel" in work.SimpleVGA(vga) has mixed driver types 
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:48:37 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 15 seconds"C:\Program Files\iCEcube2.2014.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "SimpleVGA_iCEstick_syn.prj" -log "SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of SimpleVGA_iCEstick_Implmnt/SimpleVGA_iCEstick.srr
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: C:\Program Files\iCEcube2.2014.12\synpbase
+#OS: Windows 7 6.1
+#Hostname: MPNT925109O
+
+#Implementation: SimpleVGA_iCEstick_Implmnt
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Program Files\iCEcube2.2014.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Top entity is set to SimpleVGA.
+File U:\SimpleVGA_iCEstick\PLL.vhd changed - recompiling
+File U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl changed - recompiling
+File U:\SimpleVGA_iCEstick\SimpleVGA.vhdl changed - recompiling
+@E: CD214 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":227:4:227:11|Not a concurrent statement
+1 error parsing file U:\SimpleVGA_iCEstick\SimpleVGA.vhdl
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:53:16 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jun 23 18:53:16 2015
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 12 seconds18:53:24

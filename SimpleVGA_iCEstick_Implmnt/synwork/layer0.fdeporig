@@ -10,9 +10,9 @@
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\arith.vhd":1427739839
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\unsigned.vhd":1427739839
 #CUR:"C:\\Program Files\\iCEcube2.2014.12\\synpbase\\lib\\vhd\\hyperents.vhd":1427739839
-#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1435073713
+#CUR:"U:\\SimpleVGA_iCEstick\\SimpleVGA.vhdl":1435085048
 #CUR:"U:\\SimpleVGA_iCEstick\\PLL.vhd":1434555967
-#CUR:"U:\\SimpleVGA_iCEstick\\LEDBoardFont.vhdl":1435073520
+#CUR:"U:\\SimpleVGA_iCEstick\\LEDBoardFont.vhdl":1435088160
 0 "U:\SimpleVGA_iCEstick\SimpleVGA.vhdl" vhdl
 1 "U:\SimpleVGA_iCEstick\PLL.vhd" vhdl
 2 "U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl" vhdl
@@ -32,3 +32,5 @@ arch work simplevga vga 0
 module work simplevga 0
 arch work pll behavior 1
 module work pll 1
+arch work ledboardfont font 2
+module work ledboardfont 2

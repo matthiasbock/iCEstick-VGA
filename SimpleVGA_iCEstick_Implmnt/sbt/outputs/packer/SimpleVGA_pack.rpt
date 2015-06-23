@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 23 2015 17:43:50
+* File Generated:     Jun 23 2015 21:37:42
 
 * Purpose:            General info of design implementation
 
@@ -27,8 +27,8 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  33
-    LUTs:                 452
+    FFs:                  42
+    LUTs:                 249
     RAMs:                 0
     IOBs:                 7
     GBs:                  2
@@ -37,12 +37,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 483/1280
-        Combinational Logic Cells: 450      out of   1280      35.1563%
-        Sequential Logic Cells:    33       out of   1280      2.57813%
-        Logic Tiles:               75       out of   160       46.875%
+    Total Logic Cells: 278/1280
+        Combinational Logic Cells: 236      out of   1280      18.4375%
+        Sequential Logic Cells:    42       out of   1280      3.28125%
+        Logic Tiles:               52       out of   160       32.5%
     Registers: 
-        Logic Registers:           33       out of   1280      2.57813%
+        Logic Registers:           42       out of   1280      3.28125%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
@@ -81,5 +81,5 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name   
     -------------  -------  ---------  ------  -----------   
-    6              3                   33      PixelClock_g  
-    3              3                   22      un3_beamx_g   
+    6              3                   42      PixelClock_g  
+    3              3                   17      un15_beamy_g  

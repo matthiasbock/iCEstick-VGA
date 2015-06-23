@@ -1,13 +1,13 @@
 C:\Program Files\iCEcube2.2014.12\synpbase\bin\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt   -part iCE40HX1K  -package TQ144    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\report\SimpleVGA_iCEstick_premap.xml  -oedif  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.edf  -conchk_prepass  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_cck_prepass.rpt   -autoconstraint  -freq 1.000   U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_mult.srs  -flow prepass  -gcc_prepass  -osrd  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd  -qsap  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap  -devicelib  "C:\Program Files\iCEcube2.2014.12\synpbase\lib\generic\sb_ice40.v"  -ologparam  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\syntmp\SimpleVGA_iCEstick.plg  -osyn  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd  -prjdir  U:\SimpleVGA_iCEstick\  -prjname  SimpleVGA_iCEstick_syn  -log  U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_premap.srr 
-rc:0 success:1
+rc:1 success:1
 U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.edf|o|0|0
 U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick_cck_prepass.rpt|o|0|0
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_mult.srs|i|1435074149|8173
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd|o|1435074150|11181
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap|o|1435074150|1755
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_mult.srs|i|1435088206|6850
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd|o|1435088207|14167
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\SimpleVGA_iCEstick.sap|o|1435088208|3233
 C:\Program Files\iCEcube2.2014.12\synpbase\lib\generic\sb_ice40.v|i|1427739828|222921
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\syntmp\SimpleVGA_iCEstick.plg|o|1435074149|0
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd|o|1435074150|11181
-U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_premap.srr|o|1435074150|3054
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\syntmp\SimpleVGA_iCEstick.plg|o|1435088207|0
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick_prem.srd|o|1435088207|14167
+U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synlog\SimpleVGA_iCEstick_premap.srr|o|1435088208|6029
 C:\Program Files\iCEcube2.2014.12\synpbase\bin64\m_generic.exe|i|1427739821|26408960
 C:\Program Files\iCEcube2.2014.12\synpbase\bin\m_generic.exe|i|1427739803|16431616
