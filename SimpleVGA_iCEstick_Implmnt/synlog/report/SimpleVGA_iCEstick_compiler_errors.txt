@@ -1,2 +1,3 @@
-@E: CD379 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":64:23:64:23|Specified wrong number of values in aggregate, expected 8
+@E: CD415 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":31:22:31:22|Expecting keyword is
+@E|Parse errors encountered - exiting
 

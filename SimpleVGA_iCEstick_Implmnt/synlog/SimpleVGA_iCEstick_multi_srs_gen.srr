@@ -4,9 +4,9 @@ File U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\synwork\SimpleVGA_iCEstick
 @N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Selected library: work cell: SimpleVGA view vga as top level
 @N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Selected library: work cell: SimpleVGA view vga as top level
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 37MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Jun 19 15:40:52 2015
+# Tue Jun 23 17:42:29 2015
 
 ###########################################################]

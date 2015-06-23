@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version J-2014.09L
 #--  Project file U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Implmnt\run_options.txt
-#--  Written on Fri Jun 19 15:40:50 2015
+#--  Written on Tue Jun 23 17:42:26 2015
 
 
 #project files

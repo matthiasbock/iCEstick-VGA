@@ -133,25 +133,9 @@ begin
                     then
 
                         -- text column 1
-                        if (visibleX < PixelsPerColumn)
+                        if (visibleX < 11*PixelsPerColumn)
                         then
-                            Pixel <= Font('L', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
-
-                        -- text column 2
-                        elsif (visibleX < 2*PixelsPerColumn)
-                        then
-                            Pixel <= Font('0', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
-
-                        -- text column 3
-                        elsif (visibleX < 3*PixelsPerColumn)
-                        then
-                            Pixel <= Font('1', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
-
-                        -- text column 4
-                        elsif (visibleX < 4*PixelsPerColumn)
-                        then
-                            Pixel <= Font('2', visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
-                        
+                            Pixel <= Font(47+(visibleX / PixelsPerColumn), visibleX, visibleY, PixelsPerColumn, PixelsPerRow);
                         else
                             Pixel <= '0';
                         end if;

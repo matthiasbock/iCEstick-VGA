@@ -9,16 +9,16 @@ Printing clock  summary report in "U:\SimpleVGA_iCEstick\SimpleVGA_iCEstick_Impl
 @N: MF249 |Running in 32-bit mode.
 @N: MF666 |Clock conversion enabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 58MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 59MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 60MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
@@ -35,8 +35,8 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start                            Requested     Requested     Clock                                   Clock                
 Clock                            Frequency     Period        Type                                    Group                
 --------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock     111.1 MHz     8.999         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz             26.5 MHz      37.685        inferred                                Autoconstr_clkgroup_0
+PLL|PLLOUTCORE_derived_clock     129.8 MHz     7.705         derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             31.0 MHz      32.267        inferred                                Autoconstr_clkgroup_0
 System                           1.0 MHz       1000.000      system                                  system_clkgroup      
 ==========================================================================================================================
 
@@ -48,6 +48,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 43MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Jun 19 15:40:53 2015
+# Tue Jun 23 17:42:30 2015
 
 ###########################################################]

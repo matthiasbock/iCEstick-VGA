@@ -1,28 +1,28 @@
-@P:  Worst Slack : -7.302
-@P:  PLL|PLLOUTCORE_derived_clock - Estimated Frequency : 20.5 MHz
-@P:  PLL|PLLOUTCORE_derived_clock - Requested Frequency : 24.2 MHz
-@P:  PLL|PLLOUTCORE_derived_clock - Estimated Period : 48.679
-@P:  PLL|PLLOUTCORE_derived_clock - Requested Period : 41.377
-@P:  PLL|PLLOUTCORE_derived_clock - Slack : -7.302
+@P:  Worst Slack : -7.230
+@P:  PLL|PLLOUTCORE_derived_clock - Estimated Frequency : 20.7 MHz
+@P:  PLL|PLLOUTCORE_derived_clock - Requested Frequency : 24.4 MHz
+@P:  PLL|PLLOUTCORE_derived_clock - Estimated Period : 48.200
+@P:  PLL|PLLOUTCORE_derived_clock - Requested Period : 40.970
+@P:  PLL|PLLOUTCORE_derived_clock - Slack : -7.230
 @P:  SimpleVGA|Clock12MHz - Estimated Frequency : NA
-@P:  SimpleVGA|Clock12MHz - Requested Frequency : 24.2 MHz
+@P:  SimpleVGA|Clock12MHz - Requested Frequency : 24.4 MHz
 @P:  SimpleVGA|Clock12MHz - Estimated Period : NA
-@P:  SimpleVGA|Clock12MHz - Requested Period : 41.377
+@P:  SimpleVGA|Clock12MHz - Requested Period : 40.970
 @P:  SimpleVGA|Clock12MHz - Slack : NA
-@P:  Worst Slack(min analysis) : 2.523
-@P:  PLL|PLLOUTCORE_derived_clock - Estimated Frequency(min analysis) : 20.5 MHz
-@P:  PLL|PLLOUTCORE_derived_clock - Requested Frequency(min analysis) : 24.2 MHz
-@P:  PLL|PLLOUTCORE_derived_clock - Estimated Period(min analysis) : 48.679
-@P:  PLL|PLLOUTCORE_derived_clock - Requested Period(min analysis) : 41.377
-@P:  PLL|PLLOUTCORE_derived_clock - Slack(min analysis) : -7.302
+@P:  Worst Slack(min analysis) : 1.978
+@P:  PLL|PLLOUTCORE_derived_clock - Estimated Frequency(min analysis) : 20.7 MHz
+@P:  PLL|PLLOUTCORE_derived_clock - Requested Frequency(min analysis) : 24.4 MHz
+@P:  PLL|PLLOUTCORE_derived_clock - Estimated Period(min analysis) : 48.200
+@P:  PLL|PLLOUTCORE_derived_clock - Requested Period(min analysis) : 40.970
+@P:  PLL|PLLOUTCORE_derived_clock - Slack(min analysis) : -7.230
 @P:  SimpleVGA|Clock12MHz - Estimated Frequency(min analysis) : NA
-@P:  SimpleVGA|Clock12MHz - Requested Frequency(min analysis) : 24.2 MHz
+@P:  SimpleVGA|Clock12MHz - Requested Frequency(min analysis) : 24.4 MHz
 @P:  SimpleVGA|Clock12MHz - Estimated Period(min analysis) : NA
-@P:  SimpleVGA|Clock12MHz - Requested Period(min analysis) : 41.377
+@P:  SimpleVGA|Clock12MHz - Requested Period(min analysis) : 40.970
 @P:  SimpleVGA|Clock12MHz - Slack(min analysis) : NA
 @P: SimpleVGA Part : ice40hx1ktq144
 @P: SimpleVGA I/O primitives : 7
 @P: SimpleVGA I/O Register bits : 0
-@P: SimpleVGA Register bits (Non I/O) : 32 (2%)
-@P: SimpleVGA Total Luts : 329 (25%)
-@P:  CPU Time : 0h:00m:11s
+@P: SimpleVGA Register bits (Non I/O) : 33 (2%)
+@P: SimpleVGA Total Luts : 437 (34%)
+@P:  CPU Time : 0h:00m:18s

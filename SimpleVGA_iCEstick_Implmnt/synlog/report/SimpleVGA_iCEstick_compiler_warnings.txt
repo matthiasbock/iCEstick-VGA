@@ -1,6 +1,6 @@
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":184:18:184:22|hsync is not readable.  This may cause a simulation mismatch.
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":185:18:185:22|vsync is not readable.  This may cause a simulation mismatch.
-@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":186:18:186:22|pixel is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":168:18:168:22|hsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":169:18:169:22|vsync is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":170:18:170:22|pixel is not readable.  This may cause a simulation mismatch.
 @W: CD280 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input extfeedback of instance PLL_inst is floating
 @W: CL245 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Bit 0 of input dynamicdelay of instance PLL_inst is floating
