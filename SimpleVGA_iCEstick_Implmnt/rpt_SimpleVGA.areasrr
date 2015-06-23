@@ -9,38 +9,26 @@ Part:			ICE40HX1KTQ144 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     42                 100 %                
+FLOPS     31                 100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block SimpleVGA:	42 (9.74 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SimpleVGA:	31 (4.55 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       228                100 %                
-CARRYS     133                100 %                
+LUTS       485                100 %                
+CARRYS     152                100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block SimpleVGA:	361 (83.76 % Utilization)
+Total COMBINATIONAL LOGIC in the block SimpleVGA:	637 (93.40 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     9                  100 %                
+PADS     8                  100 %                
 =================================================
-Total IO PADS in the block SimpleVGA:	9 (2.09 % Utilization)
-
-------------------------------------------------------------------
-########   Utilization report for  cell:   LEDBoardFont   ########
-Instance path:   SimpleVGA.LEDBoardFont                           
-==================================================================
-
-COMBINATIONAL LOGIC
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-LUTS     1                  0.4390 %             
-=================================================
-Total COMBINATIONAL LOGIC in the block SimpleVGA.LEDBoardFont:	1 (0.23 % Utilization)
+Total IO PADS in the block SimpleVGA:	8 (1.17 % Utilization)
 
 ---------------------------------------------------------
 ########   Utilization report for  cell:   PLL   ########
@@ -50,9 +38,9 @@ Instance path:   SimpleVGA.PLL
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     1                  11.1 %               
+PADS     1                  12.5 %               
 =================================================
-Total IO PADS in the block SimpleVGA.PLL:	1 (0.23 % Utilization)
+Total IO PADS in the block SimpleVGA.PLL:	1 (0.15 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

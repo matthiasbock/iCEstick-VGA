@@ -1,12 +1,12 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Jun 23 21:36:56 2015
+# Timing Report written on Tue Jun 23 22:10:39 2015
 #
 
 
 Top view:               SimpleVGA
-Requested Frequency:    36.8 MHz
+Requested Frequency:    22.1 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -20,13 +20,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 1.983
+Worst slack in design: 2.523
 
                                  Requested     Estimated     Requested     Estimated                 Clock                                   Clock                
 Starting Clock                   Frequency     Frequency     Period        Period        Slack       Type                                    Group                
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock     36.8 MHz      15.6 MHz      27.199        63.997        -18.399     derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz             36.8 MHz      NA            27.199        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
+PLL|PLLOUTCORE_derived_clock     22.1 MHz      18.7 MHz      45.349        53.352        -8.003      derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             22.1 MHz      NA            45.349        NA            DCM/PLL     inferred                                Autoconstr_clkgroup_0
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -35,12 +35,12 @@ SimpleVGA|Clock12MHz             36.8 MHz      NA            27.199        NA   
 Clock Relationships
 *******************
 
-Clocks                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall    |    fall  to  rise 
----------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                      Ending                        |  constraint  slack  |  constraint  slack  |  constraint  slack   |  constraint  slack
----------------------------------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock  PLL|PLLOUTCORE_derived_clock  |  0.000       1.983  |  No paths    -      |  13.599      16.299  |  No paths    -    
-===================================================================================================================================================
+Clocks                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------
+PLL|PLLOUTCORE_derived_clock  PLL|PLLOUTCORE_derived_clock  |  0.000       2.523  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -66,9 +66,7 @@ Starting Points with Worst Slack
 Instance     Reference                        Type       Pin     Net          Time        Slack
              Clock                                                                             
 -----------------------------------------------------------------------------------------------
-beamX[7]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[7]     0.378       1.983
-beamY[1]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamY[1]     0.378       2.102
-beamX[0]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       un5_vx       0.378       2.523
+beamX[0]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[0]     0.378       2.523
 beamY[0]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamY[0]     0.378       2.523
 beamX[1]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[1]     0.378       2.614
 beamX[2]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[2]     0.378       2.614
@@ -76,27 +74,29 @@ beamX[3]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[3]     0.
 beamX[4]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[4]     0.378       2.614
 beamX[5]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[5]     0.378       2.614
 beamX[6]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[6]     0.378       2.614
+beamX[7]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[7]     0.378       2.614
+beamX[8]     PLL|PLLOUTCORE_derived_clock     SB_DFF     Q       beamX[8]     0.378       2.614
 ===============================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                      Starting                                                              Required          
-Instance              Reference                        Type        Pin     Net              Time         Slack
-                      Clock                                                                                   
---------------------------------------------------------------------------------------------------------------
-TextOutputEnabled     PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[3]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[4]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[5]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[6]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[7]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[8]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleX[9]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleY[1]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-visibleY[2]           PLL|PLLOUTCORE_derived_clock     SB_DFFE     E       un15_beamy_g     0.000        1.983
-==============================================================================================================
+                  Starting                                                                            Required          
+Instance          Reference                        Type        Pin     Net                            Time         Slack
+                  Clock                                                                                                 
+------------------------------------------------------------------------------------------------------------------------
+beamX[2]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[2]                   0.074        2.523
+beamY[2]          PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       un21_beamy_cry_1_c_RNIAL73     0.074        2.523
+beamY_fast[2]     PLL|PLLOUTCORE_derived_clock     SB_DFFE     D       un21_beamy_cry_1_c_RNIAL73     0.074        2.523
+beamX[3]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[3]                   0.074        2.614
+beamX[4]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_3[4]                     0.074        2.614
+beamX[5]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[5]                   0.074        2.614
+beamX[6]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[6]                   0.074        2.614
+beamX[7]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[7]                   0.074        2.614
+beamX[8]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[8]                   0.074        2.614
+beamX[9]          PLL|PLLOUTCORE_derived_clock     SB_DFF      D       beamX_RNO[9]                   0.074        2.614
+========================================================================================================================
 
 
 
@@ -105,32 +105,32 @@ Worst Path Information
 
 
 Path information for path number 1: 
-    Propagation time:                        1.983
+    Propagation time:                        2.596
     + Clock delay at starting point:         0.000 (ideal)
     - Requested Period:                      0.000
-    - Hold time:                             0.000
+    - Hold time:                             0.074
     - Clock delay at ending point:           0.000 (ideal)
-    = Slack (critical) :                     1.983
+    = Slack (critical) :                     2.523
 
     Number of logic level(s):                2
-    Starting point:                          beamX[7] / Q
-    Ending point:                            TextOutputEnabled / E
+    Starting point:                          beamX[0] / Q
+    Ending point:                            beamX[2] / D
     The start point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
     The end   point is clocked by            PLL|PLLOUTCORE_derived_clock [rising] on pin C
 
-Instance / Net                     Pin                              Pin               Arrival     No. of    
-Name                   Type        Name                             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------
-beamX[7]               SB_DFF      Q                                Out     0.378     0.378       -         
-beamX[7]               Net         -                                -       1.119     -           8         
-beamX_RNISO4T[7]       SB_LUT4     I0                               In      -         1.497       -         
-beamX_RNISO4T[7]       SB_LUT4     O                                Out     0.270     1.767       -         
-beamX_RNISO4T[7]       Net         -                                -       0.000     -           2         
-beamX_RNISO4T_0[7]     SB_GB       USER_SIGNAL_TO_GLOBAL_BUFFER     In      -         1.767       -         
-beamX_RNISO4T_0[7]     SB_GB       GLOBAL_BUFFER_OUTPUT             Out     0.216     1.983       -         
-un15_beamy_g           Net         -                                -       0.000     -           17        
-TextOutputEnabled      SB_DFFE     E                                In      -         1.983       -         
-============================================================================================================
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                  Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+beamX[0]              SB_DFF       Q        Out     0.378     0.378       -         
+beamX[0]              Net          -        -       0.584     -           12        
+un8_beamx_cry_1_c     SB_CARRY     CI       In      -         0.962       -         
+un8_beamx_cry_1_c     SB_CARRY     CO       Out     0.088     1.050       -         
+un8_beamx_cry_1       Net          -        -       0.270     -           2         
+beamX_RNO[2]          SB_LUT4      I3       In      -         1.320       -         
+beamX_RNO[2]          SB_LUT4      O        Out     0.221     1.541       -         
+beamX_RNO[2]          Net          -        -       1.055     -           1         
+beamX[2]              SB_DFF       D        In      -         2.596       -         
+====================================================================================
 
 
 

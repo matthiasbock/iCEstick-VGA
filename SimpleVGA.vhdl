@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 
+use LEDBoardFont.all;
+
 entity SimpleVGA is
     port(
         Clock12MHz: in std_logic;
@@ -74,37 +76,10 @@ architecture vga of SimpleVGA is
     constant PixelsPerColumn : integer := resolutionX / Columns; -- 800 / 80 = 10
     constant PixelsPerRow    : integer := resolutionY / Rows;    -- 600 / 50 = 12
     
-    -- Current pixel position on screen
-    signal visibleX : integer range 0 to resolutionX := 0;
-    signal visibleY : integer range 0 to resolutionY := 0;
-    
-    -- Current character position on screen
-    signal Column : integer := 0;
-    signal Row    : integer := 0;
-    signal OutputEnabled     : bit := '0';
-    signal TextOutputEnabled : bit := '0';
-
     type ScreenContent is array(0 to 9) of integer range 0 to 255;
     constant Content : ScreenContent := (48, 49, 50, 51, 52, 53, 54, 55, 56, 57);
-    
-    signal CurrentChar : integer range 0 to 255;
-    signal CharX       : integer range 0 to 7;
-    signal CharY       : integer range 0 to 11;
-    signal TextPixel   : std_logic;
-    
-    -- Character to pixel mapping
-    component LEDBoardFont is
-        port(
-            Ord         : in integer range 0 to 255;
-            CharX       : in integer;
-            CharY       : in integer;
-            CharWidth   : in integer;
-            CharHeight  : in integer;
-            Pixel       : out std_logic
-        );
-    end component;
+   
 begin
-
     -- Global clock
     Clock50MHz: PLL
     port map(
@@ -122,8 +97,6 @@ begin
             if (Reset = 'Z')
             then
                 Reset <= '0';
-                beamX <= 0;
-                beamY <= 0;
             else
                 Reset <= '1';
             end if;
@@ -132,21 +105,30 @@ begin
     
     -- Pixel clock processor
     -- sensitivity: PixelClock
-    -- updates:     VGA control signals, visibleX/Y, Column/Row, CharX/Y, CurrentChar, OutputEnabled, TextOutputEnabled
+    -- updates:     VGA control signals, Pixel
     process(PixelClock)
-        variable vx : integer range 0 to resolutionX-1;
-        variable vy : integer range 0 to resolutionY-1;
-        variable c  : integer range 0 to Columns-1;
-        variable r  : integer range 0 to Rows-1;
+        -- Current pixel position on screen
+        variable visibleX : integer range 0 to resolutionX := 0;
+        variable visibleY : integer range 0 to resolutionY := 0;
+        
+        -- Current character position on screen
+        variable Column      : integer := 0;
+        variable Row         : integer := 0;
+        variable CurrentChar : integer range 0 to 255 := 0;
+
+        -- Current position within character
+        variable CharX       : integer range 0 to 9  := 0;
+        variable CharY       : integer range 0 to 11 := 0;
     begin
         if (PixelClock'event and PixelClock='1')
         then
+            Pixel <= '0';
+        
             -- HSync pulse before left porch
             -- HSync is active low
             if (beamX < HSyncDuration)
             then
                 HSync <= '0'; -- HSync pulse
-                OutputEnabled <= '0';
             else
                 HSync <= '1'; -- HSync pulse off
             end if;
@@ -155,7 +137,6 @@ begin
             -- VSync is active low
             if (beamY < VSyncDuration) then
                 VSync <= '0'; -- VSync pulse
-                OutputEnabled <= '0';
             else
                 VSync <= '1'; -- VSync pulse off
 
@@ -163,38 +144,27 @@ begin
                 if (beamY >= VSyncDuration+topPorch and beamY < beamMaxY-bottomPorch
                 and beamX >= HSyncDuration+leftPorch and beamX < beamMaxX-rightPorch) then
 
-                    OutputEnabled <= '1';
-
-                    -- using variables here to encourage the synthesizer to re-use calculated values
-                    vx := beamX - HSyncDuration - leftPorch;
-                    vy := beamY - VSyncDuration - topPorch;
-                    
                     -- Calculate current position on screen
-                    visibleX <= vx;
-                    visibleY <= vy;
+                    visibleX := beamX - HSyncDuration - leftPorch;
+                    visibleY := beamY - VSyncDuration - topPorch;
                     
                     -- Calculate current character position
-                    c := vx / PixelsPerColumn;
-                    Column <= c;
-                    CharX  <= vx mod PixelsPerColumn;
+                    Column := visibleX / PixelsPerColumn;
+                    CharX  := visibleX mod PixelsPerColumn;
                     
-                    r := vy / PixelsPerRow;
-                    Row    <= r;
-                    CharY  <= vy mod PixelsPerRow;
+                    Row    := visibleY / PixelsPerRow;
+                    CharY  := visibleY mod PixelsPerRow;
 
                     -- only display text in first row
                     -- otherwise display chess board pattern
-                    if (r = 0 and c < Content'length)
+                    if (Row = 0 and Column < Content'length)
                     then
-                        CurrentChar <= 50; --Content(c);
-                        TextOutputEnabled <= '1';
+                        CurrentChar := Content(Column);
+                        Pixel <= Font(CurrentChar, CharX, CharY, PixelsPerColumn, PixelsPerRow);
                     else
-                        TextOutputEnabled <= '0';
+                        Pixel <= ChessBoardPixel(visibleX, visibleY);
                     end if;
-                else
-                    OutputEnabled <= '0';
                 end if;
-
             end if;
 
             -- move the (virtual) beam
@@ -210,57 +180,10 @@ begin
             end if;
         end if;
     end process;
-
-    CharacterDisplay: LEDBoardFont
-    port map(
-        Ord         => CurrentChar,
-        CharX       => CharX,
-        CharY       => CharY,
-        CharWidth   => PixelsPerColumn,
-        CharHeight  => PixelsPerRow,
-        Pixel       => TextPixel
-	);
-    
-    -- Choose between chess board test pattern
-    -- and text output
-    process(
-        PixelClock,
-        OutputEnabled,
-        TextOutputEnabled,
-        visibleX,
-        visibleY
-        )
-    
-        function ChessBoardPixel(x : integer; y : integer) return std_logic is
-        begin
-            if ((x mod 80 > 39) xor (y mod 60 > 29))
-            then
-                return '1';
-            else
-                return '0';
-            end if;
-        end;
-
-    begin
-        if (PixelClock'event and PixelClock='0')
-        then
-            if (OutputEnabled = '1')
-            then
-                if (TextOutputEnabled = '1')
-                then
-                    Pixel <= TextPixel;
-                else
-                    Pixel <= ChessBoardPixel(visibleX, visibleY);
-                end if;
-            else
-                Pixel <= '0';
-            end if;
-        end if;
-    end process;
     
     -- clone signals for oscilloscope probe, i.e. for debugging
     HSyncDebug <= HSync;
     VSyncDebug <= VSync;
-    PixelDebug <= TextPixel;
+    PixelDebug <= Pixel;
     
 end vga;

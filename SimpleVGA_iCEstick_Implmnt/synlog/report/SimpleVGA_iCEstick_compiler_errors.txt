@@ -1,3 +1,3 @@
-@E: CD255 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":133:20:133:20|No identifier "enabled" in scope
+@E: CD255 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":163:74:163:74|No identifier "charwidth" in scope
 @E|Parse errors encountered - exiting
 

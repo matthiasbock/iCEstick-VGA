@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 23 2015 21:37:42
+* File Generated:     Jun 23 2015 22:11:43
 
 * Purpose:            General info of design implementation
 
@@ -27,22 +27,22 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  42
-    LUTs:                 249
+    FFs:                  31
+    LUTs:                 502
     RAMs:                 0
     IOBs:                 7
-    GBs:                  2
+    GBs:                  1
     PLLs:                 1
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 278/1280
-        Combinational Logic Cells: 236      out of   1280      18.4375%
-        Sequential Logic Cells:    42       out of   1280      3.28125%
-        Logic Tiles:               52       out of   160       32.5%
+    Total Logic Cells: 535/1280
+        Combinational Logic Cells: 504      out of   1280      39.375%
+        Sequential Logic Cells:    31       out of   1280      2.42188%
+        Logic Tiles:               89       out of   160       55.625%
     Registers: 
-        Logic Registers:           42       out of   1280      3.28125%
+        Logic Registers:           31       out of   1280      2.42188%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
@@ -50,7 +50,7 @@ Logic Resource Utilization:
         Input Pins:                1        out of   96        1.04167%
         Output Pins:               6        out of   96        6.25%
         InOut Pins:                0        out of   96        0%
-    Global Buffers:                2        out of   8         25%
+    Global Buffers:                1        out of   8         12.5%
     PLLs:                          1        out of   1         100%
 
 IO Bank Utilization:
@@ -81,5 +81,4 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name   
     -------------  -------  ---------  ------  -----------   
-    6              3                   42      PixelClock_g  
-    3              3                   17      un15_beamy_g  
+    3              3                   31      PixelClock_g  

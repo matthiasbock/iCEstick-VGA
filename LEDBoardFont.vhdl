@@ -2,18 +2,19 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 
-entity LEDBoardFont is
-    port(
+package LEDBoardFont is
+    function Font(
         Ord         : in integer range 0 to 255;
         CharX       : in integer;
         CharY       : in integer;
         CharWidth   : in integer;
-        CharHeight  : in integer;
-        Pixel       : out std_logic
-        );
+        CharHeight  : in integer
+        ) return std_logic;
+    
+    function ChessBoardPixel(x : integer; y : integer) return std_logic;
 end LEDBoardFont;
 
-architecture font of LEDBoardFont is
+package body LEDBoardFont is
 
     -- The characters of this font are represented as matrices of 8x8 pixels.
     -- Each pixel can be on/'1' or off/'0'.
@@ -116,40 +117,50 @@ architecture font of LEDBoardFont is
         "00111100")
       );
 
-begin
     -- Set output pixel according to current character
     -- and the position within the character
-    process(
-            Ord,
-            CharX,
-            CharY,
-            CharWidth,
-            CharHeight
-            )
+    function Font(
+        Ord         : in integer range 0 to 255;
+        CharX       : in integer;
+        CharY       : in integer;
+        CharWidth   : in integer;
+        CharHeight  : in integer
+        ) return std_logic is
+
         -- muss ins Rastermass passen
         variable x : integer range 0 to 9  := CharX mod CharWidth;
         variable y : integer range 0 to 11 := CharY mod CharHeight;
     begin
         -- first and last column are off
         -- top and bottom two lines are off
---        if (x = 0
---         or x = CharWidth-1
---         or y < 2  -- 0 or 1
---         or y > 9) -- 10 or 11
---        then
---            Pixel <= '0';
---        else
+        if (x = 0
+         or x = CharWidth-1
+         or y < 2  -- 0 or 1
+         or y > 9) -- 10 or 11
+        then
+            return '0';
+        else
             -- strip margins
             x := x - 1;
             y := y - 2;
             
             if (Ord > 47 and Ord < 48+MaskDigits'length)
             then
-                Pixel <= std_logic( MaskDigits(Ord-48)(y)(x) );
+                return std_logic( MaskDigits(Ord-48)(y)(x) );
             else
-                Pixel <= '1';
+                return '0';
             end if;
---        end if;
-    end process;
+        end if;
+    end Font;
 
-end font;
+    function ChessBoardPixel(x : integer; y : integer) return std_logic is
+    begin
+        if ((x mod 80 > 39) xor (y mod 60 > 29))
+        then
+            return '1';
+        else
+            return '0';
+        end if;
+    end;
+        
+end LEDBoardFont;

@@ -16,13 +16,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>PLL|PLLOUTCORE_derived_clock</data>
-<data>36.8 MHz</data>
-<data>15.6 MHz</data>
-<data>-18.399</data>
+<data>22.1 MHz</data>
+<data>18.7 MHz</data>
+<data>-8.003</data>
 </row>
 <row>
 <data>SimpleVGA|Clock12MHz</data>
-<data>36.8 MHz</data>
+<data>22.1 MHz</data>
 <data>NA</data>
 <data>NA</data>
 </row>

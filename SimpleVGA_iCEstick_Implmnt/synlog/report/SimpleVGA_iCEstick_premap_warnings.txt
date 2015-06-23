@@ -1,5 +1,0 @@
-@W: BN137 :"u:\simplevga_icestick\ledboardfont.vhdl":143:17:143:21|Found combinational loop during mapping at net CharacterDisplay.un2_x[32]
-@W: BN137 :"u:\simplevga_icestick\ledboardfont.vhdl":143:17:143:21|Found combinational loop during mapping at net CharacterDisplay.un2_x[31]
-@W: BN137 :"u:\simplevga_icestick\ledboardfont.vhdl":143:17:143:21|Found combinational loop during mapping at net CharacterDisplay.un2_x[30]
-@W: BN137 :"u:\simplevga_icestick\ledboardfont.vhdl":144:17:144:21|Found combinational loop during mapping at net CharacterDisplay.un2_y[31]
-@W: BN137 :"u:\simplevga_icestick\ledboardfont.vhdl":144:17:144:21|Found combinational loop during mapping at net CharacterDisplay.un2_y[30]

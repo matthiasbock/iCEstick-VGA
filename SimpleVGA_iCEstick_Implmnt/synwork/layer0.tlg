@@ -1,12 +1,6 @@
-@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":5:7:5:15|Synthesizing work.simplevga.vga 
-@N: CD630 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":5:7:5:18|Synthesizing work.ledboardfont.font 
-@W: CD609 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":148:36:148:56|Index value 0 to 11 could be out of prefix range 0 to 7 
-@W: CD609 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":148:36:148:59|Index value 0 to 9 could be out of prefix range 0 to 7 
-@W: CD434 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":124:12:124:16|Signal charx in the sensitivity list is not used in the process
-@W: CD434 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":125:12:125:16|Signal chary in the sensitivity list is not used in the process
-@W: CD434 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":126:12:126:20|Signal charwidth in the sensitivity list is not used in the process
-@W: CD434 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":127:12:127:21|Signal charheight in the sensitivity list is not used in the process
-Post processing for work.ledboardfont.font
+@N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Synthesizing work.simplevga.vga 
+@W: CD609 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":149:34:149:54|Index value 0 to 11 could be out of prefix range 0 to 7 
+@W: CD609 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":149:34:149:57|Index value 0 to 9 could be out of prefix range 0 to 7 
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":4:7:4:9|Synthesizing work.pll.behavior 
 @W: CD280 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Unbound component SB_PLL40_CORE mapped to black box
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Synthesizing work.sb_pll40_core.syn_black_box 
@@ -25,25 +19,4 @@ Post processing for work.pll.behavior
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sdi of instance PLL_inst is floating
 @W: CL167 :"U:\SimpleVGA_iCEstick\PLL.vhd":55:0:55:7|Input sclk of instance PLL_inst is floating
 Post processing for work.simplevga.vga
-@W: CL169 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Pruning register Row_4(31 downto 0)  
-@W: CL169 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Pruning register Column_4(31 downto 0)  
-@W: CL179 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":143:17:143:21|Found combinational loop at un2_x[32]
-@W: CL179 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":143:17:143:21|Found combinational loop at un2_x[31]
-@W: CL179 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":143:17:143:21|Found combinational loop at un2_x[30]
-@W: CL179 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":144:17:144:21|Found combinational loop at un2_y[32]
-@W: CL179 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":144:17:144:21|Found combinational loop at un2_y[31]
-@W: CL179 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":144:17:144:21|Found combinational loop at un2_y[30]
-@A: CL153 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":144:17:144:21|Unassigned bits of un1(2) are referenced and tied to 0 -- simulation mismatch possible.
-@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":8:8:8:12|Input CharX is unused
-@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":9:8:9:12|Input CharY is unused
-@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":10:8:10:16|Input CharWidth is unused
-@W: CL159 :"U:\SimpleVGA_iCEstick\LEDBoardFont.vhdl":11:8:11:17|Input CharHeight is unused
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":120:8:120:9|Register bit Reset is always 1, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(0) is always 0, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(1) is always 1, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(2) is always 0, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(3) is always 0, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(4) is always 1, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(5) is always 1, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(6) is always 0, optimizing ...
-@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":142:8:142:9|Register bit CurrentChar(7) is always 0, optimizing ...
+@W: CL189 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":95:8:95:9|Register bit Reset is always 1, optimizing ...
