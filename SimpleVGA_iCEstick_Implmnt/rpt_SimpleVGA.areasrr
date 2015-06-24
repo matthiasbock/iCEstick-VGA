@@ -9,26 +9,26 @@ Part:			ICE40HX1KTQ144 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     36                 100 %                
+FLOPS     46                 100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block SimpleVGA:	36 (5.19 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SimpleVGA:	46 (6.77 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       488                100 %                
-CARRYS     155                100 %                
+LUTS       453                100 %                
+CARRYS     148                100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block SimpleVGA:	643 (92.65 % Utilization)
+Total COMBINATIONAL LOGIC in the block SimpleVGA:	601 (88.51 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     9                  100 %                
+PADS     11                 100 %                
 =================================================
-Total IO PADS in the block SimpleVGA:	9 (1.30 % Utilization)
+Total IO PADS in the block SimpleVGA:	11 (1.62 % Utilization)
 
 ---------------------------------------------------------
 ########   Utilization report for  cell:   PLL   ########
@@ -38,9 +38,9 @@ Instance path:   SimpleVGA.PLL
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     1                  11.1 %               
+PADS     1                  9.09 %               
 =================================================
-Total IO PADS in the block SimpleVGA.PLL:	1 (0.14 % Utilization)
+Total IO PADS in the block SimpleVGA.PLL:	1 (0.15 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 24 2015 00:15:30
+* File Generated:     Jun 24 2015 16:34:48
 
 * Purpose:            Detailed IO and package pin info
 
@@ -119,10 +119,10 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 111, VCC, not used, , , , , , UnknownBank
 112, PIO, nCS1, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
 113, PIO, nCS2, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
-114, PIO, SCLK1, Output, , SB_LVCMOS, No Pull Up, Output Tristatable by Enable, topBank
-115, PIO, SCLK2, Output, , SB_LVCMOS, No Pull Up, Output Tristatable by Enable, topBank
-116, PIO, not used, , , , , , topBank
-117, PIO, not used, , , , , , topBank
+114, PIO, SCLK1, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+115, PIO, SCLK2, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+116, PIO, SDATA1, Input, , SB_LVCMOS, No Pull Up, Simple Input, topBank
+117, PIO, SDATA2, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
 118, PIO, not used, , , , , , topBank
 119, PIO, not used, , , , , , topBank
 120, PIO, not used, , , , , , topBank
@@ -144,4 +144,4 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 142, PIO, not used, , , , , , topBank
 143, PIO, not used, , , , , , topBank
 144, PIO, not used, , , , , , topBank
-Total Number of Used Pins, 8
+Total Number of Used Pins, 10

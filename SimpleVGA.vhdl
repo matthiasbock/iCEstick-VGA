@@ -26,7 +26,8 @@ entity SimpleVGA is
 
         -- additional mirror pins for debugging
         nCS1, nCS2, SCLK1, SCLK2 : out std_logic;
-        SDATA : in  std_logic
+        SDATA1 : in  std_logic;
+        SDATA2 : out std_logic
         -- iCEstick:
         -- nCS  : FPGA pin 112, J1 pin 3 = PIO0_02
         -- SCLK : FPGA pin 113, J1 pin 4 = PIO0_03
@@ -77,11 +78,8 @@ architecture vga of SimpleVGA is
     constant PixelsPerColumn : integer := resolutionX / Columns; -- 800 / 80 = 10
     constant PixelsPerRow    : integer := resolutionY / Rows;    -- 600 / 50 = 12
     
-    type ScreenContent is array(0 to 9) of integer range 0 to 255;
-    constant Content : ScreenContent := (48, 49, 50, 51, 52, 53, 54, 55, 56, 57);
-
-    
-    -- SPI: Serial Peripheral Interface
+    type ScreenContent is array(0 to 12) of integer range 0 to 255;
+    signal Content : ScreenContent := (48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 49, 50);
     
 begin
     -- Global clock
@@ -194,23 +192,45 @@ begin
     begin
         if (SlaveSelect)
         then
-                -- query the slave with 12 MHz
-                if (counter > 0)
-                then
-                    SCLK1 <= Clock12MHz;
-                else
-                    SCLK1 <= 'Z';
-                end if;
+            -- query the slave with 12 MHz
+            if (counter > 1)
+            then
+                SCLK1 <= Clock12MHz;
+            else
+                SCLK1 <= '1';
+            end if;
         else
-                -- tristate: high impedance
-                SCLK1 <= 'Z';
+            SCLK1 <= '1';
         end if;
 
         if (Clock12MHz'event and Clock12MHz='1')
         then
             if (SlaveSelect)
             then
+                -- sample a bit at the rising edge of the clock
+                -- (assuming Clock12MHz equals SCLK)
+                -- the first two clock ticks are omitted for delay (see above)
+                -- the following three bits are always zero
+                -- don't sample after but including the final clock tick
+                if (counter > 4 and counter <= 17)
+                then
+                    SDATA2 <= SDATA1;
+                    if (SDATA1 = '1')
+                    then
+                        Content(counter-5) <= 49; -- "1"
+                    else
+                        Content(counter-5) <= 48; -- "0"
+                    end if;
+                else
+                    SDATA2 <= '0';
+                end if;
+
                 -- disable slave select
+                -- after 17 clock ticks, the first of which
+                -- is omitted to delay between the falling edge of CS
+                -- and the first falling edge of SCLK
+                -- making it 16 clock ticks in total
+                -- corresponding to 16 bits transferred
                 if (counter >= 17)
                 then
                     SlaveSelect := false;

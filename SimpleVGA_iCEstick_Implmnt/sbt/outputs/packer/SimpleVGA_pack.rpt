@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 24 2015 00:15:33
+* File Generated:     Jun 24 2015 16:34:49
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 4 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -27,28 +27,28 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  36
-    LUTs:                 500
+    FFs:                  46
+    LUTs:                 468
     RAMs:                 0
-    IOBs:                 8
+    IOBs:                 10
     GBs:                  2
     PLLs:                 1
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 532/1280
-        Combinational Logic Cells: 496      out of   1280      38.75%
-        Sequential Logic Cells:    36       out of   1280      2.8125%
-        Logic Tiles:               92       out of   160       57.5%
+    Total Logic Cells: 501/1280
+        Combinational Logic Cells: 455      out of   1280      35.5469%
+        Sequential Logic Cells:    46       out of   1280      3.59375%
+        Logic Tiles:               91       out of   160       56.875%
     Registers: 
-        Logic Registers:           36       out of   1280      2.8125%
+        Logic Registers:           46       out of   1280      3.59375%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                1        out of   96        1.04167%
-        Output Pins:               7        out of   96        7.29167%
+        Input Pins:                2        out of   96        2.08333%
+        Output Pins:               8        out of   96        8.33333%
         InOut Pins:                0        out of   96        0%
     Global Buffers:                2        out of   8         25%
     PLLs:                          1        out of   1         100%
@@ -57,30 +57,32 @@ IO Bank Utilization:
 --------------------
     Bank 3: 1        out of   24        4.16667%
     Bank 1: 0        out of   25        0%
-    Bank 0: 4        out of   23        17.3913%
+    Bank 0: 6        out of   23        26.087%
     Bank 2: 3        out of   24        12.5%
 
 Detailed I/O Info:
 ------------------
     Input Pins: 
-    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name 
-    ----------  ---------  -----------  -------  -------  -----------                   ----------- 
-    21          Input      SB_LVCMOS    No       3        Simple Input                  Clock12MHz  
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name 
+    ----------  ---------  -----------  -------  -------  -----------    ----------- 
+    21          Input      SB_LVCMOS    No       3        Simple Input   Clock12MHz  
+    116         Input      SB_LVCMOS    No       0        Simple Input   SDATA1      
 
     Output Pins: 
-    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name 
-    ----------  ---------  -----------  -------  -------  -----------                   ----------- 
-    60          Output     SB_LVCMOS    No       2        Simple Output                 VSync       
-    61          Output     SB_LVCMOS    No       2        Simple Output                 HSync       
-    62          Output     SB_LVCMOS    No       2        Simple Output                 Pixel       
-    112         Output     SB_LVCMOS    No       0        Simple Output                 nCS1        
-    113         Output     SB_LVCMOS    No       0        Simple Output                 nCS2        
-    114         Output     SB_LVCMOS    No       0        Output Tristatable by Enable  SCLK1       
-    115         Output     SB_LVCMOS    No       0        Output Tristatable by Enable  SCLK2       
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name 
+    ----------  ---------  -----------  -------  -------  -----------    ----------- 
+    60          Output     SB_LVCMOS    No       2        Simple Output  VSync       
+    61          Output     SB_LVCMOS    No       2        Simple Output  HSync       
+    62          Output     SB_LVCMOS    No       2        Simple Output  Pixel       
+    112         Output     SB_LVCMOS    No       0        Simple Output  nCS1        
+    113         Output     SB_LVCMOS    No       0        Simple Output  nCS2        
+    114         Output     SB_LVCMOS    No       0        Simple Output  SCLK1       
+    115         Output     SB_LVCMOS    No       0        Simple Output  SCLK2       
+    117         Output     SB_LVCMOS    No       0        Simple Output  SDATA2      
 
 Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name     
     -------------  -------  ---------  ------  -----------     
-    1              3        IO         9       Clock12MHz_c_g  
-    3              3                   28      PixelClock_g    
+    1              3        IO         24      Clock12MHz_c_g  
+    3              3                   24      PixelClock_g    

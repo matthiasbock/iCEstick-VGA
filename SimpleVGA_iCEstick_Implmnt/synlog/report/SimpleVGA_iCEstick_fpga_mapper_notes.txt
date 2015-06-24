@@ -1,19 +1,27 @@
 @N: MF249 |Running in 32-bit mode.
 @N: MF666 |Clock conversion enabled 
 @N: MT206 |Auto Constrain mode is enabled
-@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":159:30:159:52|Generating a type div divider 
-@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":156:30:156:55|Generating a type div divider 
+@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":157:30:157:52|Generating a type div divider 
+@N: MF236 :"u:\simplevga_icestick\simplevga.vhdl":154:30:154:55|Generating a type div divider 
+@N: MF135 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Found RAM 'content[0:3]', 16 words by 4 bits 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":158:13:158:20|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":157:30:157:57|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":155:30:155:57|Generating a type rem remainder 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":131:47:131:65|Generating a type rem remainder 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":158:33:158:40|Generating a type rem remainder 
-@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":160:30:160:54|Generating a type rem remainder 
+@N: MF237 :"u:\simplevga_icestick\simplevga.vhdl":158:30:158:54|Generating a type rem remainder 
 @N: MF237 :"u:\simplevga_icestick\ledboardfont.vhdl":132:47:132:66|Generating a type rem remainder 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[5]" with 8 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[7]" with 11 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[3]" with 18 loads replicated 1 times to improve timing 
-@N: FX271 :"u:\simplevga_icestick\simplevga.vhdl":127:8:127:9|Instance "beamY[2]" with 20 loads replicated 1 times to improve timing 
-@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":88:4:88:13|SB_GB inserted on the net PixelClock.
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram6_[1] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram6_[2] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram7_[1] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram7_[2] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram8_[3] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram9_[3] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram12_[1] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram2_[1] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram3_[1] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram4_[2] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: BN362 :"u:\simplevga_icestick\simplevga.vhdl":82:11:82:17|Removing sequential instance content_ram5_[2] in hierarchy view:work.SYNRAM16X4(decomp) because there are no references to its outputs 
+@N: FX1017 :"u:\simplevga_icestick\simplevga.vhdl":86:4:86:13|SB_GB inserted on the net PixelClock.
 @N: FX1016 :"u:\simplevga_icestick\simplevga.vhdl":9:8:9:17|SB_GB_IO inserted on the port Clock12MHz.
 @N: BW103 |Synopsys Constraint File time units using default value of 1ns 
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
