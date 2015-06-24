@@ -78,9 +78,45 @@ architecture vga of SimpleVGA is
     constant PixelsPerColumn : integer := resolutionX / Columns; -- 800 / 80 = 10
     constant PixelsPerRow    : integer := resolutionY / Rows;    -- 600 / 50 = 12
     
-    type ScreenContent is array(0 to 12) of integer range 0 to 255;
-    signal Content : ScreenContent := (48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 49, 50);
+    type TextLine   is array(0 to 12) of integer range 0 to 255;
+    type TextBuffer is array(0 to 1) of TextLine;
+    signal ScreenBuffer : TextBuffer := (others => 0);
+
+    -- SPI sensor
+    subtype BCD is integer range 0 to 15;
+
+    -- constant difference type
+    -- digit 3 => 1V
+    -- digit 2 => 0.1V
+    -- digit 1 => 10mV
+    -- digit 0 => 1mV
+    type DecimalVoltage is array(3 downto 0) of BCD;
     
+    -- for every bit: what numbers need to be added to each voltage digit
+    type TypeDecimalDifference is array(5 to 17) of DecimalVoltage;
+    constant VoltageDifference : TypeDecimalDifference :=
+       (
+        -- 4096 / 8192 * 3.3V = 1.65V
+        (1, 6, 5, 0),
+
+        -- divide by 2...
+        (0, 8, 2, 5),
+        (0, 4, 1, 2),
+        (0, 2, 0, 6),
+        (0, 1, 0, 3),
+
+        (0, 0, 5, 2),
+        (0, 0, 2, 6),
+        (0, 0, 1, 3),
+        (0, 0, 0, 6),
+
+        (0, 0, 0, 3),
+        (0, 0, 0, 2),
+        (0, 0, 0, 1),
+        (0, 0, 0, 0)
+       );
+
+    signal voltage : DecimalVoltage := (others => 0);    
 begin
     -- Global clock
     Clock50MHz: PLL
@@ -159,9 +195,9 @@ begin
 
                     -- only display text in first row
                     -- otherwise display chess board pattern
-                    if (Row = 0 and Column < Content'length)
+                    if (Row < ScreenBuffer'length and Column < ScreenBuffer(0)'length)
                     then
-                        CurrentChar := Content(Column);
+                        CurrentChar := ScreenBuffer(Row)(Column);
                         Pixel <= Font(CurrentChar, CharX, CharY, PixelsPerColumn, PixelsPerRow);
                     else
                         Pixel <= ChessBoardPixel(visibleX, visibleY);
@@ -217,9 +253,14 @@ begin
                     SDATA2 <= SDATA1;
                     if (SDATA1 = '1')
                     then
-                        Content(counter-5) <= 49; -- "1"
+                        -- display bit
+                        ScreenBuffer(0)(counter-5) <= Digit(1);
+                        
+                        for i in 3 downto 0 loop
+                            voltage(i) <= voltage(i) + VoltageDifference(counter)(i);
+                        end loop;
                     else
-                        Content(counter-5) <= 48; -- "0"
+                        ScreenBuffer(0)(counter-5) <= Digit(0);
                     end if;
                 else
                     SDATA2 <= '0';
@@ -236,15 +277,38 @@ begin
                     SlaveSelect := false;
                     nCS1 <= '1';
                     counter := 0;
+                    
+                    for i in 3 downto 0 loop
+                        ScreenBuffer(1)(3-i) <= voltage(i);
+                    end loop;
+                    voltage <= (others => 0);
                 else
                     counter := counter + 1;
                 end if;
             else
                 -- recover from undefined states
                 nCS1 <= '1';
+
+                -- from counter 0 to 2:
+                -- carry...
+                if (counter >= 0 and counter <= 3 and voltage(counter) > 9)
+                then
+                    voltage(counter) <= voltage(counter) - 10;
+                    if (counter < voltage'length)
+                    then
+                        voltage(counter+1) <= voltage(counter+1) + 1;
+                    end if;
+                end if;
+                
+                -- counter from 4 to 7:
+                -- fill ScreenBuffer
+                if (counter >= 4 and counter <= 7)
+                then
+                    ScreenBuffer(1)(counter-4) <= Digit(voltage(counter-4));
+                end if;
                 
                 -- enable slave select
-                if (counter >= 50)
+                if (counter >= 1000)
                 then
                     SlaveSelect := true;
                     nCS1 <= '0';

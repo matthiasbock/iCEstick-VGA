@@ -5,7 +5,6 @@
 @N: CD630 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Synthesizing work.simplevga.vga 
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":4:7:4:9|Synthesizing work.pll.behavior 
 @N: CD630 :"U:\SimpleVGA_iCEstick\PLL.vhd":14:10:14:22|Synthesizing work.sb_pll40_core.syn_black_box 
-@N: CL134 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":82:11:82:17|Found RAM content, depth=13, width=8
 @N|Running in 32-bit mode
 @N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Selected library: work cell: SimpleVGA view vga as top level
 @N: NF107 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":7:7:7:15|Selected library: work cell: SimpleVGA view vga as top level

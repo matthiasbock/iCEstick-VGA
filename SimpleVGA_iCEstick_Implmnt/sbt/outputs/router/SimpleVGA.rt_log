@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:05:28
 
-* File Generated:     Jun 24 2015 16:34:50
+* File Generated:     Jun 24 2015 19:04:31
 
 * Purpose:            Router runtime info
 
@@ -20,14 +20,14 @@ I1202: Reading Architecture of device iCE40HX1K
 Info-1404: Inferred PLL generated clock at Clock50MHz.PLL_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at Clock50MHz.PLL_inst/PLLOUTGLOBAL
 I1209: Started routing
-I1223: Total Nets : 649 
-I1212: Iteration  1 :   143 unrouted : 1 seconds
-I1212: Iteration  2 :    16 unrouted : 1 seconds
-I1212: Iteration  3 :     2 unrouted : 0 seconds
+I1223: Total Nets : 979 
+I1212: Iteration  1 :   220 unrouted : 3 seconds
+I1212: Iteration  2 :    33 unrouted : 1 seconds
+I1212: Iteration  3 :     6 unrouted : 1 seconds
 I1212: Iteration  4 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design SimpleVGA
 I1210: Writing routes
 I1218: Exiting the router
-I1224: Router run-time : 8 seconds
+I1224: Router run-time : 12 seconds

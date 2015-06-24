@@ -4,14 +4,17 @@ use IEEE.std_logic_arith.all;
 
 package LEDBoardFont is
     function Font(
-        Ord         : in integer range 0 to 255;
-        CharX       : in integer;
-        CharY       : in integer;
-        CharWidth   : in integer;
-        CharHeight  : in integer
+        Ord         : integer range 0 to 255;
+        CharX       : integer;
+        CharY       : integer;
+        CharWidth   : integer;
+        CharHeight  : integer
         ) return std_logic;
-    
+
+    function Digit(i : integer range 0 to 9) return integer;
+        
     function ChessBoardPixel(x : integer; y : integer) return std_logic;
+
 end LEDBoardFont;
 
 package body LEDBoardFont is
@@ -120,11 +123,11 @@ package body LEDBoardFont is
     -- Set output pixel according to current character
     -- and the position within the character
     function Font(
-        Ord         : in integer range 0 to 255;
-        CharX       : in integer;
-        CharY       : in integer;
-        CharWidth   : in integer;
-        CharHeight  : in integer
+        Ord         : integer range 0 to 255;
+        CharX       : integer;
+        CharY       : integer;
+        CharWidth   : integer;
+        CharHeight  : integer
         ) return std_logic is
 
         -- muss ins Rastermass passen
@@ -153,6 +156,13 @@ package body LEDBoardFont is
         end if;
     end Font;
 
+    -- return the ordinal of the given integer's corresponding ASCII character
+    function Digit(i : integer range 0 to 9)
+        return integer is
+    begin
+        return 48+i;
+    end;
+    
     function ChessBoardPixel(x : integer; y : integer) return std_logic is
     begin
         if ((x mod 80 > 39) xor (y mod 60 > 29))

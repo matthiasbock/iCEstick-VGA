@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  8 2014 15:01:30
 
-* File Generated:     Jun 24 2015 16:34:49
+* File Generated:     Jun 24 2015 19:04:31
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 2 seconds
 
 Device Info:
 ------------
@@ -27,22 +27,22 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  46
-    LUTs:                 468
+    FFs:                  86
+    LUTs:                 751
     RAMs:                 0
     IOBs:                 10
-    GBs:                  2
+    GBs:                  3
     PLLs:                 1
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 501/1280
-        Combinational Logic Cells: 455      out of   1280      35.5469%
-        Sequential Logic Cells:    46       out of   1280      3.59375%
-        Logic Tiles:               91       out of   160       56.875%
+    Total Logic Cells: 789/1280
+        Combinational Logic Cells: 703      out of   1280      54.9219%
+        Sequential Logic Cells:    86       out of   1280      6.71875%
+        Logic Tiles:               129      out of   160       80.625%
     Registers: 
-        Logic Registers:           46       out of   1280      3.59375%
+        Logic Registers:           86       out of   1280      6.71875%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
@@ -50,7 +50,7 @@ Logic Resource Utilization:
         Input Pins:                2        out of   96        2.08333%
         Output Pins:               8        out of   96        8.33333%
         InOut Pins:                0        out of   96        0%
-    Global Buffers:                2        out of   8         25%
+    Global Buffers:                3        out of   8         37.5%
     PLLs:                          1        out of   1         100%
 
 IO Bank Utilization:
@@ -82,22 +82,23 @@ Detailed I/O Info:
 
 Detailed Global Buffer Info:
 ----------------------------
-    Buffer Number  IO Bank  Driven By  Fanout  Signal Name     
-    -------------  -------  ---------  ------  -----------     
-    1              3        IO         24      Clock12MHz_c_g  
-    3              3                   24      PixelClock_g    
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name             
+    -------------  -------  ---------  ------  -----------             
+    1              3        IO         64      Clock12MHz_c_g          
+    6              3                   18      voltage_0_0_sqmuxa_1_g  
+    3              3                   24      PixelClock_g            
 
 
 Router Summary:
 ---------------
     Status:  Successful
-    Runtime: 6 seconds
+    Runtime: 9 seconds
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     3258 out of  28666      11.3654%
-                          Span 4      413 out of   6944      5.94758%
-                         Span 12       76 out of   1440      5.27778%
-                  Global network        2 out of      8      25%
-      Vertical Inter-LUT Connect       91 out of   1120      8.125%
+              Local line of tile     5328 out of  28666      18.5865%
+                          Span 4      897 out of   6944      12.9176%
+                         Span 12      101 out of   1440      7.01389%
+                  Global network        3 out of      8      37.5%
+      Vertical Inter-LUT Connect      163 out of   1120      14.5536%
 

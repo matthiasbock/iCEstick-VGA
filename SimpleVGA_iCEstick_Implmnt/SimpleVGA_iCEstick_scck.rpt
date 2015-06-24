@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker(syntax only), version maplat, Build 1061R, built Nov 12 2014
 # Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
-# Written on Wed Jun 24 16:33:41 2015
+# Written on Wed Jun 24 19:02:46 2015
 
 
 ##### DESIGN INFO #######################################################
@@ -24,7 +24,7 @@ Clock Summary
 Start                            Requested     Requested     Clock                                   Clock                
 Clock                            Frequency     Period        Type                                    Group                
 --------------------------------------------------------------------------------------------------------------------------
-PLL|PLLOUTCORE_derived_clock     8.6 MHz       116.194       derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
-SimpleVGA|Clock12MHz             2.1 MHz       486.576       inferred                                Autoconstr_clkgroup_0
+PLL|PLLOUTCORE_derived_clock     8.6 MHz       116.724       derived (from SimpleVGA|Clock12MHz)     Autoconstr_clkgroup_0
+SimpleVGA|Clock12MHz             2.0 MHz       488.795       inferred                                Autoconstr_clkgroup_0
 System                           1.0 MHz       1000.000      system                                  system_clkgroup      
 ==========================================================================================================================

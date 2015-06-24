@@ -1,2 +1,2 @@
-@E: CL123 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":207:8:207:9|Logic for SDATA2_6 does not match a standard flip-flop
+@E: CD464 :"U:\SimpleVGA_iCEstick\SimpleVGA.vhdl":282:48:282:57|Index 4 is out of range
 
